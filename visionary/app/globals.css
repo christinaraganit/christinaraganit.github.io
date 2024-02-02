@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #fff;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer components {
+  .large-title {
+    @apply text-5xl lg:text-6xl font-semibold tracking-tighter text-slate-900 leading-none;
+  }
+
+  .title-1 {
+    @apply text-3xl lg:text-4xl font-medium tracking-tighter text-slate-900 leading-none;
+  }
+
+  .title-2 {
+
+  }
+
+  .title-3 {
+
+  }
+
+  .callout {
+    @apply text-sm font-semibold;
+  }
+}
