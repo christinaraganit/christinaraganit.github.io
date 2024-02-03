@@ -4,30 +4,16 @@ import Review from "@/components/review";
 
 export default function Home() {
   return (
-    <main className="w-full flex flex-col gap-20 items-center pt-[12rem] pb-[6rem]">
-      <nav className="w-full bg-white/80 backdrop-blur-lg border-b border-zinc-200/60 fixed z-20 h-14 flex justify-between items-center left-1/2 -translate-x-1/2 top-0">
+    <main className="w-full flex flex-col gap-20 items-center pt-40 pb-16">
+      <nav className="w-full bg-white/90 backdrop-blur-lg border-b border-zinc-200/60 fixed z-20 h-12 flex justify-between items-center left-1/2 -translate-x-1/2 top-0">
         <div className="px-6 flex items-center w-full max-w-[80rem] mx-auto">
           <div className="w-full">
-            {/* <a href="" className="w-fit group">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                className="w-6 h-6 group-hover:scale-125 transition-transform mx-2"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M9 4.5a.75.75 0 0 1 .721.544l.813 2.846a3.75 3.75 0 0 0 2.576 2.576l2.846.813a.75.75 0 0 1 0 1.442l-2.846.813a3.75 3.75 0 0 0-2.576 2.576l-.813 2.846a.75.75 0 0 1-1.442 0l-.813-2.846a3.75 3.75 0 0 0-2.576-2.576l-2.846-.813a.75.75 0 0 1 0-1.442l2.846-.813A3.75 3.75 0 0 0 7.466 7.89l.813-2.846A.75.75 0 0 1 9 4.5ZM18 1.5a.75.75 0 0 1 .728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 0 1 0 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 0 1-1.456 0l-.258-1.036a2.625 2.625 0 0 0-1.91-1.91l-1.036-.258a.75.75 0 0 1 0-1.456l1.036-.258a2.625 2.625 0 0 0 1.91-1.91l.258-1.036A.75.75 0 0 1 18 1.5ZM16.5 15a.75.75 0 0 1 .712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 0 1 0 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 0 1-1.422 0l-.395-1.183a1.5 1.5 0 0 0-.948-.948l-1.183-.395a.75.75 0 0 1 0-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0 1 16.5 15Z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </a> */}
             <a href="">
               <Image
                 src="/headshot.png"
                 width={100}
                 height={100}
-                className="w-10 h-10 rounded-full"
+                className="w-9 h-9 rounded-full"
                 alt="A UX Designer with glasses and curled bangs"
               ></Image>
             </a>
@@ -36,7 +22,7 @@ export default function Home() {
             <Button link=" " variant="tertiary" text="Home"></Button>
             <Button link=" " variant="tertiary" text="About"></Button>
             <Button link=" " variant="tertiary" text="Projects"></Button>
-            <div className="pl-2">
+            <div className="pl-1">
               <Button link=" " variant="primary" text="Resume"></Button>
             </div>
           </div>
@@ -65,7 +51,7 @@ export default function Home() {
         <h1 className="large-title max-w-4xl mb-4">
           I'm Christina Raganit, a UX designer who writes code.
         </h1>
-        <p className="lg:text-lg text-zinc-600 max-w-4xl mb-20">
+        <p className="lg:text-lg text-zinc-600 max-w-4xl mb-12">
           2 years of experience in aligning business objectives and technical
           requirements to deliver stunning design solutions. Third-year BSc
           Interactive Arts and Technology student at Simon Fraser University.
@@ -142,27 +128,31 @@ export default function Home() {
         <div className="grid lg:grid-cols-3 gap-6 w-full text-left">
           <div className="flex flex-col gap-6">
             <Review
+              name="Ray Gong"
+              imgLink="/ray-gong.png"
+              title="Software Developer Intern at BlackBerry"
+            >
+              <span>
+                Christina is a{" "}
+                <span className="bg-blue-200/50 font-medium">
+                  very talented designer with a vast skillset
+                </span>
+                . She excels at rapidly producing prototypes to present her
+                ideas, both in design platforms such as Figma or in code. I am
+                confident that Christina will be a valuable member to any team.
+              </span>
+            </Review>
+            <Review
               name="Jason Lee"
               imgLink="/jason-lee.jpg"
               title="Team Lead at Felix Payment Systems"
             >
-              <p className="text-zinc-600 text-lg leading-tight my-6">
+              <span>
                 Christina always brings a new perspective to the product team
                 with her designs. She has always gone out of her way to research
                 new ways to accomodate both the developers and the stakeholder
                 requirements.
-              </p>
-            </Review>
-            <Review
-              name="Devon Friend"
-              imgLink="/devon-friend.jpg"
-              title="Student at University of British Columbia"
-            >
-              <p className="text-zinc-600 text-lg leading-tight my-6">
-                What does it take to bring your platform to the next level by
-                leveraging exceptional UI/UX design? Whatever the answer might
-                be, Christina will certainly have one for you.
-              </p>
+              </span>
             </Review>
           </div>
           <div className="flex flex-col gap-6">
@@ -171,31 +161,38 @@ export default function Home() {
               imgLink="/eric-dam.jpg"
               title="Software Developer at Harris Computers"
             >
-              <p className="text-zinc-600 text-lg leading-tight my-6">
-                Christina Raganit is a designer-developer powerhouse.
-              </p>
-            </Review>
-            <Review
-              name="Simon Wong Chung"
-              imgLink="/simon-wong-chung.jpg"
-              title="Student at Simon Fraser University"
-            >
-              <p className="text-zinc-600 text-lg leading-tight my-6">
-                One of Christina's standout qualities is her attention to
-                detail. Every element of her designs, from layout and typography
-                to interactions and microinteractions, is meticulously crafted.
-              </p>
+              <span>
+                Christina Raganit is a{" "}
+                <span className="bg-blue-200/50 font-medium">
+                  designer-developer powerhouse
+                </span>
+                .
+              </span>
             </Review>
             <Review
               name="Michael Dresler"
               imgLink="/michael-dresler.jpeg"
               title="Student at Simon Fraser University"
             >
-              <p className="text-zinc-600 text-lg leading-tight my-6">
+              <span>
                 When working with Christina she consistently went above and
-                beyond. She is dependable, productive, passionate, and does not
-                cut corners when it comes to her work ethic.
-              </p>
+                beyond. She is{" "}
+                <span className="bg-blue-200/50 font-medium">
+                  dependable, productive, passionate
+                </span>
+                , and does not cut corners when it comes to her work ethic.
+              </span>
+            </Review>
+            <Review
+              name="Simon Wong Chung"
+              imgLink="/simon-wong-chung.jpg"
+              title="Student at Simon Fraser University"
+            >
+              <span>
+                One of Christina's standout qualities is her attention to
+                detail. Every element of her designs, from layout and typography
+                to interactions and microinteractions, is meticulously crafted.
+              </span>
             </Review>
           </div>
           <div className="flex flex-col gap-6">
@@ -204,25 +201,27 @@ export default function Home() {
               imgLink="/kurt-milan.jpg"
               title="Team Lead at Felix Payment Systems"
             >
-              <p className="text-zinc-600 text-lg leading-tight my-6">
-                Christina is an excellent communicator and collaborator. She has
-                a proven track record of effectively communicating design
-                concepts to both the technical development team and
+              <span>
+                Christina is an{" "}
+                <span className="bg-blue-200/50 font-medium">
+                  excellent communicator and collaborator
+                </span>
+                . She has a proven track record of effectively communicating
+                design concepts to both the technical development team and
                 non-technical stakeholders, fostering a culture of collaboration
                 within the team.
-              </p>
+              </span>
             </Review>
             <Review
-              name="Ray Gong"
-              imgLink="/ray-gong.png"
-              title="Software Developer Intern at BlackBerry"
+              name="Devon Friend"
+              imgLink="/devon-friend.jpg"
+              title="Student at University of British Columbia"
             >
-              <p className="text-zinc-600 text-lg leading-tight my-6">
-                Christina is a very talented designer with a vast skillset. She
-                excels at rapidly producing prototypes to present her ideas,
-                both in design platforms such as Figma or in code. I am
-                confident that Christina will be a valuable member to any team.
-              </p>
+              <span>
+                What does it take to bring your platform to the next level by
+                leveraging exceptional UI/UX design? Whatever the answer might
+                be, Christina will certainly have one for you.
+              </span>
             </Review>
           </div>
         </div>

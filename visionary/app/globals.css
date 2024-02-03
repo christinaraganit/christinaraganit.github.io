@@ -29,7 +29,15 @@ body {
 
   }
 
+  p a {
+    @apply underline underline-offset-4 font-medium hover:text-blue-600;
+  }
+
   .callout {
     @apply text-sm font-semibold;
+  }
+
+  .icon-link {
+    @apply text-zinc-900/50 hover:text-blue-600 hover:scale-125 transition-all;
   }
 }

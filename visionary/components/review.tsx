@@ -10,7 +10,9 @@ interface Props {
 export default function Review(props: Props) {
   return (
     <div className="bg-zinc-100/60 rounded-2xl p-6">
-      {props.children}
+      <p className="text-zinc-600 lg:text-lg lg:leading-6 mb-4">
+        {props.children}
+      </p>
       <div className="flex items-center gap-3.5 pt-3">
         <Image
           src={props.imgLink}
