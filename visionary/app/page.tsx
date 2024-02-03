@@ -4,8 +4,8 @@ import Review from "@/components/review";
 
 export default function Home() {
   return (
-    <main className="w-full flex flex-col gap-20 items-center pt-[10rem] pb-[6rem]">
-      <nav className="w-full bg-white/90 backdrop-blur-sm border-b border-zinc-200/60 fixed z-20 h-14 flex justify-between items-center left-1/2 -translate-x-1/2 top-0">
+    <main className="w-full flex flex-col gap-20 items-center pt-[12rem] pb-[6rem]">
+      <nav className="w-full bg-white/80 backdrop-blur-lg border-b border-zinc-200/60 fixed z-20 h-14 flex justify-between items-center left-1/2 -translate-x-1/2 top-0">
         <div className="px-6 flex items-center w-full max-w-[80rem] mx-auto">
           <div className="w-full">
             {/* <a href="" className="w-fit group">
@@ -35,6 +35,7 @@ export default function Home() {
           <div className="flex">
             <Button link=" " variant="tertiary" text="Home"></Button>
             <Button link=" " variant="tertiary" text="About"></Button>
+            <Button link=" " variant="tertiary" text="Projects"></Button>
             <div className="pl-2">
               <Button link=" " variant="primary" text="Resume"></Button>
             </div>
@@ -64,7 +65,7 @@ export default function Home() {
         <h1 className="large-title max-w-4xl mb-4">
           I'm Christina Raganit, a UX designer who writes code.
         </h1>
-        <p className="lg:text-lg text-zinc-600 max-w-4xl mb-16">
+        <p className="lg:text-lg text-zinc-600 max-w-4xl mb-20">
           2 years of experience in aligning business objectives and technical
           requirements to deliver stunning design solutions. Third-year BSc
           Interactive Arts and Technology student at Simon Fraser University.
@@ -82,20 +83,46 @@ export default function Home() {
               <h2 className="title-1 text-white mb-4">
                 Teamfight Tactics Team Planner
               </h2>
-              <p className="max-w-3xl lg:text-lg text-zinc-400 mb-8 md:mb-0">
-                Listened to the needs of the Teamfight Tactics playerbase and
-                delivered proofs-of-concept of QOL improvements in the in-game
-                desktop Team Planner.
+              <p className="max-w-3xl lg:text-lg text-zinc-300 mb-8 md:mb-0">
+                Conceptualized QOL features for the in-game desktop Team Planner
+                and designed proof-of-concept mockups, garnering an
+                overwhelmingly positive response from the playerbase.
               </p>
             </div>
 
-            <div className="hidden md:block w-[160rem] aspect-square left-1/2 translate-y-[5rem] -translate-x-1/2 blur-[100px] rounded-full relative bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] to-[#005A82] from-[#0AC8B9] opacity-30 group-hover:opacity-60 transition-all "></div>
+            <div className="hidden md:block w-[160rem] aspect-square left-1/2 translate-y-[5rem] group-hover:blur-[200px] -translate-x-1/2 blur-[100px] rounded-full relative bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] to-[#005A82] from-[#0AC8B9] opacity-30 group-hover:opacity-60 transition-all "></div>
 
             <Image
               src="/tft-team-planner/ui.png"
               width={2400}
               height={1350}
               className="rounded-lg lg:rounded-3xl md:-translate-y-[161rem] md:scale-[0.8] md:group-hover:scale-[0.85] transition-all"
+              alt="Teamfight Tactics Team Planner Case Study"
+            ></Image>
+          </a>
+          <a
+            href=""
+            className="group bg-[#150E0C] px-6 py-8 lg:p-12 h-fit md:aspect-video rounded-3xl text-white overflow-hidden transition-all"
+          >
+            <div className="w-full text-center flex flex-col items-center justify-center">
+              <p className="callout text-orange-500 mb-4">
+                1st Place and Best Design at cmd-f 2023
+              </p>
+              <h2 className="title-1 text-white mb-4">Chow Now</h2>
+              <p className="max-w-3xl lg:text-lg text-zinc-300 mb-8 md:mb-0">
+                Designed and developed a mobile app that offers a discreet way
+                for victims of domestic violence to confidentially report
+                incidents of abuse to local authorities.
+              </p>
+            </div>
+
+            <div className="hidden md:block w-[160rem] aspect-square left-1/2 translate-y-[5rem] group-hover:translate-y-[2rem] -translate-x-1/2 blur-[100px] group-hover:blur-[200px] rounded-full relative bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] to-[#f83600] from-[#fe8c00] opacity-30 group-hover:opacity-[55%] transition-all"></div>
+
+            <Image
+              src="/chow-now/ui.png"
+              width={800}
+              height={1621}
+              className="rounded-lg lg:rounded-3xl mx-auto md:-translate-y-[156rem] md:scale-[1.05] md:group-hover:scale-[1.12] transition-all"
               alt="Teamfight Tactics Team Planner Case Study"
             ></Image>
           </a>
@@ -115,22 +142,8 @@ export default function Home() {
         <div className="grid lg:grid-cols-3 gap-6 w-full text-left">
           <div className="flex flex-col gap-6">
             <Review
-              name="Devon Friend"
-              imgLink="/placeholder.jpg"
-              title="Student at University of British Columbia"
-            >
-              <p className="text-zinc-600 text-lg leading-tight my-6">
-                What does it take to bring your platform to the next level by
-                leveraging exceptional UI/UX design? Whatever the answer might
-                be, Christina will certainly have one for you. ...Christina's
-                attention to detail is outstanding. I can only count the number
-                of people that I know on one hand whose design ability is
-                comparable to Christina's.
-              </p>
-            </Review>
-            <Review
               name="Jason Lee"
-              imgLink="/placeholder.jpg"
+              imgLink="/jason-lee.jpg"
               title="Team Lead at Felix Payment Systems"
             >
               <p className="text-zinc-600 text-lg leading-tight my-6">
@@ -140,11 +153,22 @@ export default function Home() {
                 requirements.
               </p>
             </Review>
+            <Review
+              name="Devon Friend"
+              imgLink="/devon-friend.jpg"
+              title="Student at University of British Columbia"
+            >
+              <p className="text-zinc-600 text-lg leading-tight my-6">
+                What does it take to bring your platform to the next level by
+                leveraging exceptional UI/UX design? Whatever the answer might
+                be, Christina will certainly have one for you.
+              </p>
+            </Review>
           </div>
           <div className="flex flex-col gap-6">
             <Review
               name="Eric Dam"
-              imgLink="/placeholder.jpg"
+              imgLink="/eric-dam.jpg"
               title="Software Developer at Harris Computers"
             >
               <p className="text-zinc-600 text-lg leading-tight my-6">
@@ -153,7 +177,7 @@ export default function Home() {
             </Review>
             <Review
               name="Simon Wong Chung"
-              imgLink="/placeholder.jpg"
+              imgLink="/simon-wong-chung.jpg"
               title="Student at Simon Fraser University"
             >
               <p className="text-zinc-600 text-lg leading-tight my-6">
@@ -164,7 +188,7 @@ export default function Home() {
             </Review>
             <Review
               name="Michael Dresler"
-              imgLink="/placeholder.jpg"
+              imgLink="/michael-dresler.jpeg"
               title="Student at Simon Fraser University"
             >
               <p className="text-zinc-600 text-lg leading-tight my-6">
@@ -176,20 +200,8 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-6">
             <Review
-              name="Ray Gong"
-              imgLink="/placeholder.jpg"
-              title="Software Developer Intern at BlackBerry"
-            >
-              <p className="text-zinc-600 text-lg leading-tight my-6">
-                Christina is a very talented designer with a vast skillset. She
-                excels at rapidly producing prototypes to present her ideas,
-                both in design platforms such as Figma or in code. I am
-                confident that Christina will be a valuable member to any team.
-              </p>
-            </Review>
-            <Review
               name="Kurt Milan"
-              imgLink="/placeholder.jpg"
+              imgLink="/kurt-milan.jpg"
               title="Team Lead at Felix Payment Systems"
             >
               <p className="text-zinc-600 text-lg leading-tight my-6">
@@ -198,6 +210,18 @@ export default function Home() {
                 concepts to both the technical development team and
                 non-technical stakeholders, fostering a culture of collaboration
                 within the team.
+              </p>
+            </Review>
+            <Review
+              name="Ray Gong"
+              imgLink="/ray-gong.png"
+              title="Software Developer Intern at BlackBerry"
+            >
+              <p className="text-zinc-600 text-lg leading-tight my-6">
+                Christina is a very talented designer with a vast skillset. She
+                excels at rapidly producing prototypes to present her ideas,
+                both in design platforms such as Figma or in code. I am
+                confident that Christina will be a valuable member to any team.
               </p>
             </Review>
           </div>
