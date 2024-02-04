@@ -1,11 +1,14 @@
 import Image from "next/image";
 import Button from "@/components/button";
 import Review from "@/components/review";
+import Nav from "@/components/nav";
 
 export default function Home() {
   return (
     <main className="w-full flex flex-col gap-20 items-center pt-40 pb-16">
-      <nav className="w-full bg-white/90 backdrop-blur-lg border-b border-zinc-200/60 fixed z-20 h-12 flex justify-between items-center left-1/2 -translate-x-1/2 top-0">
+      <Nav></Nav>
+
+      <nav className="w-full bg-white/90 backdrop-blur-lg border-b border-zinc-200/60 fixed z-20 h-16 hidden sm:flex justify-between items-center left-1/2 -translate-x-1/2 top-0">
         <div className="px-6 flex items-center w-full max-w-[80rem] mx-auto">
           <div className="w-full">
             <a href="">
@@ -48,6 +51,7 @@ export default function Home() {
             />
           </svg>
         </a>
+
         <h1 className="large-title max-w-4xl mb-4">
           I'm Christina Raganit, a UX designer who writes code.
         </h1>
@@ -108,7 +112,7 @@ export default function Home() {
               src="/chow-now/ui.png"
               width={800}
               height={1621}
-              className="rounded-lg lg:rounded-3xl mx-auto md:-translate-y-[156rem] md:scale-[1.05] md:group-hover:scale-[1.12] transition-all"
+              className="rounded-lg lg:rounded-3xl mx-auto lg:-translate-y-[156rem] md:-translate-y-[159rem] md:scale-[0.9] lg:scale-[1.05] md:group-hover:scale-[0.95] lg:group-hover:scale-[1.12] transition-all"
               alt="Teamfight Tactics Team Planner Case Study"
             ></Image>
           </a>
