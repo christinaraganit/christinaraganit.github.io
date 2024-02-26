@@ -11,22 +11,33 @@ export default function Home() {
       <nav className="w-full bg-white/90 backdrop-blur-lg border-b border-zinc-200/60 fixed z-20 h-16 hidden sm:flex justify-between items-center left-1/2 -translate-x-1/2 top-0">
         <div className="px-6 flex items-center w-full max-w-[80rem] mx-auto">
           <div className="w-full">
-            <a href="">
+            <a href="/">
               <Image
                 src="/headshot.png"
                 width={100}
                 height={100}
                 className="w-9 h-9 rounded-full"
-                alt="A UX Designer with glasses and curled bangs"
-              ></Image>
+                alt="A UX Designer with glasses and curled bangs"></Image>
             </a>
           </div>
           <div className="flex">
-            <Button link=" " variant="tertiary" text="Home"></Button>
-            <Button link=" " variant="tertiary" text="About"></Button>
-            <Button link=" " variant="tertiary" text="Projects"></Button>
+            <Button
+              link=" "
+              variant="tertiary"
+              text="Home"></Button>
+            <Button
+              link=" "
+              variant="tertiary"
+              text="About"></Button>
+            <Button
+              link=" "
+              variant="tertiary"
+              text="Projects"></Button>
             <div className="pl-1">
-              <Button link=" " variant="primary" text="Resume"></Button>
+              <Button
+                link=" "
+                variant="primary"
+                text="Resume"></Button>
             </div>
           </div>
         </div>
@@ -35,15 +46,13 @@ export default function Home() {
       <section className="px-6 max-w-[80rem] w-full flex items-center flex-col text-center">
         <a
           href=""
-          className="mb-4 text-xs leading-5 font-medium border border-blue-300/20 text-blue-600 bg-blue-300/10 hover:bg-blue-300/20 hover:border-blue-300/30 transition-all rounded-full py-1 px-3 gap-1 flex items-center w-fit"
-        >
+          className="mb-4 text-xs leading-5 font-medium border border-blue-300/20 text-blue-600 bg-blue-300/10 hover:bg-blue-300/20 hover:border-blue-300/30 transition-all rounded-full py-1 px-3 gap-1 flex items-center w-fit">
           Seeking internships for Summer 2024
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 16 16"
             fill="currentColor"
-            className="w-4 h-4"
-          >
+            className="w-4 h-4">
             <path
               fillRule="evenodd"
               d="M2 8c0 .414.336.75.75.75h8.69l-1.22 1.22a.75.75 0 1 0 1.06 1.06l2.5-2.5a.75.75 0 0 0 0-1.06l-2.5-2.5a.75.75 0 1 0-1.06 1.06l1.22 1.22H2.75A.75.75 0 0 0 2 8Z"
@@ -65,11 +74,10 @@ export default function Home() {
 
         <div className="grid gap-6 text-left">
           <a
-            href=""
-            className="group bg-[#010A13] hover:bg-[#011A23] px-6 py-8 lg:p-12 h-fit md:aspect-video rounded-3xl text-white overflow-hidden transition-all"
-          >
+            href="/projects/tft-team-planner"
+            className="group bg-[#010A13] hover:bg-[#011A23] px-6 py-8 lg:p-12 h-fit md:aspect-video rounded-3xl text-white overflow-hidden transition-all">
             <div className="w-full text-center flex flex-col items-center justify-center">
-              <p className="callout text-[#0ac8b9] mb-4">Case Study</p>
+              <p className="callout text-[#0ac8b9] mb-4">UX Design</p>
               <h2 className="title-1 text-white mb-4">
                 Teamfight Tactics Team Planner
               </h2>
@@ -87,16 +95,14 @@ export default function Home() {
               width={2400}
               height={1350}
               className="rounded-lg lg:rounded-3xl md:-translate-y-[161rem] md:scale-[0.8] md:group-hover:scale-[0.85] transition-all"
-              alt="Teamfight Tactics Team Planner Case Study"
-            ></Image>
+              alt="Teamfight Tactics Team Planner Case Study"></Image>
           </a>
           <a
             href=""
-            className="group bg-[#150E0C] px-6 py-8 lg:p-12 h-fit md:aspect-video rounded-3xl text-white overflow-hidden transition-all"
-          >
+            className="group bg-[#150E0C] px-6 py-8 lg:p-12 h-fit md:aspect-video rounded-3xl text-white overflow-hidden transition-all">
             <div className="w-full text-center flex flex-col items-center justify-center">
-              <p className="callout text-orange-500 mb-4">
-                1st Place and Best Design at cmd-f 2023
+              <p className="callout text-orange-400 mb-4">
+                UX Design and Frontend Development
               </p>
               <h2 className="title-1 text-white mb-4">Chow Now</h2>
               <p className="max-w-3xl lg:text-lg text-zinc-300 mb-8 md:mb-0">
@@ -113,8 +119,7 @@ export default function Home() {
               width={800}
               height={1621}
               className="rounded-lg lg:rounded-3xl mx-auto lg:-translate-y-[156rem] md:-translate-y-[159rem] md:scale-[0.9] lg:scale-[1.05] md:group-hover:scale-[0.95] lg:group-hover:scale-[1.12] transition-all"
-              alt="Teamfight Tactics Team Planner Case Study"
-            ></Image>
+              alt="Teamfight Tactics Team Planner Case Study"></Image>
           </a>
         </div>
       </section>
@@ -134,8 +139,7 @@ export default function Home() {
             <Review
               name="Ray Gong"
               imgLink="/ray-gong.png"
-              title="Software Developer Intern at BlackBerry"
-            >
+              title="Software Developer Intern at BlackBerry">
               <span>
                 Christina is a{" "}
                 <span className="bg-blue-200/50 font-medium">
@@ -149,8 +153,7 @@ export default function Home() {
             <Review
               name="Jason Lee"
               imgLink="/jason-lee.jpg"
-              title="Team Lead at Felix Payment Systems"
-            >
+              title="Team Lead at Felix Payment Systems">
               <span>
                 Christina always brings a new perspective to the product team
                 with her designs. She has always gone out of her way to research
@@ -163,8 +166,7 @@ export default function Home() {
             <Review
               name="Eric Dam"
               imgLink="/eric-dam.jpg"
-              title="Software Developer at Harris Computers"
-            >
+              title="Software Developer at Harris Computers">
               <span>
                 Christina Raganit is a{" "}
                 <span className="bg-blue-200/50 font-medium">
@@ -176,8 +178,7 @@ export default function Home() {
             <Review
               name="Michael Dresler"
               imgLink="/michael-dresler.jpeg"
-              title="Student at Simon Fraser University"
-            >
+              title="Student at Simon Fraser University">
               <span>
                 When working with Christina she consistently went above and
                 beyond. She is{" "}
@@ -190,8 +191,7 @@ export default function Home() {
             <Review
               name="Simon Wong Chung"
               imgLink="/simon-wong-chung.jpg"
-              title="Student at Simon Fraser University"
-            >
+              title="Student at Simon Fraser University">
               <span>
                 One of Christina's standout qualities is her attention to
                 detail. Every element of her designs, from layout and typography
@@ -203,8 +203,7 @@ export default function Home() {
             <Review
               name="Kurt Milan"
               imgLink="/kurt-milan.jpg"
-              title="Team Lead at Felix Payment Systems"
-            >
+              title="Team Lead at Felix Payment Systems">
               <span>
                 Christina is an{" "}
                 <span className="bg-blue-200/50 font-medium">
@@ -219,8 +218,7 @@ export default function Home() {
             <Review
               name="Devon Friend"
               imgLink="/devon-friend.jpg"
-              title="Student at University of British Columbia"
-            >
+              title="Student at University of British Columbia">
               <span>
                 What does it take to bring your platform to the next level by
                 leveraging exceptional UI/UX design? Whatever the answer might

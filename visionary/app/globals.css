@@ -13,6 +13,10 @@ body {
 }
 
 @layer components {
+  P {
+    @apply text-pretty;
+  }
+
   .large-title {
     @apply text-5xl lg:text-6xl font-semibold tracking-tighter text-slate-900 leading-none;
   }
@@ -22,11 +26,9 @@ body {
   }
 
   .title-2 {
-
   }
 
   .title-3 {
-
   }
 
   p a {
@@ -39,5 +41,13 @@ body {
 
   .icon-link {
     @apply text-zinc-900/50 hover:text-blue-600 hover:scale-125 transition-all;
+  }
+
+  .p-xl {
+    @apply text-3xl text-pretty tracking-tight;
+  }
+
+  .p-lg {
+    @apply text-2xl text-pretty tracking-tight;
   }
 }
