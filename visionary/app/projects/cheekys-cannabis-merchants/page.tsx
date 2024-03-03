@@ -46,10 +46,9 @@ export default function Cheekys() {
           <h1 className="large-title mb-6">Cheeky's Cannabis Merchants</h1>
           <p className="p-xl font-light">
             In this 4-week academic team project, we digitized the in-store
-            experience of Cheeky's Cannabis Merchants by designing additional
-            features for their online store, providing first-time cannabis
-            consumers with the knowledge they need to comfortably make a
-            purchase.
+            experience of Cheeky's Cannabis Merchants to help support first-time
+            cannabis consumers, providing them with the knowledge they need to
+            comfortably make a purchase.
           </p>
         </div>
 
