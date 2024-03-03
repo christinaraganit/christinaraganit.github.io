@@ -98,6 +98,31 @@ export default function Home() {
               alt="Teamfight Tactics Team Planner Case Study"></Image>
           </a>
           <a
+            href="/projects/cheekys-cannabis-merchants"
+            className="group bg-[#EFEDE3] hover:bg-[#EBE9DC] px-6 py-8 lg:p-12 h-fit md:aspect-video rounded-3xl text-black overflow-hidden transition-all">
+            <div className="w-full text-center flex flex-col items-center justify-center">
+              <p className="callout text-[#538477] mb-4">
+                UI Design and Interaction Design
+              </p>
+              <h2 className="title-1 text-black mb-4 font-semibold">
+                Cheeky's Cannabis Merchants
+              </h2>
+              <p className="max-w-3xl lg:text-lg text-zinc-700 mb-8 md:mb-0">
+                Designed features providing novice cannabis consumers with the
+                knowledge they need to safely get high for the first time.
+              </p>
+            </div>
+
+            <div className="hidden md:block w-[160rem] aspect-square left-1/2 translate-y-[5rem] group-hover:blur-[200px] -translate-x-1/2 blur-[100px] rounded-full relative bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] to-[#FAFFD1] from-[#A1FFCE] opacity-30 group-hover:opacity-70 transition-all "></div>
+
+            <Image
+              src="/cheekys/ui.png"
+              width={5120}
+              height={3328}
+              className="rounded-lg lg:rounded-3xl md:-translate-y-[162rem] md:scale-[0.8] md:group-hover:scale-[0.85] transition-all"
+              alt="Cheekys Cannabis Merchants Case Study"></Image>
+          </a>
+          <a
             href=""
             className="group bg-[#150E0C] px-6 py-8 lg:p-12 h-fit md:aspect-video rounded-3xl text-white overflow-hidden transition-all">
             <div className="w-full text-center flex flex-col items-center justify-center">

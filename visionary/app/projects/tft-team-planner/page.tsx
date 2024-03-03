@@ -78,8 +78,8 @@ export default function TFTTeamPlanner() {
       <section className="px-6 max-w-[80rem] w-full flex">
         <Image
           src="/tft-team-planner/hero-hextech.png"
-          width={1920}
-          height={1080}
+          width={5120}
+          height={3328}
           alt="Redesigned UI of the TFT Team Planner from client"></Image>
       </section>
 
@@ -121,6 +121,7 @@ export default function TFTTeamPlanner() {
           </div>
         </div>
       </section>
+
       <section className="px-6 max-w-[80rem] w-full grid gap-6">
         <Image
           src="/tft-team-planner/in-game.png"
@@ -133,6 +134,7 @@ export default function TFTTeamPlanner() {
           height={1080}
           alt="Redesigned UI of the TFT Team Planner from client"></Image>
       </section>
+      
       <Spacer></Spacer>
 
       <section className="px-6 max-w-[80rem] w-full grid items-center lg:grid-cols-2 gap-20 lg:gap-40">
@@ -187,7 +189,9 @@ export default function TFTTeamPlanner() {
             alt="Redesigned UI of the TFT Team Planner from client"></Image>
         </div>
       </section>
+
       <Spacer></Spacer>
+
       <section className="p-6 max-w-[80rem] w-full">
         <section className="text-center flex flex-col items-center p-6 lg:p-16 bg-zinc-100/60 rounded-2xl">
           <h2 className="callout text-blue-500 mb-4">Design Challenge</h2>

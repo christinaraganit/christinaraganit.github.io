@@ -50,4 +50,8 @@ body {
   .p-lg {
     @apply text-2xl text-pretty tracking-tight;
   }
+
+  .half-spacer {
+    @apply h-6 w-full max-w-[80rem] flex items-center p-3;
+  }
 }
