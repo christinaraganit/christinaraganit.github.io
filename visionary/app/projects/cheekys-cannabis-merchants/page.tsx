@@ -5,7 +5,7 @@ import Button from "@/components/button";
 
 export default function Cheekys() {
   return (
-    <main className="max-w-[100vw] overflow-x-clip w-full flex flex-col items-center gap-10 pt-40 pb-32">
+    <main className="max-w-[100vw] overflow-x-clip w-full flex flex-col items-center gap-4 lg:gap-10 pt-40 pb-32">
       <Nav></Nav>
       <nav className="w-full bg-white/90 backdrop-blur-lg border-b border-zinc-200/60 fixed z-20 h-16 hidden sm:flex justify-between items-center left-1/2 -translate-x-1/2 top-0">
         <div className="px-6 flex items-center w-full max-w-[80rem] mx-auto">
@@ -16,35 +16,24 @@ export default function Cheekys() {
                 width={100}
                 height={100}
                 className="w-9 h-9 rounded-full"
-                alt="A UX Designer with glasses and curled bangs"></Image>
+                alt="A UX Designer with glasses and curled bangs"
+              ></Image>
             </a>
           </div>
           <div className="flex">
-            <Button
-              link=" "
-              variant="tertiary"
-              text="Home"></Button>
-            <Button
-              link=" "
-              variant="tertiary"
-              text="About"></Button>
-            <Button
-              link=" "
-              variant="tertiary"
-              text="Projects"></Button>
+            <Button link=" " variant="tertiary" text="Home"></Button>
+            <Button link=" " variant="tertiary" text="About"></Button>
+            <Button link=" " variant="tertiary" text="Projects"></Button>
             <div className="pl-1">
-              <Button
-                link=" "
-                variant="primary"
-                text="Resume"></Button>
+              <Button link=" " variant="primary" text="Resume"></Button>
             </div>
           </div>
         </div>
       </nav>
-      <section className="px-6 max-w-[80rem] w-full grid lg:grid-cols-3 lg:gap-40">
+      <section className="px-6 max-w-[80rem] w-full lg:grid lg:grid-cols-3 lg:gap-40">
         <div className="col-span-2">
           <h1 className="large-title mb-6">Cheeky's Cannabis Merchants</h1>
-          <p className="p-xl font-light">
+          <p className="p-xl font-light mb-6">
             In this 4-week academic team project, we digitized the in-store
             experience of Cheeky's Cannabis Merchants to help support first-time
             cannabis consumers, providing them with the knowledge they need to
@@ -83,14 +72,15 @@ export default function Cheekys() {
           src="/cheekys/desktop.png"
           width={3840}
           height={2160}
-          alt="Cheekys UI"></Image>
+          alt="Cheekys UI"
+        ></Image>
       </section>
 
       <Spacer></Spacer>
 
       <section className="px-6 max-w-[80rem] w-full">
         <h2 className="text-3xl tracking-tight mb-4">Overview</h2>
-        <div className="grid lg:grid-cols-2 gap-20">
+        <div className="grid lg:grid-cols-2 lg:gap-20">
           <div>
             <p className="mb-4">
               As the user interface designer and interaction designer, I was
@@ -108,7 +98,8 @@ export default function Cheekys() {
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                className="w-5 h-5">
+                className="w-5 h-5"
+              >
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -125,19 +116,22 @@ export default function Cheekys() {
           width={3200}
           height={1800}
           className="p-6"
-          alt="Cheekys UI"></Image>
+          alt="Cheekys UI"
+        ></Image>
 
         <div className="grid lg:grid-cols-2 p-6 pt-0 gap-6">
           <Image
             src="/cheekys/highlights.png"
             width={3200}
             height={1800}
-            alt="Cheekys UI"></Image>
+            alt="Cheekys UI"
+          ></Image>
           <Image
             src="/cheekys/design-system.png"
             width={3200}
             height={1800}
-            alt="Cheekys UI"></Image>
+            alt="Cheekys UI"
+          ></Image>
         </div>
 
         <Image
@@ -145,14 +139,15 @@ export default function Cheekys() {
           width={3200}
           height={1800}
           className="p-6 pt-0"
-          alt="Cheekys UI"></Image>
+          alt="Cheekys UI"
+        ></Image>
       </section>
 
       <Spacer></Spacer>
       <section className="px-6 max-w-[80rem] w-full">
         <h2 className="callout text-green-500 mb-4">Problem Space</h2>{" "}
-        <p className="p-xl mb-6">"It's the wild west."</p>
-        <div className="grid w-full lg:grid-cols-2 gap-20">
+        <p className="p-xl mb-4">"It's the wild west."</p>
+        <div className="grid w-full lg:grid-cols-2 gap-6 lg:gap-20">
           <p className="p-lg">
             There’s a wide variety of cannabis products and consumption methods
             that can vary from store to store, and first-time cannabis consumers
@@ -180,9 +175,9 @@ export default function Cheekys() {
       <Spacer></Spacer>
 
       <section className="p-6 lg:py-0 max-w-[80rem] w-full">
-        <section className="text-center flex flex-col items-center p-6 lg:p-16 bg-[#F7F6F1]/70 rounded-2xl">
+        <section className="text-center flex flex-col items-center p-6 py-12 lg:p-16 bg-[#F7F6F1]/70 rounded-2xl">
           <h2 className="callout text-green-500 mb-4">Design Challenge</h2>
-          <p className="text-4xl max-w-3xl tracking-tight text-balance">
+          <p className="text-xl lg:text-4xl max-w-3xl tracking-tight text-balance">
             How might we provide novice cannabis consumers that prefer to shop
             online with a digital shopping experience that is equally accessible
             and inviting as it is for those who shop in-store?
@@ -194,7 +189,7 @@ export default function Cheekys() {
       <section className="max-w-[80rem] w-full px-6">
         <h2 className="callout text-green-500 mb-4">Proposed Feature #1</h2>
         <p className="p-xl mb-4">Connecting budtenders and online shoppers</p>
-        <div className="grid w-full lg:grid-cols-2 gap-20">
+        <div className="grid w-full lg:grid-cols-2">
           <p className="">
             If a budtender is available, the consumer can start a chat to
             receive guidance on what product best suits their needs and
@@ -205,19 +200,16 @@ export default function Cheekys() {
         </div>
       </section>
 
-      <section className="max-w-full w-full bg-[#F9F9F5]">
-        <div className="grid lg:grid-cols-2 p-6 gap-6">
-          <Image
-            src="/cheekys/feature-2.png"
-            width={3840}
-            height={2160}
-            alt="Cheekys UI"></Image>
-          <Image
-            src="/cheekys/design-system.png"
-            width={3200}
-            height={1800}
-            alt="Cheekys UI"></Image>
-        </div>
+      <section className="max-w-full p-6 w-full bg-[#F9F9F5] flex justify-center">
+        <video
+          width={1920}
+          height={1090}
+          src="/cheekys/chat-with-budtender.mp4"
+          loop
+          muted
+          autoPlay
+          className="outline outline-[#f9f9f5] -outline-offset-2 w-full max-w-[80rem]"
+        ></video>
       </section>
 
       <Spacer></Spacer>
@@ -225,7 +217,7 @@ export default function Cheekys() {
       <section className="max-w-[80rem] w-full px-6">
         <h2 className="callout text-green-500 mb-4">Proposed Feature #2</h2>
         <p className="p-xl mb-4">Providing options for busy budtenders</p>
-        <div className="grid w-full lg:grid-cols-2 gap-20">
+        <div className="grid w-full lg:grid-cols-2">
           <p className="">
             In peak hours, a budtender might not always be available to help a
             customer out. The consumer can speak with an AI-powered chatbot
@@ -236,19 +228,16 @@ export default function Cheekys() {
         </div>
       </section>
 
-      <section className="max-w-full w-full bg-[#F9F9F5]">
-        <div className="grid lg:grid-cols-2 p-6 gap-6">
-          <Image
-            src="/cheekys/feature-2.png"
-            width={3840}
-            height={2160}
-            alt="Cheekys UI"></Image>
-          <Image
-            src="/cheekys/design-system.png"
-            width={3200}
-            height={1800}
-            alt="Cheekys UI"></Image>
-        </div>
+      <section className="max-w-full p-6 w-full bg-[#F9F9F5] flex justify-center">
+        <video
+          width={1920}
+          height={1090}
+          src="/cheekys/book-budtender.mp4"
+          loop
+          muted
+          autoPlay
+          className="outline outline-[#f9f9f5] -outline-offset-2 w-full max-w-[80rem]"
+        ></video>
       </section>
 
       <Spacer></Spacer>
@@ -256,7 +245,7 @@ export default function Cheekys() {
       <section className="max-w-[80rem] w-full px-6">
         <h2 className="callout text-green-500 mb-4">Proposed Feature #3</h2>
         <p className="p-xl mb-4"> Carefully curating cannabis starter packs</p>
-        <div className="grid w-full lg:grid-cols-2 gap-20">
+        <div className="grid w-full lg:grid-cols-2">
           <p className="">
             Budtenders can curate cannabis starter packs to help beginner
             consumers meet their needs. By anticipating what cannabis consumers
@@ -266,19 +255,14 @@ export default function Cheekys() {
         </div>
       </section>
 
-      <section className="max-w-full w-full bg-[#F9F9F5]">
-        <div className="grid lg:grid-cols-2 p-6 gap-6">
-          <Image
-            src="/cheekys/feature-2.png"
-            width={3840}
-            height={2160}
-            alt="Cheekys UI"></Image>
-          <Image
-            src="/cheekys/design-system.png"
-            width={3200}
-            height={1800}
-            alt="Cheekys UI"></Image>
-        </div>
+      <section className="max-w-full p-6 w-full bg-[#F9F9F5] flex justify-center">
+        <Image
+          src="/cheekys/starter-packs.png"
+          width={1920}
+          height={1080}
+          alt="Cheekys UI"
+          className="outline outline-[#f9f9f5] -outline-offset-2 w-full max-w-[80rem]"
+        ></Image>
       </section>
 
       <Spacer></Spacer>
@@ -288,7 +272,7 @@ export default function Cheekys() {
         <p className="p-xl mb-4">
           Answering common questions with the information hub
         </p>
-        <div className="grid w-full lg:grid-cols-2 gap-20">
+        <div className="grid w-full lg:grid-cols-2">
           <p className="">
             Beginner cannabis consumers can visit the information hub to learn
             more about its benefits, methods of consumption, the different
@@ -300,19 +284,16 @@ export default function Cheekys() {
         </div>
       </section>
 
-      <section className="max-w-full w-full bg-[#F9F9F5]">
-        <div className="grid lg:grid-cols-2 p-6 gap-6">
-          <Image
-            src="/cheekys/feature-2.png"
-            width={3840}
-            height={2160}
-            alt="Cheekys UI"></Image>
-          <Image
-            src="/cheekys/design-system.png"
-            width={3200}
-            height={1800}
-            alt="Cheekys UI"></Image>
-        </div>
+      <section className="max-w-full p-6 w-full bg-[#F9F9F5] flex justify-center">
+        <video
+          width={1920}
+          height={1090}
+          src="/cheekys/information-hub.mp4"
+          loop
+          muted
+          autoPlay
+          className="outline outline-[#f9f9f5] -outline-offset-2 w-full max-w-[80rem]"
+        ></video>
       </section>
 
       <Spacer></Spacer>
@@ -322,7 +303,7 @@ export default function Cheekys() {
         <p className="p-xl mb-4">
           Supplying information about usage and effects in the product catalog
         </p>
-        <div className="grid w-full lg:grid-cols-2 gap-20">
+        <div className="grid w-full lg:grid-cols-2">
           <p className="">
             When the beginner cannabis consumer feels informed enough to browse
             the product catalog, they can hover over icons to read additional
@@ -333,26 +314,23 @@ export default function Cheekys() {
         </div>
       </section>
 
-      <section className="max-w-full w-full bg-[#F9F9F5]">
-        <div className="grid lg:grid-cols-2 p-6 gap-6">
-          <Image
-            src="/cheekys/feature-2.png"
-            width={3840}
-            height={2160}
-            alt="Cheekys UI"></Image>
-          <Image
-            src="/cheekys/design-system.png"
-            width={3200}
-            height={1800}
-            alt="Cheekys UI"></Image>
-        </div>
+      <section className="max-w-full p-6 w-full bg-[#F9F9F5] flex justify-center">
+        <video
+          width={1920}
+          height={1090}
+          src="/cheekys/hover.mp4"
+          loop
+          muted
+          autoPlay
+          className="outline outline-[#f9f9f5] -outline-offset-2 w-full max-w-[80rem]"
+        ></video>
       </section>
 
       <Spacer></Spacer>
 
       <section className="max-w-[80rem] w-full px-6">
         <h2 className="p-xl mb-4">Learnings and Takeaways</h2>
-        <div className="grid w-full lg:grid-cols-2 gap-20">
+        <div className="grid w-full lg:grid-cols-2">
           <p className="">
             One big takeaway from this project was learning how to frame a
             problem while considering not only how a solution can address a user
@@ -368,7 +346,7 @@ export default function Cheekys() {
 
       <section className="max-w-[80rem] w-full px-6">
         <h2 className="p-xl mb-4">Reflection</h2>
-        <div className="grid w-full lg:grid-cols-2 gap-20">
+        <div className="grid w-full lg:grid-cols-2 gap-6 lg:gap-20">
           <p className="">
             Something we also could have done to strengthen the proposal of
             these features was to design what the solution might look like from

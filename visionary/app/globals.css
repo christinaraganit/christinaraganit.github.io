@@ -44,11 +44,11 @@ body {
   }
 
   .p-xl {
-    @apply text-3xl text-pretty tracking-tight;
+    @apply text-2xl lg:text-3xl text-pretty tracking-tight;
   }
 
   .p-lg {
-    @apply text-2xl text-pretty tracking-tight;
+    @apply text-xl lg:text-2xl text-pretty tracking-tight;
   }
 
   .half-spacer {
