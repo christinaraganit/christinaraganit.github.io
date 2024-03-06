@@ -1,46 +1,14 @@
 import Nav from "@/components/nav";
 import Image from "next/image";
-import Button from "@/components/button";
+import MediaTag from "@/components/media-tag";
 import Spacer from "@/components/spacer";
+import HalfSpacer from "@/components/half-spacer";
 
 export default function TFTTeamPlanner() {
   return (
     <main className="max-w-[100vw] overflow-x-clip w-full flex flex-col items-center gap-10 pt-40 pb-32">
       <Nav></Nav>
-      <nav className="w-full bg-white/90 backdrop-blur-lg border-b border-zinc-200/60 fixed z-20 h-16 hidden sm:flex justify-between items-center left-1/2 -translate-x-1/2 top-0">
-        <div className="px-6 flex items-center w-full max-w-[80rem] mx-auto">
-          <div className="w-full">
-            <a href="/">
-              <Image
-                src="/headshot.png"
-                width={100}
-                height={100}
-                className="w-9 h-9 rounded-full"
-                alt="A UX Designer with glasses and curled bangs"></Image>
-            </a>
-          </div>
-          <div className="flex">
-            <Button
-              link=" "
-              variant="tertiary"
-              text="Home"></Button>
-            <Button
-              link=" "
-              variant="tertiary"
-              text="About"></Button>
-            <Button
-              link=" "
-              variant="tertiary"
-              text="Projects"></Button>
-            <div className="pl-1">
-              <Button
-                link=" "
-                variant="primary"
-                text="Resume"></Button>
-            </div>
-          </div>
-        </div>
-      </nav>
+
       <section className="px-6 max-w-[80rem] w-full grid lg:grid-cols-3 lg:gap-40">
         <div className="col-span-2">
           <h1 className="large-title mb-6">
@@ -75,12 +43,17 @@ export default function TFTTeamPlanner() {
           </div>
         </div>
       </section>
-      <section className="px-6 max-w-[80rem] w-full flex">
+      <section className="px-6 max-w-[80rem] w-full">
         <Image
           src="/tft-team-planner/hero-hextech.png"
           width={5120}
           height={3328}
-          alt="Redesigned UI of the TFT Team Planner from client"></Image>
+          alt="Redesigned UI of the TFT Team Planner from client"
+          className="mb-2"
+        ></Image>
+        <MediaTag media="IMAGE">
+          The redesigned desktop UI of the Team Planner from the client
+        </MediaTag>
       </section>
 
       <Spacer></Spacer>
@@ -110,7 +83,8 @@ export default function TFTTeamPlanner() {
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                className="w-5 h-5">
+                className="w-5 h-5"
+              >
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -127,14 +101,16 @@ export default function TFTTeamPlanner() {
           src="/tft-team-planner/in-game.png"
           width={1920}
           height={1080}
-          alt="Redesigned UI of the TFT Team Planner from client"></Image>
+          alt="Redesigned UI of the TFT Team Planner from client"
+        ></Image>
         <Image
           src="/tft-team-planner/feedback.png"
           width={1920}
           height={1080}
-          alt="Redesigned UI of the TFT Team Planner from client"></Image>
+          alt="Redesigned UI of the TFT Team Planner from client"
+        ></Image>
       </section>
-      
+
       <Spacer></Spacer>
 
       <section className="px-6 max-w-[80rem] w-full grid items-center lg:grid-cols-2 gap-20 lg:gap-40">
@@ -144,17 +120,12 @@ export default function TFTTeamPlanner() {
             The existing functionality of the Team Planner is helpful, although
             limited.
           </p>
-          <p className="mb-6">
+          <p>
             Currently, the only functionality that the Team Planner has is that
             it highlights champions you add to your planner when they appear in
             your shop. While players find this feature helpful, they’d like to
             see more features augmented in the Team Planner to provide more
             information as game knowledge is crucial for success.
-          </p>
-          <p className="mb-6">
-            As a player myself, I already know there's a few functionalities I'd
-            personally like to see, but I wondered what the playerbase had to
-            say.
           </p>
 
           <span className="text-neutral-400 hidden flex items-center gap-1.5 italic">
@@ -170,7 +141,8 @@ export default function TFTTeamPlanner() {
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              className="w-5 h-5 lg:-rotate-90">
+              className="w-5 h-5 lg:-rotate-90"
+            >
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
@@ -186,7 +158,8 @@ export default function TFTTeamPlanner() {
             src="/tft-team-planner/problem-statement.png"
             width={940}
             height={1054}
-            alt="Redesigned UI of the TFT Team Planner from client"></Image>
+            alt="Redesigned UI of the TFT Team Planner from client"
+          ></Image>
         </div>
       </section>
 
@@ -210,7 +183,8 @@ export default function TFTTeamPlanner() {
           width={800}
           height={885}
           className="hidden xl:block xl:relative scale-50 xl:-translate-y-[60%] xl:float-right xl:translate-x-[75%]"
-          alt="Piximander"></Image>
+          alt="Piximander"
+        ></Image>
       </div>
 
       <div className="xl:hidden">
@@ -239,22 +213,26 @@ export default function TFTTeamPlanner() {
           src="/tft-team-planner/requested-feature-1.png"
           width={1920}
           height={1290}
-          alt="Redesigned UI of the TFT Team Planner from client"></Image>
+          alt="Redesigned UI of the TFT Team Planner from client"
+        ></Image>
         <Image
           src="/tft-team-planner/requested-feature-2.png"
           width={1920}
           height={1003}
-          alt="Redesigned UI of the TFT Team Planner from client"></Image>
+          alt="Redesigned UI of the TFT Team Planner from client"
+        ></Image>
         <Image
           src="/tft-team-planner/requested-feature-3.png"
           width={1920}
           height={756}
-          alt="Redesigned UI of the TFT Team Planner from client"></Image>
+          alt="Redesigned UI of the TFT Team Planner from client"
+        ></Image>
         <Image
           src="/tft-team-planner/requested-feature-4.png"
           width={1920}
           height={756}
-          alt="Redesigned UI of the TFT Team Planner from client"></Image>
+          alt="Redesigned UI of the TFT Team Planner from client"
+        ></Image>
       </section>
       <Spacer></Spacer>
     </main>

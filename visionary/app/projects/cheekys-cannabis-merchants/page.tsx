@@ -1,35 +1,13 @@
 import Nav from "@/components/nav";
 import Image from "next/image";
 import Spacer from "@/components/spacer";
-import Button from "@/components/button";
+import HalfSpacer from "@/components/half-spacer";
+import MediaTag from "@/components/media-tag";
 
 export default function Cheekys() {
   return (
     <main className="max-w-[100vw] overflow-x-clip w-full flex flex-col items-center gap-4 lg:gap-10 pt-40 pb-32">
       <Nav></Nav>
-      <nav className="w-full bg-white/90 backdrop-blur-lg border-b border-zinc-200/60 fixed z-20 h-16 hidden sm:flex justify-between items-center left-1/2 -translate-x-1/2 top-0">
-        <div className="px-6 flex items-center w-full max-w-[80rem] mx-auto">
-          <div className="w-full">
-            <a href="/">
-              <Image
-                src="/headshot.png"
-                width={100}
-                height={100}
-                className="w-9 h-9 rounded-full"
-                alt="A UX Designer with glasses and curled bangs"
-              ></Image>
-            </a>
-          </div>
-          <div className="flex">
-            <Button link=" " variant="tertiary" text="Home"></Button>
-            <Button link=" " variant="tertiary" text="About"></Button>
-            <Button link=" " variant="tertiary" text="Projects"></Button>
-            <div className="pl-1">
-              <Button link=" " variant="primary" text="Resume"></Button>
-            </div>
-          </div>
-        </div>
-      </nav>
       <section className="px-6 max-w-[80rem] w-full lg:grid lg:grid-cols-3 lg:gap-40">
         <div className="col-span-2">
           <h1 className="large-title mb-6">Cheeky's Cannabis Merchants</h1>
@@ -66,20 +44,18 @@ export default function Cheekys() {
           </div>
         </div>
       </section>
-
-      <section className="px-6 max-w-[80rem] w-full flex">
+      <section className="px-6 max-w-[80rem] w-full flex flex-col gap-2">
         <Image
           src="/cheekys/desktop.png"
           width={3840}
           height={2160}
           alt="Cheekys UI"
         ></Image>
+        <MediaTag media="IMAGE">Final solution in a device mockup</MediaTag>
       </section>
-
       <Spacer></Spacer>
-
       <section className="px-6 max-w-[80rem] w-full">
-        <h2 className="text-3xl tracking-tight mb-4">Overview</h2>
+        <h2 className="text-3xl tracking-tight mb-4">My Role</h2>
         <div className="grid lg:grid-cols-2 lg:gap-20">
           <div>
             <p className="mb-4">
@@ -142,7 +118,6 @@ export default function Cheekys() {
           alt="Cheekys UI"
         ></Image>
       </section>
-
       <Spacer></Spacer>
       <section className="px-6 max-w-[80rem] w-full">
         <h2 className="callout text-green-500 mb-4">Problem Space</h2>{" "}
@@ -172,7 +147,8 @@ export default function Cheekys() {
           </div>
         </div>
       </section>
-      <Spacer></Spacer>
+
+      <section className="spacer h-20 w-full max-w-[80rem] flex items-center p-6"></section>
 
       <section className="p-6 lg:py-0 max-w-[80rem] w-full">
         <section className="text-center flex flex-col items-center p-6 py-12 lg:p-16 bg-[#F7F6F1]/70 rounded-2xl">
@@ -185,12 +161,13 @@ export default function Cheekys() {
         </section>
       </section>
 
-      <Spacer></Spacer>
+      <section className="spacer h-20 w-full max-w-[80rem] flex items-center p-6"></section>
+
       <section className="max-w-[80rem] w-full px-6">
-        <h2 className="callout text-green-500 mb-4">Proposed Feature #1</h2>
-        <p className="p-xl mb-4">Connecting budtenders and online shoppers</p>
-        <div className="grid w-full lg:grid-cols-2">
-          <p className="">
+        <h2 className="callout text-green-500 mb-2">Proposed Feature</h2>
+        <div className="grid w-full gap-4 lg:gap-20 lg:grid-cols-2">
+          <p className="p-xl">Connecting budtenders and online shoppers</p>
+          <p className="mb-4 lg:mb-0">
             If a budtender is available, the consumer can start a chat to
             receive guidance on what product best suits their needs and
             situation. They can ask questions and receive product
@@ -199,26 +176,27 @@ export default function Cheekys() {
           </p>
         </div>
       </section>
-
-      <section className="max-w-full p-6 w-full bg-[#F9F9F5] flex justify-center">
+      <section className="max-w-[80rem] px-6 w-full">
         <video
-          width={1920}
-          height={1090}
-          src="/cheekys/chat-with-budtender.mp4"
+          width={1280}
+          height={832}
+          src="/cheekys/video-1.mp4"
           loop
           muted
           autoPlay
-          className="outline outline-[#f9f9f5] -outline-offset-2 w-full max-w-[80rem]"
+          className="mb-2"
         ></video>
+        <MediaTag media="VIDEO">
+          A user chats with a budtender, asking specific questions about
+          cannabis usage
+        </MediaTag>
       </section>
-
-      <Spacer></Spacer>
-
+      <HalfSpacer />
       <section className="max-w-[80rem] w-full px-6">
-        <h2 className="callout text-green-500 mb-4">Proposed Feature #2</h2>
-        <p className="p-xl mb-4">Providing options for busy budtenders</p>
-        <div className="grid w-full lg:grid-cols-2">
-          <p className="">
+        <h2 className="callout text-green-500 mb-2">Proposed Feature</h2>
+        <div className="grid w-full gap-4 lg:gap-20 lg:grid-cols-2">
+          <p className="p-xl">Providing options for busy budtenders</p>
+          <p className="mb-4 lg:mb-0">
             In peak hours, a budtender might not always be available to help a
             customer out. The consumer can speak with an AI-powered chatbot
             instead or even book an in-store appointment with a budtender to
@@ -227,26 +205,26 @@ export default function Cheekys() {
           </p>
         </div>
       </section>
-
-      <section className="max-w-full p-6 w-full bg-[#F9F9F5] flex justify-center">
+      <section className="max-w-[80rem] w-full px-6">
         <video
-          width={1920}
-          height={1090}
-          src="/cheekys/book-budtender.mp4"
+          width={1280}
+          height={832}
+          src="/cheekys/video-2.mp4"
           loop
           muted
           autoPlay
-          className="outline outline-[#f9f9f5] -outline-offset-2 w-full max-w-[80rem]"
+          className="mb-2"
         ></video>
+        <MediaTag media="VIDEO">
+          A user books an in-store appointment with a budtender
+        </MediaTag>
       </section>
-
-      <Spacer></Spacer>
-
+      <HalfSpacer />
       <section className="max-w-[80rem] w-full px-6">
-        <h2 className="callout text-green-500 mb-4">Proposed Feature #3</h2>
-        <p className="p-xl mb-4"> Carefully curating cannabis starter packs</p>
-        <div className="grid w-full lg:grid-cols-2">
-          <p className="">
+        <h2 className="callout text-green-500 mb-2">Proposed Feature</h2>
+        <div className="grid w-full gap-4 lg:gap-20 lg:grid-cols-2">
+          <p className="p-xl">Carefully curating cannabis starter packs</p>
+          <p className="mb-4 lg:mb-0">
             Budtenders can curate cannabis starter packs to help beginner
             consumers meet their needs. By anticipating what cannabis consumers
             might consume cannabis for, budtenders can improve their experience
@@ -254,26 +232,28 @@ export default function Cheekys() {
           </p>
         </div>
       </section>
-
-      <section className="max-w-full p-6 w-full bg-[#F9F9F5] flex justify-center">
+      <section className="max-w-[80rem] w-full px-6">
         <Image
           src="/cheekys/starter-packs.png"
-          width={1920}
-          height={1080}
+          width={1280}
+          height={832}
           alt="Cheekys UI"
-          className="outline outline-[#f9f9f5] -outline-offset-2 w-full max-w-[80rem]"
+          className="mb-2"
         ></Image>
+        <MediaTag media="IMAGE">
+          A user views the cannabis starter packs available on the home page
+        </MediaTag>
       </section>
 
-      <Spacer></Spacer>
+      <HalfSpacer />
 
       <section className="max-w-[80rem] w-full px-6">
-        <h2 className="callout text-green-500 mb-4">Proposed Feature #4</h2>
-        <p className="p-xl mb-4">
-          Answering common questions with the information hub
-        </p>
-        <div className="grid w-full lg:grid-cols-2">
-          <p className="">
+        <h2 className="callout text-green-500 mb-2">Proposed Feature</h2>
+        <div className="grid w-full gap-4 lg:gap-20 lg:grid-cols-2">
+          <p className="p-xl">
+            Answering common questions with the information hub
+          </p>
+          <p className="mb-4 lg:mb-0">
             Beginner cannabis consumers can visit the information hub to learn
             more about its benefits, methods of consumption, the different
             strains and forms, and more. They can read everything they need to
@@ -283,28 +263,27 @@ export default function Cheekys() {
           </p>
         </div>
       </section>
-
-      <section className="max-w-full p-6 w-full bg-[#F9F9F5] flex justify-center">
+      <section className="max-w-[80rem] w-full px-6">
         <video
-          width={1920}
-          height={1090}
-          src="/cheekys/information-hub.mp4"
+          width={1280}
+          height={832}
+          src="/cheekys/video-4.mp4"
           loop
           muted
           autoPlay
-          className="outline outline-[#f9f9f5] -outline-offset-2 w-full max-w-[80rem]"
         ></video>
+        <MediaTag media="VIDEO">
+          A user explores the educational resource to learn more about cannabis
+        </MediaTag>
       </section>
-
-      <Spacer></Spacer>
-
+      <HalfSpacer />
       <section className="max-w-[80rem] w-full px-6">
-        <h2 className="callout text-green-500 mb-4">Proposed Feature #5</h2>
-        <p className="p-xl mb-4">
-          Supplying information about usage and effects in the product catalog
-        </p>
-        <div className="grid w-full lg:grid-cols-2">
-          <p className="">
+        <h2 className="callout text-green-500 mb-2">Proposed Feature</h2>
+        <div className="grid w-full gap-4 lg:gap-20 lg:grid-cols-2">
+          <p className="p-xl">
+            Supplying information about usage and effects in the product catalog
+          </p>
+          <p className="mb-4 lg:mb-0">
             When the beginner cannabis consumer feels informed enough to browse
             the product catalog, they can hover over icons to read additional
             information such as the side effects of a certain product and the
@@ -313,21 +292,178 @@ export default function Cheekys() {
           </p>
         </div>
       </section>
-
-      <section className="max-w-full p-6 w-full bg-[#F9F9F5] flex justify-center">
+      <section className="max-w-[80rem] w-full px-6">
         <video
-          width={1920}
-          height={1090}
-          src="/cheekys/hover.mp4"
+          width={1280}
+          height={832}
+          src="/cheekys/video-5.mp4"
           loop
           muted
           autoPlay
-          className="outline outline-[#f9f9f5] -outline-offset-2 w-full max-w-[80rem]"
+          className="mb-2"
         ></video>
+
+        <MediaTag media="VIDEO">
+          A user hovers over icons on a product page to learn more about its
+          side effects
+        </MediaTag>
+      </section>
+      <Spacer></Spacer>
+      <section className="max-w-[80rem] w-full px-6">
+        <h2 className="callout text-green-500 mb-4">Design Process</h2>
+        <div className="grid w-full gap-4 lg:gap-20 lg:grid-cols-2">
+          <p className="p-xl">
+            In three weeks, our solution evolved to support both goal-oriented
+            and exploratory users.
+          </p>
+          <p className="">
+            Initially, the educational resource we designed comprised two
+            lengthy pages packed with large amounts of information. While it
+            served its purpose of informing the reader, the content was not
+            scannable, and it appeared rather overwhelming.
+          </p>
+        </div>
+      </section>
+      <section className="max-w-full w-full">
+        <div className="grid lg:grid-cols-2 px-6 pt-0 gap-6">
+          <Image
+            src="/cheekys/iteration-1.png"
+            width={1600}
+            height={900}
+            alt="Cheekys UI"
+          ></Image>
+          <Image
+            src="/cheekys/iteration-1-2.png"
+            width={1600}
+            height={900}
+            alt="Cheekys UI"
+          ></Image>
+        </div>
+      </section>
+      <HalfSpacer />
+      <section className="max-w-[80rem] w-full px-6">
+        <h2 className="callout text-green-500 mb-4">Iteration #2</h2>
+        <div className="grid w-full gap-4 lg:gap-20 lg:grid-cols-2">
+          <p className="p-xl">
+            Our second iteration enabled users to learn in bite-sized portions
+            tailored to their interests, eliminating the need to sift through
+            irrelevant information.
+          </p>
+          <p className="mb-4 lg:mb-0">
+            We condensed the content into a single page. Information is chunked
+            under tabs with a card presenting data corresponding to the selected
+            tab. The content in the card dynamically changes when a chip is
+            clicked. This approach allows users to learn in small, bite-sized
+            chunks. Additionally, with this approach, users will only see
+            information pertaining to what their learning interests and not need
+            to sift through irrelevant data.
+          </p>
+        </div>
+      </section>
+
+      <section className="max-w-full w-full">
+        <div className="grid lg:grid-cols-2 px-6 pt-0 gap-6">
+          <Image
+            src="/cheekys/iteration-2.png"
+            width={1600}
+            height={900}
+            alt="Cheekys UI"
+          ></Image>
+          <Image
+            src="/cheekys/iteration-2-2.png"
+            width={1600}
+            height={900}
+            alt="Cheekys UI"
+          ></Image>
+        </div>
+      </section>
+
+      <HalfSpacer />
+      <section className="max-w-[80rem] w-full px-6">
+        <h2 className="callout text-green-500 mb-4">Valuable Feedback</h2>
+        <div className="grid w-full gap-4 lg:gap-20 lg:grid-cols-2">
+          <p className="p-xl">
+            Our solution could be stronger if users did not have to be entirely
+            reliant on the information hub.
+          </p>
+          <p className="mb-4 lg:mb-0">
+            While it’s valuable to have this resource available for the website,
+            the teaching team prompted us to brainstorm ways to provide users
+            more support for learning. The goal was to seamlessly integrate
+            informative interactions throughout the platform, ensuring that
+            valuable information wasn’t confined solely to the information hub.
+          </p>
+        </div>
+      </section>
+      <HalfSpacer />
+
+      <section className="max-w-[80rem] w-full px-6">
+        <h2 className="callout text-green-500 mb-4">Improvements</h2>
+        <div className="grid w-full gap-4 lg:gap-20 lg:grid-cols-2">
+          <p className="p-lg">
+            I refined the existing design by prototyping solutions that
+            anticipate user needs, aiming to make their experience more
+            seamless.
+          </p>
+          <p className="mb-4 lg:mb-0">
+            This involved integrating features allowing users to access product
+            information directly within the chat, facilitating the asking of
+            clarifying questions to boost their confidence in making informed
+            purchase decisions.
+          </p>
+        </div>
+      </section>
+      <section className="max-w-[80rem] w-full px-6">
+        <video
+          width={1600}
+          height={900}
+          src="/cheekys/interaction-2.mp4"
+          loop
+          muted
+          autoPlay
+          className="mb-2"
+        ></video>
+        <MediaTag media="VIDEO">
+          A user views additional details about a product from the chatroom
+        </MediaTag>
+      </section>
+
+      <HalfSpacer />
+      <section className="max-w-[80rem] w-full px-6">
+        <h2 className="callout text-green-500 mb-4">More Improvements</h2>
+        <div className="grid w-full gap-4 lg:gap-20 lg:grid-cols-2">
+          <p className="mb-4 lg:mb-0">
+            Another interaction I prototyped within the chat was the ability to
+            add products to the cart by dragging the item or clicking the “Add
+            to cart” button from the dropdown menu. This functionality
+            eliminates the need for users to exit the chat to individually add
+            products to their cart.
+          </p>
+          <p className="p-lg">
+            This approach benefits the user, but Cheeky’s as well; by reducing
+            friction in the purchasing process, we increase the likelihood of
+            completing a sale.
+          </p>
+        </div>
+      </section>
+
+      <section className="max-w-[80rem] w-full px-6">
+        <video
+          width={1600}
+          height={900}
+          src="/cheekys/interaction-3.mp4"
+          loop
+          muted
+          autoPlay
+          className="mb-2"
+        ></video>
+        <MediaTag media="VIDEO">
+          A user adds multiple products recommended by the budtender to their
+          cart
+        </MediaTag>
       </section>
 
       <Spacer></Spacer>
-
       <section className="max-w-[80rem] w-full px-6">
         <h2 className="p-xl mb-4">Learnings and Takeaways</h2>
         <div className="grid w-full lg:grid-cols-2">
@@ -341,9 +477,7 @@ export default function Cheekys() {
           </p>
         </div>
       </section>
-
       <Spacer></Spacer>
-
       <section className="max-w-[80rem] w-full px-6">
         <h2 className="p-xl mb-4">Reflection</h2>
         <div className="grid w-full lg:grid-cols-2 gap-6 lg:gap-20">

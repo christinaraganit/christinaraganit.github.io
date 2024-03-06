@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="w-full border-t border-zinc-200/60">
       <div className="px-6 max-w-[80rem] mx-auto py-6">
-        <div className="flex justify-center items-center flex-row mb-2 gap-5">
+        <div className="flex justify-center items-center flex-row mb-6 xs:mb-3 gap-5">
           <a
             href="mailto:christinaraganit@gmail.com"
             aria-label="Christina's Email"
@@ -75,11 +75,16 @@ export default function Footer() {
           </a>
         </div>
 
-        <div className="flex w-full justify-center mb-1.5">
-          <Button link=" " variant="secondary" text="Home"></Button>
-          <Button link=" " variant="secondary" text="About"></Button>
-          <Button link=" " variant="secondary" text="Projects"></Button>
-          <Button link=" " variant="secondary" text="Resume"></Button>
+        <div className="flex flex-wrap w-full justify-center mb-6 xs:mb-2">
+          <Button link="/" variant="secondary" text="Home"></Button>
+          <Button link="/about" variant="secondary" text="About"></Button>
+          {/* <Button link="/projects" variant="secondary" text="Projects"></Button> */}
+          <Button link="/awards" variant="secondary" text="Awards"></Button>
+          <Button
+            link="https://drive.google.com/file/d/1XdjiOlwxWced9ZCvzwyLcPiZANGwptAV/view?usp=sharing"
+            variant="secondary"
+            text="Resume"
+          ></Button>
         </div>
 
         <span className="block w-full text-center text-sm text-zinc-500">

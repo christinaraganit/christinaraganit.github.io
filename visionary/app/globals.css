@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  background-color: #fff;
+  background-color: #fafafa;
 }
 
 @layer utilities {
@@ -26,6 +26,7 @@ body {
   }
 
   .title-2 {
+    @apply text-2xl lg:text-3xl font-medium tracking-tighter text-slate-900 leading-none;
   }
 
   .title-3 {
