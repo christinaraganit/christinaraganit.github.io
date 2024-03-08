@@ -9,7 +9,7 @@ export default function TFTTeamPlanner() {
     <main className="max-w-[100vw] overflow-x-clip w-full flex flex-col items-center gap-10 pt-40 pb-32">
       <Nav></Nav>
 
-      <section className="px-6 max-w-[80rem] w-full grid lg:grid-cols-3 lg:gap-40">
+      <section className="px-6 max-w w-full grid lg:grid-cols-3 lg:gap-40">
         <div className="col-span-2">
           <h1 className="large-title mb-6">
             Teamfight Tactics Desktop Team Planner

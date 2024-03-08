@@ -7,7 +7,7 @@ export default function About() {
     <main className="w-full flex flex-col gap-20 items-center pt-12 lg:pt-20 pb-24">
       <Nav></Nav>
 
-      <section className="max-w-[64rem] w-full md:grid-cols-2 grid px-6 gap-10 lg:gap-20">
+      <section className="max-w w-full md:grid-cols-2 grid px-6 gap-10 lg:gap-20">
         <div>
           <h1 className="large-title mb-8 max-w-3xl md:hidden">
             Hi, I'm Christina Raganit.

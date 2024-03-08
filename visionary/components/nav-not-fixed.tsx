@@ -6,7 +6,7 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
 import Button from "./button";
 
-export default function Nav() {
+export default function NavNotFixed() {
   const [modalOpen, setModalOpen] = useState(false);
 
   return (
@@ -131,7 +131,7 @@ export default function Nav() {
         </Dialog>
       </nav>
 
-      <nav className="w-full bg-zinc-50/90 backdrop-blur-lg border-b border-zinc-200/60 fixed z-20 h-16 hidden sm:flex justify-between items-center left-1/2 -translate-x-1/2 top-0">
+      <nav className="w-full absolute bg-zinc-50/90 backdrop-blur-lg border-b border-zinc-200/60 z-20 h-16 hidden sm:flex justify-between items-center left-1/2 -translate-x-1/2 top-0">
         <div className="px-6 flex items-center w-full max-w mx-auto">
           <div className="w-full">
             <div>

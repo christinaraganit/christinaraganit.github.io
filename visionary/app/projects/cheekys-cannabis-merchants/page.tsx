@@ -3,19 +3,21 @@ import Image from "next/image";
 import Spacer from "@/components/spacer";
 import HalfSpacer from "@/components/half-spacer";
 import MediaTag from "@/components/media-tag";
+import NavNotFixed from "@/components/nav-not-fixed";
+import Link from "@/components/link";
 
 export default function Cheekys() {
   return (
-    <main className="max-w-[100vw] overflow-x-clip w-full flex flex-col items-center gap-4 lg:gap-10 pt-40 pb-32">
-      <Nav></Nav>
-      <section className="px-6 max-w-[80rem] w-full lg:grid lg:grid-cols-3 lg:gap-40">
+    <main className="max-w-[100vw] overflow-x-clip w-full flex flex-col items-center gap-4 lg:gap-8 pt-40 pb-32">
+      <NavNotFixed></NavNotFixed>
+      <section className="px-6 max-w w-full lg:grid lg:grid-cols-3 lg:gap-40">
         <div className="col-span-2">
           <h1 className="large-title mb-6">Cheeky's Cannabis Merchants</h1>
           <p className="p-xl font-light mb-6">
-            In this 4-week academic team project, we digitized the in-store
-            experience of Cheeky's Cannabis Merchants to help support first-time
-            cannabis consumers, providing them with the knowledge they need to
-            comfortably make a purchase.
+            In this 3-week academic team project, I worked alongside a team of 5
+            to digitize the in-store experience of Cheeky's Cannabis Merchants
+            to help support first-time cannabis consumers, providing them with
+            the knowledge they need to comfortably make a purchase.
           </p>
         </div>
 
@@ -40,11 +42,11 @@ export default function Cheekys() {
 
           <div>
             <h2 className="callout mb-1">Duration</h2>
-            <p>February 7–28, 2023 (4 weeks)</p>
+            <p>February 7–28, 2023 (3 weeks)</p>
           </div>
         </div>
       </section>
-      <section className="px-6 max-w-[80rem] w-full flex flex-col gap-2">
+      <section className="px-6 max-w w-full flex flex-col gap-2">
         <Image
           src="/cheekys/desktop.png"
           width={3840}
@@ -54,7 +56,7 @@ export default function Cheekys() {
         <MediaTag media="IMAGE">Final solution in a device mockup</MediaTag>
       </section>
       <Spacer></Spacer>
-      <section className="px-6 max-w-[80rem] w-full">
+      <section className="px-6 max-w w-full">
         <h2 className="text-3xl tracking-tight mb-4">My Role</h2>
         <div className="grid lg:grid-cols-2 lg:gap-20">
           <div>
@@ -119,16 +121,23 @@ export default function Cheekys() {
         ></Image>
       </section>
       <Spacer></Spacer>
-      <section className="px-6 max-w-[80rem] w-full">
+      <section className="px-6 max-w w-full">
         <h2 className="callout text-green-500 mb-4">Problem Space</h2>{" "}
-        <p className="p-xl mb-4">"It's the wild west."</p>
         <div className="grid w-full lg:grid-cols-2 gap-6 lg:gap-20">
-          <p className="p-lg">
-            There’s a wide variety of cannabis products and consumption methods
-            that can vary from store to store, and first-time cannabis consumers
-            often feel lost navigating the use of cannabis without guidance from
-            their doctors.
-          </p>
+          <div>
+            <p className="p-xl">
+              According to a{" "}
+              <Link
+                link="https://gero.nursing.ubc.ca/research/completed-projects/exploring-first-time-cannabis-use-among-community-dwelling-older-adults/"
+                text="study"
+                color="green"
+                size="large"
+              ></Link>{" "}
+              performed by the University of British Columbia, first-time
+              cannabis consumers often feel lost navigating the use of cannabis
+              without guidance from their doctors.
+            </p>
+          </div>
           <div>
             <p className="mb-6">
               However, during their first visit to a dispensary, employees (or
@@ -138,19 +147,26 @@ export default function Cheekys() {
               this guidance.
             </p>
             <p>
-              In a survey studying responsible cannabis use, 67% of Ontarians
-              believe that retailers must educate consumers on cannabis—both
-              in-store and online. Thus, it’s imperative that the in-store
-              shopping experience provided to consumers can also be experienced
-              in the digital space.
+              In a{" "}
+              <Link
+                link="https://www.globenewswire.com/fr/news-release/2019/12/12/1960115/0/en/Ontario-residents-are-not-happy-with-how-they-can-purchase-legal-cannabis.html"
+                text="survey"
+                color="green"
+                size="medium"
+              ></Link>{" "}
+              studying responsible cannabis use, 67% of Ontarians believe that
+              retailers must educate consumers on cannabis—both in-store and
+              online. Thus, it’s imperative that the in-store shopping
+              experience provided to consumers can also be experienced in the
+              digital space.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="spacer h-20 w-full max-w-[80rem] flex items-center p-6"></section>
+      <section className="spacer h-20 w-full max-w flex items-center p-6"></section>
 
-      <section className="p-6 lg:py-0 max-w-[80rem] w-full">
+      <section className="p-6 lg:py-0 max-w w-full">
         <section className="text-center flex flex-col items-center p-6 py-12 lg:p-16 bg-[#F7F6F1]/70 rounded-2xl">
           <h2 className="callout text-green-500 mb-4">Design Challenge</h2>
           <p className="text-xl lg:text-4xl max-w-3xl tracking-tight text-balance">
@@ -161,22 +177,22 @@ export default function Cheekys() {
         </section>
       </section>
 
-      <section className="spacer h-20 w-full max-w-[80rem] flex items-center p-6"></section>
+      <section className="spacer h-20 w-full max-w flex items-center p-6"></section>
 
-      <section className="max-w-[80rem] w-full px-6">
-        <h2 className="callout text-green-500 mb-2">Proposed Feature</h2>
+      <section className="max-w w-full px-6">
+        <h2 className="callout text-green-500 mb-4">Proposed Feature</h2>
         <div className="grid w-full gap-4 lg:gap-20 lg:grid-cols-2">
           <p className="p-xl">Connecting budtenders and online shoppers</p>
           <p className="mb-4 lg:mb-0">
             If a budtender is available, the consumer can start a chat to
-            receive guidance on what product best suits their needs and
-            situation. They can ask questions and receive product
-            recommendations from the in-store employee—which they can add to
-            their cart and checkout when they feel ready to make a purchase.
+            receive guidance on what product best suits their needs. They can
+            ask questions and receive product recommendations from the
+            budtender—which they can add to their cart and checkout when they
+            feel ready to make a purchase.
           </p>
         </div>
       </section>
-      <section className="max-w-[80rem] px-6 w-full">
+      <section className="max-w px-6 w-full">
         <video
           width={1280}
           height={832}
@@ -192,8 +208,8 @@ export default function Cheekys() {
         </MediaTag>
       </section>
       <HalfSpacer />
-      <section className="max-w-[80rem] w-full px-6">
-        <h2 className="callout text-green-500 mb-2">Proposed Feature</h2>
+      <section className="max-w w-full px-6">
+        <h2 className="callout text-green-500 mb-4">Proposed Feature</h2>
         <div className="grid w-full gap-4 lg:gap-20 lg:grid-cols-2">
           <p className="p-xl">Providing options for busy budtenders</p>
           <p className="mb-4 lg:mb-0">
@@ -205,7 +221,7 @@ export default function Cheekys() {
           </p>
         </div>
       </section>
-      <section className="max-w-[80rem] w-full px-6">
+      <section className="max-w w-full px-6">
         <video
           width={1280}
           height={832}
@@ -220,8 +236,8 @@ export default function Cheekys() {
         </MediaTag>
       </section>
       <HalfSpacer />
-      <section className="max-w-[80rem] w-full px-6">
-        <h2 className="callout text-green-500 mb-2">Proposed Feature</h2>
+      <section className="max-w w-full px-6">
+        <h2 className="callout text-green-500 mb-4">Proposed Feature</h2>
         <div className="grid w-full gap-4 lg:gap-20 lg:grid-cols-2">
           <p className="p-xl">Carefully curating cannabis starter packs</p>
           <p className="mb-4 lg:mb-0">
@@ -232,7 +248,7 @@ export default function Cheekys() {
           </p>
         </div>
       </section>
-      <section className="max-w-[80rem] w-full px-6">
+      <section className="max-w w-full px-6">
         <Image
           src="/cheekys/starter-packs.png"
           width={1280}
@@ -247,12 +263,14 @@ export default function Cheekys() {
 
       <HalfSpacer />
 
-      <section className="max-w-[80rem] w-full px-6">
-        <h2 className="callout text-green-500 mb-2">Proposed Feature</h2>
+      <section className="max-w w-full px-6">
+        <h2 className="callout text-green-500 mb-4">Proposed Feature</h2>
         <div className="grid w-full gap-4 lg:gap-20 lg:grid-cols-2">
-          <p className="p-xl">
-            Answering common questions with the information hub
-          </p>
+          <div>
+            <p className="p-xl">
+              Answering common questions with the information hub
+            </p>
+          </div>
           <p className="mb-4 lg:mb-0">
             Beginner cannabis consumers can visit the information hub to learn
             more about its benefits, methods of consumption, the different
@@ -263,7 +281,7 @@ export default function Cheekys() {
           </p>
         </div>
       </section>
-      <section className="max-w-[80rem] w-full px-6">
+      <section className="max-w w-full px-6">
         <video
           width={1280}
           height={832}
@@ -277,12 +295,15 @@ export default function Cheekys() {
         </MediaTag>
       </section>
       <HalfSpacer />
-      <section className="max-w-[80rem] w-full px-6">
-        <h2 className="callout text-green-500 mb-2">Proposed Feature</h2>
+      <section className="max-w w-full px-6">
         <div className="grid w-full gap-4 lg:gap-20 lg:grid-cols-2">
-          <p className="p-xl">
-            Supplying information about usage and effects in the product catalog
-          </p>
+          <div>
+            <h2 className="callout text-green-500 mb-4">Proposed Feature</h2>
+            <p className="p-xl">
+              Supplying information about usage and effects in the product
+              catalog
+            </p>
+          </div>
           <p className="mb-4 lg:mb-0">
             When the beginner cannabis consumer feels informed enough to browse
             the product catalog, they can hover over icons to read additional
@@ -292,7 +313,7 @@ export default function Cheekys() {
           </p>
         </div>
       </section>
-      <section className="max-w-[80rem] w-full px-6">
+      <section className="max-w w-full px-6">
         <video
           width={1280}
           height={832}
@@ -309,7 +330,7 @@ export default function Cheekys() {
         </MediaTag>
       </section>
       <Spacer></Spacer>
-      <section className="max-w-[80rem] w-full px-6">
+      <section className="max-w w-full px-6">
         <h2 className="callout text-green-500 mb-4">Design Process</h2>
         <div className="grid w-full gap-4 lg:gap-20 lg:grid-cols-2">
           <p className="p-xl">
@@ -341,7 +362,7 @@ export default function Cheekys() {
         </div>
       </section>
       <HalfSpacer />
-      <section className="max-w-[80rem] w-full px-6">
+      <section className="max-w w-full px-6">
         <h2 className="callout text-green-500 mb-4">Iteration #2</h2>
         <div className="grid w-full gap-4 lg:gap-20 lg:grid-cols-2">
           <p className="p-xl">
@@ -379,7 +400,7 @@ export default function Cheekys() {
       </section>
 
       <HalfSpacer />
-      <section className="max-w-[80rem] w-full px-6">
+      <section className="max-w w-full px-6">
         <h2 className="callout text-green-500 mb-4">Valuable Feedback</h2>
         <div className="grid w-full gap-4 lg:gap-20 lg:grid-cols-2">
           <p className="p-xl">
@@ -397,7 +418,7 @@ export default function Cheekys() {
       </section>
       <HalfSpacer />
 
-      <section className="max-w-[80rem] w-full px-6">
+      <section className="max-w w-full px-6">
         <h2 className="callout text-green-500 mb-4">Improvements</h2>
         <div className="grid w-full gap-4 lg:gap-20 lg:grid-cols-2">
           <p className="p-lg">
@@ -413,7 +434,8 @@ export default function Cheekys() {
           </p>
         </div>
       </section>
-      <section className="max-w-[80rem] w-full px-6">
+
+      <section className="max-w w-full px-6">
         <video
           width={1600}
           height={900}
@@ -429,7 +451,7 @@ export default function Cheekys() {
       </section>
 
       <HalfSpacer />
-      <section className="max-w-[80rem] w-full px-6">
+      <section className="max-w w-full px-6">
         <h2 className="callout text-green-500 mb-4">More Improvements</h2>
         <div className="grid w-full gap-4 lg:gap-20 lg:grid-cols-2">
           <p className="mb-4 lg:mb-0">
@@ -447,7 +469,7 @@ export default function Cheekys() {
         </div>
       </section>
 
-      <section className="max-w-[80rem] w-full px-6">
+      <section className="max-w w-full px-6">
         <video
           width={1600}
           height={900}
@@ -464,7 +486,7 @@ export default function Cheekys() {
       </section>
 
       <Spacer></Spacer>
-      <section className="max-w-[80rem] w-full px-6">
+      <section className="max-w w-full px-6">
         <h2 className="p-xl mb-4">Learnings and Takeaways</h2>
         <div className="grid w-full lg:grid-cols-2">
           <p className="">
@@ -478,7 +500,7 @@ export default function Cheekys() {
         </div>
       </section>
       <Spacer></Spacer>
-      <section className="max-w-[80rem] w-full px-6">
+      <section className="max-w w-full px-6">
         <h2 className="p-xl mb-4">Reflection</h2>
         <div className="grid w-full lg:grid-cols-2 gap-6 lg:gap-20">
           <p className="">

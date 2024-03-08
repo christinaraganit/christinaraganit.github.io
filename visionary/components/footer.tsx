@@ -3,7 +3,7 @@ import Button from "./button";
 export default function Footer() {
   return (
     <footer className="w-full border-t border-zinc-200/60">
-      <div className="px-6 max-w-[80rem] mx-auto py-6">
+      <div className="px-6 max-w mx-auto py-6">
         <div className="flex justify-center items-center flex-row mb-6 xs:mb-3 gap-5">
           <a
             href="mailto:christinaraganit@gmail.com"

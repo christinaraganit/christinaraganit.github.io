@@ -11,7 +11,7 @@ export default function Home() {
     <main className="w-full flex flex-col gap-20 items-center pt-20 pb-20">
       <Nav></Nav>
 
-      <section className="px-6 max-w-[80rem] w-full flex items-center flex-col text-center">
+      <section className="px-6 max-w w-full flex items-center flex-col text-center">
         {/* <a
           href=""
           className="mb-4 text-xs leading-5 font-medium border border-blue-300/20 text-blue-600 bg-blue-300/10 hover:bg-blue-300/20 hover:border-blue-300/30 transition-all rounded-full py-1 px-3 gap-1 flex items-center w-fit"
@@ -31,12 +31,12 @@ export default function Home() {
         </p>
 
         <div className="grid gap-6 text-left">
-          {/* <a
+          <a
             href="/projects/tft-team-planner"
             className="group bg-[#010A13] hover:bg-[#011A23] px-6 py-8 lg:p-12 h-fit md:aspect-video rounded-3xl text-white overflow-hidden transition-all"
           >
             <div className="w-full text-center flex flex-col items-center justify-center">
-              <p className="callout text-[#0ac8b9] mb-4">UX Case Study</p>
+              <p className="callout text-[#0ac8b9] mb-4">Visual Design</p>
               <h2 className="title-1 text-white mb-4">
                 Teamfight Tactics Team Planner
               </h2>
@@ -53,17 +53,17 @@ export default function Home() {
               src="/tft-team-planner/ui.png"
               width={2400}
               height={1350}
-              className="rounded-lg lg:rounded-3xl md:-translate-y-[161rem] md:scale-[0.8] md:group-hover:scale-[0.85] transition-all"
+              className="rounded-lg lg:rounded-3xl md:-translate-y-[162rem] md:scale-[0.75] md:group-hover:scale-[0.8] transition-all"
               alt="Teamfight Tactics Team Planner Case Study"
             ></Image>
-          </a> */}
+          </a>
 
           <a
             href="/projects/cheekys-cannabis-merchants"
             className="group bg-[#EFEEE3] hover:bg-[#EBEADC] px-6 py-8 lg:p-12 h-fit md:aspect-video rounded-3xl text-black overflow-hidden transition-all"
           >
             <div className="w-full text-center flex flex-col items-center justify-center">
-              <p className="callout text-[#538477] mb-3">UX Case Study</p>
+              <p className="callout text-[#538477] mb-3">UX Design</p>
               <h2 className="title-1 text-black mb-4 font-semibold">
                 Cheeky's Cannabis Merchants
               </h2>
@@ -151,7 +151,7 @@ export default function Home() {
 
             <div className="hidden md:block w-[160rem] aspect-square left-1/2 translate-y-[5rem] group-hover:blur-[200px] -translate-x-1/2 blur-[100px] rounded-full relative bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] to-[#C6FFDD] via-[#FBD786] from-[#f7797d] opacity-40 group-hover:opacity-60 transition-all "></div>
 
-            <div className="w-full flex md:scale-[0.6] md:-translate-y-[167rem] lg:-translate-y-[170rem] xl:-translate-y-[172rem] md:-translate-x-2">
+            <div className="w-full flex md:scale-[0.6] md:-translate-y-[169rem] lg:-translate-y-[170rem] xl:-translate-y-[171rem] md:-translate-x-2">
               <Image
                 src="/chow-now/mobile-1.png"
                 width={589.5}
@@ -171,7 +171,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mt-8 px-6 flex max-w-[80rem] w-full flex-col text-center items-center">
+      <section className="mt-8 px-6 flex max-w w-full flex-col text-center items-center">
         <p className="callout text-blue-600 mb-3">Testimonials</p>
         <h2 className="title-1 font-semibold mb-4 max-w-3xl">
           I excel in collaborating with teams and working together to achieve

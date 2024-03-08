@@ -53,6 +53,10 @@ body {
   }
 
   .half-spacer {
-    @apply h-6 w-full max-w-[80rem] flex items-center p-3;
+    @apply h-6 w-full max-w-[72rem] flex items-center p-3;
+  }
+
+  .max-w {
+    @apply max-w-[72rem];
   }
 }

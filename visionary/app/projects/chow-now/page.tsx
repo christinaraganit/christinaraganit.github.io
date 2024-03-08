@@ -3,13 +3,15 @@ import Spacer from "@/components/spacer";
 import HalfSpacer from "@/components/half-spacer";
 import Image from "next/image";
 import MediaTag from "@/components/media-tag";
+import Link from "@/components/link";
+import NavNotFixed from "@/components/nav-not-fixed";
 
 export default function ChowNow() {
   return (
     <main className="max-w-[100vw] overflow-x-clip w-full flex flex-col items-center gap-4 lg:gap-10 pt-40 pb-32">
-      <Nav></Nav>
+      <NavNotFixed />
 
-      <section className="px-6 max-w-[80rem] w-full lg:grid lg:grid-cols-3 lg:gap-40">
+      <section className="px-6 max-w w-full lg:grid lg:grid-cols-3 lg:gap-40">
         <div className="col-span-2">
           <h1 className="large-title mb-6">Chow Now</h1>
           <p className="p-lg font-light mb-6">
@@ -43,12 +45,15 @@ export default function ChowNow() {
 
           <div>
             <h2 className="callout mb-1">Achievements</h2>
-            <p>First Place Winner (out of 44 teams) and Best Design Award</p>
+            <p>
+              First Place Winner (out of 44 teams) and Best Design Award at
+              cmd-f 2023
+            </p>
           </div>
         </div>
       </section>
 
-      <section className="px-6 max-w-[80rem] w-full flex flex-col gap-2">
+      <section className="px-6 max-w w-full flex flex-col gap-2">
         <Image
           src="/chow-now/header.png"
           width={1920}
@@ -60,7 +65,7 @@ export default function ChowNow() {
 
       <Spacer></Spacer>
 
-      <section className="px-6 max-w-[80rem] w-full">
+      <section className="px-6 max-w w-full">
         <h2 className="callout text-orange-600 mb-4">Content Warning</h2>
         <div className="grid w-full lg:grid-cols-2 gap-6 lg:gap-20">
           <p className="p-xl">
@@ -69,7 +74,7 @@ export default function ChowNow() {
             individuals.
           </p>
           <div>
-            <p className="mb-4">
+            <p className="mb-2">
               Please proceed with caution and prioritize your well-being while
               reading. If you or someone you know is experiencing abuse, please
               reach out to the appropriate hotline or support service for
@@ -90,7 +95,7 @@ export default function ChowNow() {
 
       <Spacer></Spacer>
 
-      <section className="px-6 max-w-[80rem] w-full">
+      <section className="px-6 max-w w-full">
         <h2 className="text-3xl tracking-tight mb-4">My Role</h2>
         <div className="grid lg:grid-cols-2 lg:gap-20">
           <div>
@@ -125,11 +130,99 @@ export default function ChowNow() {
 
       <Spacer></Spacer>
 
-      <section className="px-6 max-w-[80rem] w-full grid lg:grid-cols-2">
-        <p className="p-xl">
-          The rest of this case study is still in progress. Please check back
-          later!
-        </p>
+      <section className="px-6 max-w w-full grid lg:grid-cols-2">
+        {" "}
+        <div>
+          <h2 className="callout text-orange-500 mb-4">Problem Space</h2>{" "}
+          <div className="grid w-full gap-6">
+            <div>
+              <p className="p-xl">
+                In 2019, a woman in Ohio reported an incident of domestic abuse
+                by{" "}
+                <Link
+                  link="https://www.cnn.com/2019/11/26/us/what-to-do-if-you-cant-speak-to-911/index.html"
+                  text="pretending to order a pizza."
+                  color="orange"
+                  size="large"
+                ></Link>
+              </p>
+            </div>
+
+            <p className="mb-4">
+              The discretion was imperative because the abuser was in the same
+              room as her. Fortunately, the situation ended well for the caller,
+              but according to April Heinze, 911 operations director for the
+              National Emergency Number Association (NENA), there’s “no
+              universal code language to let dispatchers know you’re in
+              trouble”.
+            </p>
+            <p className="p-lg">
+              And it’s imperative that victims of abuse report these cases of
+              domestic violence discreetly, because attempting to leave puts
+              them in danger.
+            </p>
+            <p>
+              The most dangerous time for a victim of domestic violence is when
+              they attempt to leave their abuser. Based on{" "}
+              <Link
+                link="https://www.ojp.gov/pdffiles1/nij/181867.pdf"
+                text="interviews"
+                color="orange"
+                size="medium"
+              ></Link>{" "}
+              with men who have murdered their wives, it appears that the most
+              common events that trigger such violence are either threats of
+              separation by their partners or actual separation.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <Spacer></Spacer>
+
+      <section className="px-6 max-w w-full grid lg:grid-cols-2">
+        {" "}
+        <div>
+          <h2 className="callout text-orange-500 mb-4">Understanding Users</h2>{" "}
+          <div className="grid w-full gap-6">
+            <div>
+              <p>
+                Navigating through this challenge was complex as I struggled
+                with the task of designing an app that could operate discreetly
+                while also justifying its need for accessing the user's location
+                and phone number. However, I stumbled upon research that guided
+                me towards a solution.
+              </p>
+            </div>
+
+            <p className="mb-4">
+              The discretion was imperative because the abuser was in the same
+              room as her. Fortunately, the situation ended well for the caller,
+              but according to April Heinze, 911 operations director for the
+              National Emergency Number Association (NENA), there’s “no
+              universal code language to let dispatchers know you’re in
+              trouble”.
+            </p>
+            <p className="p-lg">
+              And it’s imperative that victims of abuse report these cases of
+              domestic violence discreetly, because attempting to leave puts
+              them in danger.
+            </p>
+            <p>
+              The most dangerous time for a victim of domestic violence is when
+              they attempt to leave their abuser. Based on{" "}
+              <Link
+                link="https://www.ojp.gov/pdffiles1/nij/181867.pdf"
+                text="interviews"
+                color="orange"
+                size="medium"
+              ></Link>{" "}
+              with men who have murdered their wives, it appears that the most
+              common events that trigger such violence are either threats of
+              separation by their partners or actual separation.
+            </p>
+          </div>
+        </div>
       </section>
     </main>
   );

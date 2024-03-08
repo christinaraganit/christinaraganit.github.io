@@ -6,7 +6,7 @@ export default function Awards() {
     <main className="w-full flex flex-col gap-24 items-center pt-20 pb-20">
       <Nav></Nav>
 
-      <section className="px-6 flex max-w-[80rem] w-full flex-col text-center items-center">
+      <section className="px-6 flex max-w w-full flex-col text-center items-center">
         <h1 className="callout text-blue-600 mb-3">Awards</h1>
         <p className="title-1 font-semibold mb-4 max-w-3xl">
           Celebrating moments of excellence.
@@ -18,7 +18,7 @@ export default function Awards() {
         </p>
       </section>
 
-      <section className="px-6 grid md:grid-cols-3 xs:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 max-w-[80rem] w-full">
+      <section className="px-6 grid md:grid-cols-3 xs:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 max-w w-full">
         <Award
           award="Undergraduate Open Scholarship"
           awardedBy="Simon Fraser University"
