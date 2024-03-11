@@ -12,13 +12,12 @@ export default function Home() {
       <Nav></Nav>
 
       <section className="px-6 max-w w-full flex items-center flex-col text-center">
-        {/* <a
+        <a
           href=""
           className="mb-4 text-xs leading-5 font-medium border border-blue-300/20 text-blue-600 bg-blue-300/10 hover:bg-blue-300/20 hover:border-blue-300/30 transition-all rounded-full py-1 px-3 gap-1 flex items-center w-fit"
         >
-          <MagnifyingGlassIcon width={16} height={16}></MagnifyingGlassIcon>
           Seeking internships for Summer 2024
-        </a> */}
+        </a>
 
         <h1 className="large-title max-w-4xl mb-4">
           I'm Christina Raganit, a UX designer who writes code.

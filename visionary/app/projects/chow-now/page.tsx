@@ -11,8 +11,8 @@ export default function ChowNow() {
     <main className="max-w-[100vw] overflow-x-clip w-full flex flex-col items-center gap-4 lg:gap-10 pt-40 pb-32">
       <NavNotFixed />
 
-      <section className="px-6 max-w w-full lg:grid lg:grid-cols-3 lg:gap-40">
-        <div className="col-span-2">
+      <section className="px-6 max-w w-full grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-40">
+        <div className="lg:col-span-2">
           <h1 className="large-title mb-6">Chow Now</h1>
           <p className="p-lg font-light mb-6">
             In 2019, a woman in Ohio reported an incident of domestic abuse by
@@ -27,7 +27,7 @@ export default function ChowNow() {
           </p>
         </div>
 
-        <div className="grid gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-1 gap-6">
           <div>
             <h2 className="callout mb-1">Team</h2>
             <p>Christina Raganit and Eunsaem Lee</p>
@@ -53,7 +53,7 @@ export default function ChowNow() {
         </div>
       </section>
 
-      <section className="px-6 max-w w-full flex flex-col gap-2">
+      <section className="px-6 mt-6 max-w w-full flex flex-col gap-2">
         <Image
           src="/chow-now/header.png"
           width={1920}
@@ -127,28 +127,48 @@ export default function ChowNow() {
           </div>
         </div>
       </section>
+      <section className="max-w-full w-full">
+        <div className="grid lg:grid-cols-2 p-6 pt-0 gap-6">
+          <Image
+            src="/chow-now/main-screens.png"
+            width={3200}
+            height={1800}
+            alt="Chow Now UI"
+          ></Image>
+          <Image
+            src="/chow-now/screens.png"
+            width={3200}
+            height={1800}
+            alt="Chow Now"
+          ></Image>
+        </div>
 
+        <Image
+          src="/chow-now/main.png"
+          width={3200}
+          height={1800}
+          className="p-6 pt-0"
+          alt="Chow Now"
+        ></Image>
+      </section>
       <Spacer></Spacer>
 
-      <section className="px-6 max-w w-full grid lg:grid-cols-2">
-        {" "}
-        <div>
-          <h2 className="callout text-orange-500 mb-4">Problem Space</h2>{" "}
-          <div className="grid w-full gap-6">
-            <div>
-              <p className="p-xl">
-                In 2019, a woman in Ohio reported an incident of domestic abuse
-                by{" "}
-                <Link
-                  link="https://www.cnn.com/2019/11/26/us/what-to-do-if-you-cant-speak-to-911/index.html"
-                  text="pretending to order a pizza."
-                  color="orange"
-                  size="large"
-                ></Link>
-              </p>
-            </div>
-
-            <p className="mb-4">
+      <section className="px-6 max-w w-full ">
+        <h2 className="callout text-orange-500 mb-4">Problem Space</h2>
+        <div className="grid gap-6 lg:gap-20 lg:grid-cols-2">
+          <div>
+            <p className="p-xl">
+              In 2019, a woman in Ohio reported an incident of domestic abuse by{" "}
+              <Link
+                link="https://www.cnn.com/2019/11/26/us/what-to-do-if-you-cant-speak-to-911/index.html"
+                text="pretending to order a pizza."
+                color="orange"
+                size="large"
+              ></Link>
+            </p>
+          </div>
+          <div>
+            <p>
               The discretion was imperative because the abuser was in the same
               room as her. Fortunately, the situation ended well for the caller,
               but according to April Heinze, 911 operations director for the
@@ -156,26 +176,27 @@ export default function ChowNow() {
               universal code language to let dispatchers know you’re in
               trouble”.
             </p>
-            <p className="p-lg">
-              And it’s imperative that victims of abuse report these cases of
-              domestic violence discreetly, because attempting to leave puts
-              them in danger.
-            </p>
-            <p>
-              The most dangerous time for a victim of domestic violence is when
-              they attempt to leave their abuser. Based on{" "}
-              <Link
-                link="https://www.ojp.gov/pdffiles1/nij/181867.pdf"
-                text="interviews"
-                color="orange"
-                size="medium"
-              ></Link>{" "}
-              with men who have murdered their wives, it appears that the most
-              common events that trigger such violence are either threats of
-              separation by their partners or actual separation.
-            </p>
           </div>
         </div>
+      </section>
+      <section className="px-6 max-w w-full grid lg:grid-cols-2 gap-6 lg:gap-20">
+        <p className="p-lg">
+          And it’s imperative that victims report cases of domestic violence
+          discreetly, because attempting to leave puts them in danger.
+        </p>
+        <p>
+          The most dangerous time for a victim of domestic violence is when they
+          attempt to leave their abuser. Based on{" "}
+          <Link
+            link="https://www.ojp.gov/pdffiles1/nij/181867.pdf"
+            text="interviews"
+            color="orange"
+            size="medium"
+          ></Link>{" "}
+          with men who have murdered their wives, it appears that the most
+          common events that trigger such violence are either threats of
+          separation by their partners or actual separation.
+        </p>
       </section>
 
       <Spacer></Spacer>
