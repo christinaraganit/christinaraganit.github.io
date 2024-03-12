@@ -3,13 +3,14 @@ import Image from "next/image";
 import MediaTag from "@/components/media-tag";
 import Spacer from "@/components/spacer";
 import HalfSpacer from "@/components/half-spacer";
+import NavNotFixed from "@/components/nav-not-fixed";
 
 export default function TFTTeamPlanner() {
   return (
     <main className="max-w-[100vw] overflow-x-clip w-full flex flex-col items-center gap-10 pt-40 pb-32">
-      <Nav></Nav>
+      <NavNotFixed></NavNotFixed>
 
-      <section className="px-6 max-w w-full grid lg:grid-cols-3 lg:gap-40">
+      <section className="px-6 max-w w-full grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-40">
         <div className="col-span-2">
           <h1 className="large-title mb-6">
             Teamfight Tactics Desktop Team Planner
@@ -21,7 +22,7 @@ export default function TFTTeamPlanner() {
           </p>
         </div>
 
-        <div className="grid gap-6 mb-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-1 gap-6">
           <div>
             <h2 className="callout mb-1">Team</h2>
             <p>Christina Raganit (Solo Designer)</p>
@@ -43,14 +44,14 @@ export default function TFTTeamPlanner() {
           </div>
         </div>
       </section>
-      <section className="px-6 max-w-[80rem] w-full">
+
+      <section className="px-6 mt-6 max-w w-full">
         <Image
           src="/tft-team-planner/hero-hextech.png"
           width={5120}
           height={3328}
           alt="Redesigned UI of the TFT Team Planner from client"
-          className="mb-2"
-        ></Image>
+          className="mb-2"></Image>
         <MediaTag media="IMAGE">
           The redesigned desktop UI of the Team Planner from the client
         </MediaTag>
@@ -58,9 +59,9 @@ export default function TFTTeamPlanner() {
 
       <Spacer></Spacer>
 
-      <section className="px-6 max-w-[80rem] w-full">
+      <section className="px-6 max-w w-full">
         <h2 className="text-3xl tracking-tight mb-4">Overview</h2>
-        <div className="grid lg:grid-cols-2 gap-20">
+        <div className="grid lg:grid-cols-2 gap-6 lg:gap-20">
           <p>
             Teamfight Tactics (TFT) is an auto battler where players compete
             against seven other opponents by building a team to be the last one
@@ -75,7 +76,7 @@ export default function TFTTeamPlanner() {
               created proof-of-concept mockups, which received an overwhelmingly
               positive response from the playerbase.
             </p>
-            <span className="text-neutral-400 flex items-center gap-1.5 italic">
+            {/* <span className="text-neutral-400 flex items-center gap-1.5 italic">
               Check out some of the highlights below
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -83,40 +84,24 @@ export default function TFTTeamPlanner() {
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                className="w-5 h-5"
-              >
+                className="w-5 h-5">
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3"
                 />
               </svg>
-            </span>
+            </span> */}
           </div>
         </div>
       </section>
 
-      <section className="px-6 max-w-[80rem] w-full grid gap-6">
-        <Image
-          src="/tft-team-planner/in-game.png"
-          width={1920}
-          height={1080}
-          alt="Redesigned UI of the TFT Team Planner from client"
-        ></Image>
-        <Image
-          src="/tft-team-planner/feedback.png"
-          width={1920}
-          height={1080}
-          alt="Redesigned UI of the TFT Team Planner from client"
-        ></Image>
-      </section>
-
       <Spacer></Spacer>
 
-      <section className="px-6 max-w-[80rem] w-full grid items-center lg:grid-cols-2 gap-20 lg:gap-40">
-        <div>
-          <h2 className="callout text-blue-500 mb-4">Problem Statement</h2>
-          <p className="p-xl mb-6">
+      <section className="px-6 max-w w-full">
+        <h2 className="callout text-blue-500 mb-4">Problem Statement</h2>
+        <div className="grid lg:grid-cols-2 gap-6 lg:gap-20">
+          <p className="p-xl">
             The existing functionality of the Team Planner is helpful, although
             limited.
           </p>
@@ -127,45 +112,12 @@ export default function TFTTeamPlanner() {
             see more features augmented in the Team Planner to provide more
             information as game knowledge is crucial for success.
           </p>
-
-          <span className="text-neutral-400 hidden flex items-center gap-1.5 italic">
-            <span className="hidden lg:block">
-              Image (Right): Player perceptions of the existing Team Planner
-            </span>
-            <span className="lg:hidden">
-              Image (Below): Player perceptions of the existing Team Planner
-            </span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              className="w-5 h-5 lg:-rotate-90"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3"
-              />
-            </svg>
-          </span>
-        </div>
-        <div>
-          {" "}
-          <Image
-            className="hidden"
-            src="/tft-team-planner/problem-statement.png"
-            width={940}
-            height={1054}
-            alt="Redesigned UI of the TFT Team Planner from client"
-          ></Image>
         </div>
       </section>
 
       <Spacer></Spacer>
 
-      <section className="p-6 max-w-[80rem] w-full">
+      <section className="p-6 max-w w-full">
         <section className="text-center flex flex-col items-center p-6 lg:p-16 bg-zinc-100/60 rounded-2xl">
           <h2 className="callout text-blue-500 mb-4">Design Challenge</h2>
           <p className="text-4xl max-w-3xl tracking-tight text-balance">
@@ -183,15 +135,14 @@ export default function TFTTeamPlanner() {
           width={800}
           height={885}
           className="hidden xl:block xl:relative scale-50 xl:-translate-y-[60%] xl:float-right xl:translate-x-[75%]"
-          alt="Piximander"
-        ></Image>
+          alt="Piximander"></Image>
       </div>
 
       <div className="xl:hidden">
         <Spacer></Spacer>
       </div>
 
-      <section className="px-6 max-w-[80rem] xl:-mt-[calc(885px-5rem+1.5rem)] w-full">
+      <section className="px-6 max-w xl:-mt-[calc(885px-5rem+1.5rem)] w-full">
         <div className="grid w-full lg:grid-cols-2">
           <div>
             <h2 className="callout text-blue-500 mb-4">Research</h2>
@@ -208,31 +159,27 @@ export default function TFTTeamPlanner() {
           </div>
         </div>
       </section>
-      <section className="px-6 max-w-[80rem] w-full grid gap-6 -mt-6">
+      <section className="px-6 max-w w-full grid gap-6 -mt-6">
         <Image
           src="/tft-team-planner/requested-feature-1.png"
           width={1920}
           height={1290}
-          alt="Redesigned UI of the TFT Team Planner from client"
-        ></Image>
+          alt="Redesigned UI of the TFT Team Planner from client"></Image>
         <Image
           src="/tft-team-planner/requested-feature-2.png"
           width={1920}
           height={1003}
-          alt="Redesigned UI of the TFT Team Planner from client"
-        ></Image>
+          alt="Redesigned UI of the TFT Team Planner from client"></Image>
         <Image
           src="/tft-team-planner/requested-feature-3.png"
           width={1920}
           height={756}
-          alt="Redesigned UI of the TFT Team Planner from client"
-        ></Image>
+          alt="Redesigned UI of the TFT Team Planner from client"></Image>
         <Image
           src="/tft-team-planner/requested-feature-4.png"
           width={1920}
           height={756}
-          alt="Redesigned UI of the TFT Team Planner from client"
-        ></Image>
+          alt="Redesigned UI of the TFT Team Planner from client"></Image>
       </section>
       <Spacer></Spacer>
     </main>

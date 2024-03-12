@@ -10,7 +10,7 @@ export default function Cheekys() {
   return (
     <main className="max-w-[100vw] overflow-x-clip w-full flex flex-col items-center gap-4 lg:gap-8 pt-40 pb-32">
       <NavNotFixed></NavNotFixed>
-      <section className="px-6 max-w w-full lg:grid lg:grid-cols-3 lg:gap-40">
+      <section className="px-6 max-w w-full grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-40">
         <div className="col-span-2">
           <h1 className="large-title mb-6">Cheeky's Cannabis Merchants</h1>
           <p className="p-xl font-light mb-6">
@@ -21,7 +21,7 @@ export default function Cheekys() {
           </p>
         </div>
 
-        <div className="grid gap-6 mb-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-1 gap-6">
           <div>
             <h2 className="callout mb-1">Team</h2>
             <p>
@@ -51,8 +51,7 @@ export default function Cheekys() {
           src="/cheekys/desktop.png"
           width={3840}
           height={2160}
-          alt="Cheekys UI"
-        ></Image>
+          alt="Cheekys UI"></Image>
         <MediaTag media="IMAGE">Final solution in a device mockup</MediaTag>
       </section>
       <Spacer></Spacer>
@@ -76,8 +75,7 @@ export default function Cheekys() {
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                className="w-5 h-5"
-              >
+                className="w-5 h-5">
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -94,22 +92,19 @@ export default function Cheekys() {
           width={3200}
           height={1800}
           className="p-6"
-          alt="Cheekys UI"
-        ></Image>
+          alt="Cheekys UI"></Image>
 
         <div className="grid lg:grid-cols-2 p-6 pt-0 gap-6">
           <Image
             src="/cheekys/highlights.png"
             width={3200}
             height={1800}
-            alt="Cheekys UI"
-          ></Image>
+            alt="Cheekys UI"></Image>
           <Image
             src="/cheekys/design-system.png"
             width={3200}
             height={1800}
-            alt="Cheekys UI"
-          ></Image>
+            alt="Cheekys UI"></Image>
         </div>
 
         <Image
@@ -117,8 +112,7 @@ export default function Cheekys() {
           width={3200}
           height={1800}
           className="p-6 pt-0"
-          alt="Cheekys UI"
-        ></Image>
+          alt="Cheekys UI"></Image>
       </section>
       <Spacer></Spacer>
       <section className="px-6 max-w w-full">
@@ -131,8 +125,7 @@ export default function Cheekys() {
                 link="https://gero.nursing.ubc.ca/research/completed-projects/exploring-first-time-cannabis-use-among-community-dwelling-older-adults/"
                 text="study"
                 color="green"
-                size="large"
-              ></Link>{" "}
+                size="large"></Link>{" "}
               performed by the University of British Columbia, first-time
               cannabis consumers often feel lost navigating the use of cannabis
               without guidance from their doctors.
@@ -152,8 +145,7 @@ export default function Cheekys() {
                 link="https://www.globenewswire.com/fr/news-release/2019/12/12/1960115/0/en/Ontario-residents-are-not-happy-with-how-they-can-purchase-legal-cannabis.html"
                 text="survey"
                 color="green"
-                size="medium"
-              ></Link>{" "}
+                size="medium"></Link>{" "}
               studying responsible cannabis use, 67% of Ontarians believe that
               retailers must educate consumers on cannabis—both in-store and
               online. Thus, it’s imperative that the in-store shopping
@@ -200,8 +192,7 @@ export default function Cheekys() {
           loop
           muted
           autoPlay
-          className="mb-2"
-        ></video>
+          className="mb-2"></video>
         <MediaTag media="VIDEO">
           A user chats with a budtender, asking specific questions about
           cannabis usage
@@ -229,8 +220,7 @@ export default function Cheekys() {
           loop
           muted
           autoPlay
-          className="mb-2"
-        ></video>
+          className="mb-2"></video>
         <MediaTag media="VIDEO">
           A user books an in-store appointment with a budtender
         </MediaTag>
@@ -254,8 +244,7 @@ export default function Cheekys() {
           width={1280}
           height={832}
           alt="Cheekys UI"
-          className="mb-2"
-        ></Image>
+          className="mb-2"></Image>
         <MediaTag media="IMAGE">
           A user views the cannabis starter packs available on the home page
         </MediaTag>
@@ -288,8 +277,7 @@ export default function Cheekys() {
           src="/cheekys/video-4.mp4"
           loop
           muted
-          autoPlay
-        ></video>
+          autoPlay></video>
         <MediaTag media="VIDEO">
           A user explores the educational resource to learn more about cannabis
         </MediaTag>
@@ -321,8 +309,7 @@ export default function Cheekys() {
           loop
           muted
           autoPlay
-          className="mb-2"
-        ></video>
+          className="mb-2"></video>
 
         <MediaTag media="VIDEO">
           A user hovers over icons on a product page to learn more about its
@@ -351,14 +338,12 @@ export default function Cheekys() {
             src="/cheekys/iteration-1.png"
             width={1600}
             height={900}
-            alt="Cheekys UI"
-          ></Image>
+            alt="Cheekys UI"></Image>
           <Image
             src="/cheekys/iteration-1-2.png"
             width={1600}
             height={900}
-            alt="Cheekys UI"
-          ></Image>
+            alt="Cheekys UI"></Image>
         </div>
       </section>
       <HalfSpacer />
@@ -388,14 +373,12 @@ export default function Cheekys() {
             src="/cheekys/iteration-2.png"
             width={1600}
             height={900}
-            alt="Cheekys UI"
-          ></Image>
+            alt="Cheekys UI"></Image>
           <Image
             src="/cheekys/iteration-2-2.png"
             width={1600}
             height={900}
-            alt="Cheekys UI"
-          ></Image>
+            alt="Cheekys UI"></Image>
         </div>
       </section>
 
@@ -443,8 +426,7 @@ export default function Cheekys() {
           loop
           muted
           autoPlay
-          className="mb-2"
-        ></video>
+          className="mb-2"></video>
         <MediaTag media="VIDEO">
           A user views additional details about a product from the chatroom
         </MediaTag>
@@ -477,8 +459,7 @@ export default function Cheekys() {
           loop
           muted
           autoPlay
-          className="mb-2"
-        ></video>
+          className="mb-2"></video>
         <MediaTag media="VIDEO">
           A user adds multiple products recommended by the budtender to their
           cart
