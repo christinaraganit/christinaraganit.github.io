@@ -165,7 +165,7 @@ export default function Home() {
 
             <div className="hidden md:block w-[160rem] aspect-square left-1/2 translate-y-[5rem] group-hover:blur-[200px] -translate-x-1/2 blur-[100px] rounded-full relative bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] to-[#C6FFDD] via-[#FF5F6D] from-[#FFC371] opacity-20 group-hover:opacity-40 transition-all "></div>
 
-            <div className="w-full flex md:scale-[0.6] md:-translate-y-[168rem] lg:-translate-y-[171rem] 3xl:-translate-y-[168.5rem] md:-translate-x-2">
+            <div className="w-full flex md:scale-[0.6] md:-translate-y-[168rem] lg:-translate-y-[171rem] md:-translate-x-2">
               <Image
                 src="/chow-now/mobile-1.png"
                 width={589.5}
