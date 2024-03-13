@@ -125,6 +125,7 @@ export default function ChowNow() {
           </div>
         </div>
       </section>
+      
       <section className="max-w-full w-full">
         <div className="grid lg:grid-cols-2 p-6 pt-0 gap-6">
           <Image

@@ -19,6 +19,10 @@ export default function Cheekys() {
             to help support first-time cannabis consumers, providing them with
             the knowledge they need to comfortably make a purchase.
           </p>
+          <p className="mb-6">
+            This case study is not affiliated with Cheeky's Cannabis Merchants
+            as a client and this project was performed for educational purposes.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-1 gap-6">
