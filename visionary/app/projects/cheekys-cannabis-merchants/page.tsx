@@ -14,10 +14,10 @@ export default function Cheekys() {
         <div className="col-span-2">
           <h1 className="large-title mb-6">Cheeky's Cannabis Merchants</h1>
           <p className="p-xl font-light mb-6">
-            In this 3-week academic team project, I worked alongside a team of 5
-            to digitize the in-store experience of Cheeky's Cannabis Merchants
-            to help support first-time cannabis consumers, providing them with
-            the knowledge they need to comfortably make a purchase.
+            In this 3-week academic team project, I worked in a team of 5 to
+            digitize the in-store experience of Cheeky's Cannabis Merchants to
+            help support first-time cannabis consumers, providing them with the
+            knowledge they need to comfortably make a purchase.
           </p>
           <p className="mb-6">
             This case study is not affiliated with Cheeky's Cannabis Merchants

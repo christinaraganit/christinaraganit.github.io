@@ -102,7 +102,20 @@ export default function DutchDesignWeek() {
         </div>
       </section>
 
-      {/* HIGHLIGHTS HERE */}
+      <section className="mt-6 gap-6 grid px-6 w-full">
+        <div className="lg:grid-cols-2 grid gap-6">
+          <Image
+            src="/ddw/posters.png"
+            width={3200}
+            height={1800}
+            alt="Posters created for Dutch Design Week"></Image>
+          <Image
+            src="/ddw/asset-4.png"
+            width={3200}
+            height={1800}
+            alt="Asset created for Dutch Design Week"></Image>
+        </div>
+      </section>
 
       <Spacer></Spacer>
 
@@ -157,7 +170,9 @@ export default function DutchDesignWeek() {
       <Spacer></Spacer>
 
       <section className="px-6 max-w w-full ">
-        <h2 className="callout text-fuchsia-600 mb-4">Design Process</h2>
+        <h2 className="callout text-fuchsia-600 mb-4">
+          Design Process — Exploring Vignelli's Works
+        </h2>
         <div className="grid gap-6 lg:gap-20 lg:grid-cols-2">
           <div>
             <p className="p-xl">
@@ -185,19 +200,34 @@ export default function DutchDesignWeek() {
 
       <section className="px-6 max-w w-full flex flex-col gap-2">
         <Image
+          src="/ddw/vignelli-qualities-annotated.png"
+          width={3200}
+          height={1800}
+          alt="Vignelli qualities annotated"></Image>
+        <MediaTag media="IMAGE">
+          An exploration of Vignelli's design works exported from my digital
+          workspace, annotated with my notes.
+        </MediaTag>
+      </section>
+
+      <section className="px-6 max-w w-full flex flex-col gap-2">
+        <Image
           src="/ddw/vignelli-qualities.png"
           width={3200}
           height={1800}
           alt="Vignelli qualities"></Image>
         <MediaTag media="IMAGE">
-          Principles we surfaced from Vignelli's work and sample work by
-          Vignelli himself which embody these qualities
+          Qualities we surfaced from Vignelli's work and sample work by Vignelli
+          himself which embody these qualities.
         </MediaTag>
       </section>
 
       <HalfSpacer></HalfSpacer>
 
       <section className="px-6 max-w w-full ">
+        <h2 className="callout text-fuchsia-600 mb-4">
+          Design Process — Studying Ellen Lupton
+        </h2>
         <div className="grid gap-6 lg:gap-20 lg:grid-cols-2">
           <div>
             <p className="p-xl">
@@ -220,14 +250,61 @@ export default function DutchDesignWeek() {
         </div>
       </section>
 
+      <section className="px-6 max-w w-full flex flex-col gap-2">
+        <Image
+          src="/ddw/lupton-principles.png"
+          width={3200}
+          height={1800}
+          alt="Vignelli qualities annotated"></Image>
+        <MediaTag media="IMAGE">
+          Principles we surfaced from Ellen Lupton's{" "}
+          <i>Graphic Design: The New Basics</i> and sample graphic designs which
+          embody these principles.
+        </MediaTag>
+      </section>
+
       <HalfSpacer></HalfSpacer>
 
-      <section className="px-6 max-w w-full grid gap-6 lg:gap-20 lg:grid-cols-2">
-        <p className="p-xl">
-          But something wasn’t quite working in our early iterations, and I
-          refused to tunnel vision.
-        </p>
+      <section className="w-full max-w px-6 grid lg:grid-cols-2 gap-6 lg:gap-20">
         <div>
+          {" "}
+          <p className="p-lg mb-4">
+            We ideated on visual design directions by creating concept posters
+            of various Dutch Design Week exhibits, some of which were the
+            following…
+          </p>
+          <p className="text-sm line-through">
+            And thank God for iterations, because these look awful.
+          </p>
+        </div>
+      </section>
+
+      <section className="px-6 max-w w-full flex flex-col gap-2">
+        <Image
+          src="/ddw/iterations-1.png"
+          width={3200}
+          height={1800}
+          alt="Vignelli qualities"></Image>
+        <MediaTag media="IMAGE">
+          The first iterations of posters we created, combining visual qualities
+          surfaced from Vignelli's work and principles we learned from Lupton's
+          book.
+        </MediaTag>
+      </section>
+
+      <HalfSpacer></HalfSpacer>
+
+      <section className="px-6 max-w w-full">
+        <h2 className="callout text-fuchsia-600 mb-4">
+          Reflecting on Early Design Process
+        </h2>
+        <div className="grid gap-6 lg:gap-20 lg:grid-cols-2">
+          <p className="p-xl mb-6">
+            Something was obviously not working in our early iterations, and I
+            refused to tunnel vision.
+          </p>
+        </div>
+        <div className="grid gap-6 lg:gap-20 lg:grid-cols-2">
           <p className="mb-6">
             The idea was to combine the principles that we studied from
             Vignelli’s designs and Lupton’s book to create something new, but
@@ -245,22 +322,49 @@ export default function DutchDesignWeek() {
 
       <HalfSpacer></HalfSpacer>
 
-      <section className="px-6 max-w w-full grid gap-6 lg:gap-20 lg:grid-cols-2">
-        <div>
-          <p className="mb-6">
+      <section className="px-6 max-w w-full">
+        <h2 className="callout text-fuchsia-600 mb-4">
+          Design Process — Studying Dutch Design
+        </h2>
+        <div className="grid gap-6 lg:gap-20 lg:grid-cols-2">
+          <p>
             I put the project brief aside for a moment, wondering how I could
             craft a visually compelling direction for Dutch Design Week. I
             gathered over two hundred posters and graphics created by Dutch
             designers and studied their qualities.
           </p>
+          <div>
+            <p className="p-xl">
+              This was game-changing. By drawing inspiration from Dutch design
+              precedents, our visual design direction finally started to take
+              shape.
+            </p>
+          </div>
         </div>
-        <p className="p-xl">
-          This was game-changing. By drawing inspiration from Dutch design
-          precedents, our visual design direction finally started to take shape.
-        </p>
       </section>
 
       <Spacer></Spacer>
+
+      <section className="px-6 max-w w-full">
+        <h2 className="callout text-fuchsia-600 mb-4">
+          Developing the Art Direction
+        </h2>
+        <div className="grid gap-6 lg:gap-20 lg:grid-cols-2">
+          <p className="p-xl">
+            Iteration after endless iteration, we began to converge and elevate
+            the visual design direction...
+          </p>
+          <div>
+            <p className="">
+              This direction was inspired by the modular typography, vibrant
+              colors, and strict grid structure employed in designs created by
+              Dutch designers such as Wim Crouwel, Rudy Vanderlans, and
+              Experimental Jetset while embracing the principles we observed
+              from Vignelli’s works and learned from Lupton’s teachings.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
