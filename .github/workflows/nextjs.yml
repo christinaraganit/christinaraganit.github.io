@@ -70,7 +70,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: ./visionary/.next
+          path: ../../visionary/.next
 
   deploy:
     environment:
