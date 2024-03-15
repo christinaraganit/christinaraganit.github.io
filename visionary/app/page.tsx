@@ -282,7 +282,7 @@ export default function Home() {
             </Review>
             <Review
               name="Jason Lee"
-              imgLink="./jason-lee.jpg"
+              imgLink="/jason-lee.jpg"
               title="Team Lead at Felix Payment Systems">
               <span>
                 Christina always brings a new perspective to the product team
