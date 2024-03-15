@@ -43,10 +43,10 @@ jobs:
         with:
           node-version: "20"
 
-      # - name: Setup Pages
-      #   uses: actions/configure-pages@v3
-      #   with:
-      #     static_site_generator: next
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+        with:
+          static_site_generator: next
 
       - name: Restore cache
         uses: actions/cache@v4
@@ -70,7 +70,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: visionary/out
 
   deploy:
     environment:
