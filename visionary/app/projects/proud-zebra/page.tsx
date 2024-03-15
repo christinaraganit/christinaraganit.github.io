@@ -100,7 +100,7 @@ export default function ProudZebra() {
 
       <div className="mt-6 px-6">
         <section className="grid lg:grid-cols-3 gap-6">
-          <div className="w-full col-span-2">
+          <div className="w-full col-span-3 lg:col-span-2">
             <section className="w-full bg-[#f9ceff] relative aspect-video">
               <Image
                 src="/proud-zebra/macbook-nav-only.png"
