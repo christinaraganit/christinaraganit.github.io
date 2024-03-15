@@ -9,7 +9,7 @@ import QuarterSpacer from "@/components/quarter-spacer";
 
 export default function DutchDesignWeek() {
   return (
-    <main className="max-w-[100vw] overflow-x-clip w-full flex flex-col items-center gap-4 lg:gap-8 pt-40 pb-32">
+    <main className="max-w-[100vw] w-full flex flex-col items-center gap-4 lg:gap-8 pt-40 pb-32">
       <NavNotFixed></NavNotFixed>
       <section className="px-6 max-w w-full grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-40">
         <div className="col-span-2">
@@ -51,7 +51,7 @@ export default function DutchDesignWeek() {
           </div>
         </div>
       </section>
-      <div className="flex flex-col gap-2 px-6 max-w w-full">
+      <div className="flex mt-6 flex-col gap-2 px-6 max-w w-full">
         <div className="max-w w-full">
           <section className="w-full bg-[#C1F42A] relative aspect-video">
             <Image
@@ -79,6 +79,7 @@ export default function DutchDesignWeek() {
         </MediaTag>
       </div>
       <Spacer></Spacer>
+
       <section className="px-6 max-w w-full">
         <h2 className="text-3xl tracking-tight mb-4">My Role</h2>
         <div className="grid lg:grid-cols-2 lg:gap-20">
@@ -606,7 +607,7 @@ export default function DutchDesignWeek() {
       <HalfSpacer></HalfSpacer>
 
       <section className="p-6 lg:py-0 max-w w-full">
-        <section className="text-center flex flex-col items-center p-6 py-12 lg:p-16 bg-fuchsia-100/50">
+        <section className="text-center flex flex-col items-center p-6 py-12 lg:p-16 bg-fuchsia-200/30">
           <h2 className="callout text-fuchsia-500 mb-4">Design Challenge</h2>
           <p className="text-xl lg:text-4xl max-w-3xl tracking-tight text-balance">
             How might we help visitors schedule their experience at Dutch Design

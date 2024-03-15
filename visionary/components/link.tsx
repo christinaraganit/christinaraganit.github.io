@@ -24,6 +24,9 @@ export default function Link(props: Props) {
     case "fuchsia":
       classes = "hover:text-fuchsia-500 focus:text-fuchsia-500";
       break;
+    case "purple":
+      classes = "hover:text-purple-500 focus:text-purple-500";
+      break;
   }
 
   if (props.size == "medium") {
