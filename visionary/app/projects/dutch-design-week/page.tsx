@@ -61,11 +61,11 @@ export default function DutchDesignWeek() {
               alt="Macbook mockup"
               className="absolute z-10 pointer-events-none"
             ></Image>
-            <div className="w-[67.55%] relative top-[12.3444444%] left-[16.25%] h-[75.3%] flex items-center bg-black">
+            <div className="w-[67.7%] relative top-[12.3444444%] left-[16.25%] h-[75.3%] flex items-center bg-black">
               <video
                 width={1600}
                 height={900}
-                src="/ddw/exhibition.mp4"
+                src="/ddw/exhibit.mp4"
                 loop
                 muted
                 autoPlay
@@ -130,7 +130,7 @@ export default function DutchDesignWeek() {
             alt="Posters created for Dutch Design Week"
           ></Image>
           <div className="max-w w-full">
-            <section className="w-full bg-[#0A0A0A] relative aspect-video">
+            <section className="w-full bg-[#FFCE2B] relative aspect-video">
               <Image
                 src="/ddw/macbook.png"
                 width={3200}
@@ -138,7 +138,7 @@ export default function DutchDesignWeek() {
                 alt="Macbook mockup"
                 className="absolute z-10 pointer-events-none"
               ></Image>
-              <div className="w-[67.55%] relative top-[12.3444444%] left-[16.25%] h-[75.3%] overflow-y-scroll custom-scrollbar scroll-desktop">
+              <div className="w-[67.6%] relative top-[12.3444444%] left-[16.25%] h-[75.3%] overflow-y-scroll custom-scrollbar scroll-desktop">
                 <Image
                   src="/ddw/landing-page.png"
                   width={2160}
@@ -151,7 +151,28 @@ export default function DutchDesignWeek() {
           </div>
 
           <Image
-            src="/ddw/asset-4.png"
+            src="/ddw/highlight-3.png"
+            width={3200}
+            height={1800}
+            alt="Asset created for Dutch Design Week"
+          ></Image>
+
+          <Image
+            src="/ddw/colors.png"
+            width={3200}
+            height={1800}
+            alt="Asset created for Dutch Design Week"
+          ></Image>
+
+          <Image
+            src="/ddw/typography.png"
+            width={3200}
+            height={1800}
+            alt="Asset created for Dutch Design Week"
+          ></Image>
+
+          <Image
+            src="/ddw/highlight-2.png"
             width={3200}
             height={1800}
             alt="Asset created for Dutch Design Week"
@@ -598,124 +619,144 @@ export default function DutchDesignWeek() {
 
       <HalfSpacer></HalfSpacer>
 
-      <section className="w-full px-6 max-w">
-        <h2 className="callout text-fuchsia-500 mb-4">Landing page</h2>
-        <p className="max-w-xl">
-          The landing page gives users an overview of all resources the
-          microsite provides, as well as a dropdown menu for users who want to
-          directly navigate to specific pages. The landing page serves as a
-          learning tool that directs the user to the itinerary and ticket
-          purchasing resources.
-        </p>
-      </section>
+      <div>
+        <section className="w-full px-6 max-w">
+          <h2 className="callout text-fuchsia-500 mb-4">Landing page</h2>
+          <p className="max-w-xl">
+            The landing page gives users an overview of all resources the
+            microsite provides, as well as a dropdown menu for users who want to
+            directly navigate to specific pages. The landing page serves as a
+            learning tool that directs the user to the itinerary and ticket
+            purchasing resources.
+          </p>
+        </section>
 
-      <div className="flex flex-col gap-2 px-6 max-w w-full">
-        <div className="max-w w-full">
-          <section className="w-full bg-[#FAFAFA] relative aspect-video">
-            <Image
-              src="/ddw/macbook.png"
-              width={3200}
-              height={1800}
-              alt="Macbook mockup"
-              className="absolute z-10 pointer-events-none"
-            ></Image>
-            <div className="w-[67.55%] relative top-[12.3444444%] left-[16.25%] h-[75.3%] overflow-y-scroll custom-scrollbar scroll-desktop">
+        <div className="flex flex-col gap-2 px-6 max-w w-full">
+          <div className="max-w w-full">
+            <section className="w-full bg-[#FAFAFA] relative aspect-video">
               <Image
-                src="/ddw/landing-page.png"
-                width={2160}
-                height={8489}
-                alt="Landing page"
-                className="object-cover object-top"
+                src="/ddw/macbook.png"
+                width={3200}
+                height={1800}
+                alt="Macbook mockup"
+                className="absolute z-10 pointer-events-none"
               ></Image>
-            </div>
-          </section>
+              <div className="w-[67.7%] relative top-[12.3444444%] left-[16.25%] h-[75.3%] overflow-y-scroll custom-scrollbar scroll-desktop">
+                <Image
+                  src="/ddw/landing-page.png"
+                  width={2160}
+                  height={8489}
+                  alt="Landing page"
+                  className="object-cover object-top"
+                ></Image>
+              </div>
+            </section>
+          </div>
+          <MediaTag media="SCROLLABLE">
+            A scrollable view of the microsite's landing page.
+          </MediaTag>
         </div>
-        <MediaTag media="SCROLLABLE">
-          A scrollable view of the microsite's landing page.
-        </MediaTag>
       </div>
 
       <HalfSpacer></HalfSpacer>
 
-      <section className="w-full px-6 max-w">
-        <h2 className="callout text-fuchsia-500 mb-4">
-          Planning with the itinerary
-        </h2>
-        <p className="max-w-xl">
-          The itinerary page is a planning tool that provides information about
-          event dates and times, transportation methods, and other resources all
-          on one platform to help users customize an experience tailored to
-          their interests and needs.
-        </p>
-      </section>
+      <div>
+        <section className="w-full px-6 max-w">
+          <h2 className="callout text-fuchsia-500 mb-4">
+            Planning with the itinerary
+          </h2>
+          <p className="max-w-xl">
+            The itinerary page is a planning tool that provides information
+            about event dates and times, transportation methods, and other
+            resources all on one platform to help users customize an experience
+            tailored to their interests and needs.
+          </p>
+        </section>
 
-      <section className="w-full flex flex-col gap-2 px-6 max-w">
-        <Image
-          alt="Itinerary"
-          width={3200}
-          height={1800}
-          src="/ddw/itinerary.png"
-        ></Image>
-        <MediaTag media="IMAGE">
-          A user's itinerary, presenting all the events that they would like to
-          attend.
-        </MediaTag>
-      </section>
-
-      <HalfSpacer></HalfSpacer>
-
-      <section className="w-full px-6 max-w">
-        <h2 className="callout text-fuchsia-500 mb-4">
-          Purchasing event tickets
-        </h2>
-        <p className="max-w-xl">
-          The ticket purchasing page features a 4 step process to help users
-          reserve their spots at Dutch Design Week. Together with the itinerary
-          tool, the visitor’s pre-event experience is streamlined.
-        </p>
-      </section>
+        <section className="w-full flex flex-col gap-2 px-6 max-w">
+          <Image
+            alt="Itinerary"
+            width={3200}
+            height={1800}
+            src="/ddw/itinerary.png"
+          ></Image>
+          <MediaTag media="IMAGE">
+            A user's itinerary, presenting all the events that they would like
+            to attend.
+          </MediaTag>
+        </section>
+      </div>
 
       <HalfSpacer></HalfSpacer>
 
-      <section className="w-full px-6 max-w">
-        <h2 className="callout text-fuchsia-500 mb-4">
-          Highlighting the Rootfull exhibition
-        </h2>
-        <p className="max-w-xl">
-          This page features extensive information about the exhibition
-          Rootfull. This selective micro-view of a particular exhibition
-          illustrates the kind of experience visitors get at DDW, and provides
-          the user with a better understanding of how they want to build their
-          schedule for their visit to the festival.
-        </p>
-      </section>
+      <div className="w-full px-6 max-w">
+        <section className="">
+          <h2 className="callout text-fuchsia-500 mb-4">
+            Purchasing event tickets
+          </h2>
+          <p className="max-w-xl">
+            The ticket purchasing page features a 4 step process to help users
+            reserve their spots at Dutch Design Week. Together with the
+            itinerary tool, the visitor’s pre-event experience is streamlined.
+          </p>
+        </section>
 
-      <div className="flex flex-col gap-2 px-6 max-w w-full">
-        <div className="max-w w-full">
-          <section className="w-full bg-[#FAFAFA] relative aspect-video">
-            <Image
-              src="/ddw/macbook.png"
-              width={3200}
-              height={1800}
-              alt="Macbook mockup"
-              className="absolute z-10 pointer-events-none"
-            ></Image>
-            <div className="w-[67.55%] relative top-[12.3444444%] left-[16.25%] h-[75.3%] flex items-center bg-black">
-              <video
-                width={1600}
-                height={900}
-                src="/ddw/exhibition.mp4"
-                loop
-                muted
-                autoPlay
-              ></video>
-            </div>
-          </section>
+        <section className="w-full flex flex-col gap-2 max-w">
+          <Image
+            alt="Itinerary"
+            width={3200}
+            height={1800}
+            src="/ddw/select-ticket.png"
+          ></Image>
+          <MediaTag media="IMAGE">
+            A user at the beginning of the ticket purchasing flow.
+          </MediaTag>
+        </section>
+      </div>
+
+      <HalfSpacer></HalfSpacer>
+
+      <div>
+        <section className="w-full px-6 max-w">
+          <h2 className="callout text-fuchsia-500 mb-4">
+            Highlighting the Rootfull exhibition
+          </h2>
+          <p className="max-w-xl">
+            This page features extensive information about the exhibition
+            Rootfull. This selective micro-view of a particular exhibition
+            illustrates the kind of experience visitors get at DDW, and provides
+            the user with a better understanding of how they want to build their
+            schedule for their visit to the festival.
+          </p>
+        </section>
+
+        <div className="flex flex-col gap-2 px-6 max-w w-full">
+          <div className="max-w w-full">
+            <section className="w-full bg-[#FAFAFA] relative aspect-video">
+              <Image
+                src="/ddw/macbook.png"
+                width={3200}
+                height={1800}
+                alt="Macbook mockup"
+                className="absolute z-10 pointer-events-none"
+              ></Image>
+              <div className="w-[67.7%] relative top-[12.3444444%] left-[16.25%] h-[75.3%] flex items-center bg-black">
+                <video
+                  width={1600}
+                  height={900}
+                  src="/ddw/exhibit.mp4"
+                  loop
+                  muted
+                  autoPlay
+                ></video>
+              </div>
+            </section>
+          </div>
+          <MediaTag media="VIDEO">
+            What the visitor sees when learning more about the exhibition{" "}
+            <i>Rootfull</i>.
+          </MediaTag>
         </div>
-        <MediaTag media="VIDEO">
-          What the visitor sees when learning more about the exhibition{" "}
-          <i>Rootfull</i>.
-        </MediaTag>
       </div>
 
       <Spacer></Spacer>
