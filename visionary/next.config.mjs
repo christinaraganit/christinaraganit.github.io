@@ -2,9 +2,9 @@
 const nextConfig = {
   output: "export",
   images: {
-    path: "/",
+    path: "",
   },
-  basePath: "/",
+  basePath: "",
 };
 
 export default nextConfig;
