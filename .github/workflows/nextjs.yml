@@ -67,10 +67,10 @@ jobs:
           cd visionary
           ${{ env.runner }} next build
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ../visionary/out
+      # - name: Upload artifact
+      #   uses: actions/upload-pages-artifact@v3
+      #   with:
+      #     path: /out
 
   deploy:
     environment:
