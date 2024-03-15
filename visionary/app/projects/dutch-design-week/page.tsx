@@ -619,7 +619,7 @@ export default function DutchDesignWeek() {
 
       <HalfSpacer></HalfSpacer>
 
-      <div>
+      <div id="landing-page" className="scroll-mt-20">
         <section className="w-full px-6 max-w">
           <h2 className="callout text-fuchsia-500 mb-4">Landing page</h2>
           <p className="max-w-xl">
