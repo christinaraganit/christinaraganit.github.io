@@ -59,8 +59,7 @@ export default function DutchDesignWeek() {
               width={3200}
               height={1800}
               alt="Macbook mockup"
-              className="absolute z-10 pointer-events-none"
-            ></Image>
+              className="absolute z-10 pointer-events-none"></Image>
             <div className="w-[67.7%] relative top-[12.3444444%] left-[16.25%] h-[75.3%] flex items-center bg-black">
               <video
                 width={1600}
@@ -68,8 +67,7 @@ export default function DutchDesignWeek() {
                 src="/ddw/exhibit.mp4"
                 loop
                 muted
-                autoPlay
-              ></video>
+                autoPlay></video>
             </div>
           </section>
         </div>
@@ -99,8 +97,7 @@ export default function DutchDesignWeek() {
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                className="w-5 h-5"
-              >
+                className="w-5 h-5">
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -128,8 +125,7 @@ export default function DutchDesignWeek() {
             src="/ddw/posters.png"
             width={3200}
             height={1800}
-            alt="Posters created for Dutch Design Week"
-          ></Image>
+            alt="Posters created for Dutch Design Week"></Image>
           <div className="max-w w-full">
             <section className="w-full bg-[#FFCE2B] relative aspect-video">
               <Image
@@ -137,16 +133,14 @@ export default function DutchDesignWeek() {
                 width={3200}
                 height={1800}
                 alt="Macbook mockup"
-                className="absolute z-10 pointer-events-none"
-              ></Image>
+                className="absolute z-10 pointer-events-none"></Image>
               <div className="w-[67.6%] relative top-[12.3444444%] left-[16.25%] h-[75.3%] overflow-y-scroll custom-scrollbar scroll-desktop">
                 <Image
                   src="/ddw/landing-page.png"
                   width={2160}
                   height={8489}
                   alt="Landing page"
-                  className="object-cover object-top"
-                ></Image>
+                  className="object-cover object-top"></Image>
               </div>
             </section>
           </div>
@@ -155,29 +149,25 @@ export default function DutchDesignWeek() {
             src="/ddw/highlight-3.png"
             width={3200}
             height={1800}
-            alt="Asset created for Dutch Design Week"
-          ></Image>
+            alt="Asset created for Dutch Design Week"></Image>
 
           <Image
             src="/ddw/colors.png"
             width={3200}
             height={1800}
-            alt="Asset created for Dutch Design Week"
-          ></Image>
+            alt="Asset created for Dutch Design Week"></Image>
 
           <Image
             src="/ddw/typography.png"
             width={3200}
             height={1800}
-            alt="Asset created for Dutch Design Week"
-          ></Image>
+            alt="Asset created for Dutch Design Week"></Image>
 
           <Image
             src="/ddw/highlight-2.png"
             width={3200}
             height={1800}
-            alt="Asset created for Dutch Design Week"
-          ></Image>
+            alt="Asset created for Dutch Design Week"></Image>
         </div>
       </section>
 
@@ -208,22 +198,19 @@ export default function DutchDesignWeek() {
           src="/ddw/whats-ddw.jpg"
           width={2304}
           height={1645}
-          alt="Dutch Design Week 2021"
-        ></Image>
+          alt="Dutch Design Week 2021"></Image>
         <MediaTag media="IMAGE">
           The 2021 Graduation Show Exhibit of Dutch Design Week, as highlighted
           in{" "}
           <a
             href="https://www.elledecor.com/it/best-of/a38055753/dutch-design-week-eindhoven-2021-netherlands/"
-            className="inline flex-wrap group/link underline-offset-4 hover:text-fuchsia-500 focus:text-fuchsia-500"
-          >
+            className="inline flex-wrap group/link underline-offset-4 hover:text-fuchsia-500 focus:text-fuchsia-500">
             <span>this article</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="currentColor"
-              className="inline w-4 h-4 -translate-y-1.5 group-hover/link:-translate-y-2 group-hover/link:translate-x-0.5 transition-transform"
-            >
+              className="inline w-4 h-4 -translate-y-1.5 group-hover/link:-translate-y-2 group-hover/link:translate-x-0.5 transition-transform">
               <path
                 fill-rule="evenodd"
                 d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
@@ -269,8 +256,7 @@ export default function DutchDesignWeek() {
           src="/ddw/vignelli-qualities-annotated.png"
           width={3200}
           height={1800}
-          alt="Vignelli qualities annotated"
-        ></Image>
+          alt="Vignelli qualities annotated"></Image>
         <MediaTag media="IMAGE">
           An exploration of Vignelli's design works exported from my digital
           workspace, annotated with my notes.
@@ -282,8 +268,7 @@ export default function DutchDesignWeek() {
           src="/ddw/vignelli-qualities.png"
           width={3200}
           height={1800}
-          alt="Vignelli qualities"
-        ></Image>
+          alt="Vignelli qualities"></Image>
         <MediaTag media="IMAGE">
           Qualities we surfaced from Vignelli's work and sample work by Vignelli
           himself which embody these qualities.
@@ -323,8 +308,7 @@ export default function DutchDesignWeek() {
           src="/ddw/lupton-principles.png"
           width={3200}
           height={1800}
-          alt="Vignelli qualities annotated"
-        ></Image>
+          alt="Vignelli qualities annotated"></Image>
         <MediaTag media="IMAGE">
           Principles we surfaced from Ellen Lupton's{" "}
           <i>Graphic Design: The New Basics</i> and sample graphic designs which
@@ -353,8 +337,7 @@ export default function DutchDesignWeek() {
           src="/ddw/iterations-1.png"
           width={3200}
           height={1800}
-          alt="Vignelli qualities"
-        ></Image>
+          alt="Vignelli qualities"></Image>
         <MediaTag media="IMAGE">
           The first iterations of posters we created, combining visual qualities
           surfaced from Vignelli's work and principles we learned from Lupton's
@@ -417,8 +400,7 @@ export default function DutchDesignWeek() {
           src="/ddw/dutch-designs.png"
           width={3200}
           height={1800}
-          alt="Dutch Designs"
-        ></Image>
+          alt="Dutch Designs"></Image>
         <MediaTag media="IMAGE">
           Graphic works created by Dutch designers like Irma Boom, Experimental
           Jetset, Gerrit Noordzij, Rudy Vanderlans, Piet Zwart, Wim Crouwel, and
@@ -455,8 +437,7 @@ export default function DutchDesignWeek() {
           src="/ddw/final-posters.png"
           width={6019}
           height={1800}
-          alt="Final iterations"
-        ></Image>
+          alt="Final iterations"></Image>
         <MediaTag media="IMAGE">
           The final iterations of posters we created which led to the refinement
           of our art direction.
@@ -481,8 +462,7 @@ export default function DutchDesignWeek() {
             src="/ddw/colors.png"
             width={3200}
             height={1800}
-            alt="Colors used in visual design direction"
-          ></Image>
+            alt="Colors used in visual design direction"></Image>
           <MediaTag media="IMAGE">
             The various colors employed in our visual design direction.
           </MediaTag>
@@ -502,8 +482,7 @@ export default function DutchDesignWeek() {
                 text="Shriftovik Foundry"
                 link="https://www.behance.net/gallery/115425685/SK-Quadratica-Free-Font"
                 color="fuchsia"
-                size="medium"
-              ></Link>{" "}
+                size="medium"></Link>{" "}
               enforces the modular grid structure of our art direction.
             </p>
           </div>
@@ -516,8 +495,7 @@ export default function DutchDesignWeek() {
                 text="Daria Fisko"
                 link="https://www.behance.net/gallery/162660829/Damn-Free-Sans-Serif-Font"
                 color="fuchsia"
-                size="medium"
-              ></Link>
+                size="medium"></Link>
               , the typeface DAMN is a geometric sans-serif with elongated ovals
               present in its letterform, creating visual contrast when used with
               SK Quadratica.
@@ -540,8 +518,7 @@ export default function DutchDesignWeek() {
           src="/ddw/typefaces.png"
           width={3200}
           height={1800}
-          alt="Final iterations"
-        ></Image>
+          alt="Final iterations"></Image>
         <MediaTag media="IMAGE">
           The typefaces used in our art direction for our final project—SK
           Quadratica, DAMN, and Futura.
@@ -565,8 +542,7 @@ export default function DutchDesignWeek() {
             src="/ddw/image-treatment.png"
             width={3200}
             height={1800}
-            alt="Visualization of the image treatment employed throughout our art direction"
-          ></Image>
+            alt="Visualization of the image treatment employed throughout our art direction"></Image>
           <MediaTag media="IMAGE">
             A visualization of the image treatment employed throughout our art
             direction. From left to right: an untouched image, the same image
@@ -620,7 +596,9 @@ export default function DutchDesignWeek() {
 
       <HalfSpacer></HalfSpacer>
 
-      <div id="landing-page" className="scroll-mt-20">
+      <div
+        id="landing-page"
+        className="scroll-mt-20">
         <section className="w-full px-6 max-w">
           <h2 className="callout text-fuchsia-500 mb-4">Landing page</h2>
           <p className="max-w-xl">
@@ -640,16 +618,14 @@ export default function DutchDesignWeek() {
                 width={3200}
                 height={1800}
                 alt="Macbook mockup"
-                className="absolute z-10 pointer-events-none"
-              ></Image>
+                className="absolute z-10 pointer-events-none"></Image>
               <div className="w-[67.7%] relative top-[12.3444444%] left-[16.25%] h-[75.3%] overflow-y-scroll custom-scrollbar scroll-desktop">
                 <Image
                   src="/ddw/landing-page.png"
                   width={2160}
                   height={8489}
                   alt="Landing page"
-                  className="object-cover object-top"
-                ></Image>
+                  className="object-cover object-top"></Image>
               </div>
             </section>
           </div>
@@ -679,8 +655,7 @@ export default function DutchDesignWeek() {
             alt="Itinerary"
             width={3200}
             height={1800}
-            src="/ddw/itinerary.png"
-          ></Image>
+            src="/ddw/itinerary.png"></Image>
           <MediaTag media="IMAGE">
             A user's itinerary, presenting all the events that they would like
             to attend.
@@ -707,8 +682,7 @@ export default function DutchDesignWeek() {
             alt="Itinerary"
             width={3200}
             height={1800}
-            src="/ddw/select-ticket.png"
-          ></Image>
+            src="/ddw/select-ticket.png"></Image>
           <MediaTag media="IMAGE">
             A user at the beginning of the ticket purchasing flow.
           </MediaTag>
@@ -739,8 +713,7 @@ export default function DutchDesignWeek() {
                 width={3200}
                 height={1800}
                 alt="Macbook mockup"
-                className="absolute z-10 pointer-events-none"
-              ></Image>
+                className="absolute z-10 pointer-events-none"></Image>
               <div className="w-[67.7%] relative top-[12.3444444%] left-[16.25%] h-[75.3%] flex items-center bg-black">
                 <video
                   width={1600}
@@ -748,8 +721,7 @@ export default function DutchDesignWeek() {
                   src="/ddw/exhibit.mp4"
                   loop
                   muted
-                  autoPlay
-                ></video>
+                  autoPlay></video>
               </div>
             </section>
           </div>

@@ -17,8 +17,7 @@ export default function Review(props: Props) {
           width={100}
           height={100}
           className="rounded-full w-10 h-10 aspect-square"
-          alt={props.name}
-        ></Image>
+          alt={props.name}></Image>
         <div>
           <p className="text-sm font-semibold text-zinc-700 mb-0.5">
             {props.name}

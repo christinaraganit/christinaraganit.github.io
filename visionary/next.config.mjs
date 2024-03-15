@@ -2,8 +2,7 @@
 const nextConfig = {
   output: "export",
   images: {
-    loader: "custom",
-    loaderFile: "./ImageLoader.js",
+    path: "https://christinaraganit.github.io/",
   },
 };
 

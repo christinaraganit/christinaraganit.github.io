@@ -11,11 +11,11 @@ export default function Home() {
       <Nav></Nav>
 
       <section className="px-6 max-w w-full flex items-center flex-col text-center">
-        <a
+        {/* <a
           href=""
           className="mb-4 text-xs leading-5 font-medium border border-blue-300/20 text-blue-600 bg-blue-300/10 hover:bg-blue-300/20 hover:border-blue-300/30 transition-all rounded-full py-1 px-3 gap-1 flex items-center w-fit">
           Seeking internships for Summer 2024
-        </a>
+        </a> */}
 
         <h1 className="large-title max-w-4xl mb-4">
           I'm Christina Raganit, a UI designer who writes code.
@@ -55,7 +55,7 @@ export default function Home() {
 
           <a
             href="/projects/dutch-design-week"
-            className="group bg-[#0A0A0A] px-6 py-8 lg:p-12 h-fit aspect-video rounded-3xl text-white overflow-hidden transition-all">
+            className="group bg-[#0A0A0A] px-6 py-8 lg:p-12 h-fit md:aspect-video rounded-3xl text-white overflow-hidden transition-all">
             <div className="w-full text-center flex flex-col items-center justify-center">
               <p className="callout text-[#FF2BDF] mb-4">
                 Visual Design and Branding
@@ -73,6 +73,7 @@ export default function Home() {
               src="/ddw/main.png"
               width={2400}
               height={1350}
+              priority
               className="rounded-lg lg:rounded-3xl md:-translate-y-[161.25rem] md:scale-[0.75] md:group-hover:scale-[0.8] transition-all"
               alt="Dutch Design Week Case Study"></Image>
           </a>
@@ -145,6 +146,8 @@ export default function Home() {
               width={2560}
               height={1628}
               className="rounded-lg lg:rounded-3xl md:-translate-y-[161.25rem] md:scale-[0.8] md:group-hover:scale-[0.85] transition-all"
+              blurDataURL="/proud-zebra/ui.png"
+              placeholder="blur"
               alt="Proud Zebra Case Study"></Image>
           </a>
 
@@ -169,6 +172,7 @@ export default function Home() {
               src="/cheekys/ui.png"
               width={5120}
               height={3328}
+              blurDataURL="/cheekys/ui.png"
               className="rounded-lg lg:rounded-3xl md:-translate-y-[161.25rem] md:scale-[0.8] md:group-hover:scale-[0.85] transition-all"
               alt="Cheekys Cannabis Merchants Case Study"></Image>
           </a>
@@ -241,12 +245,14 @@ export default function Home() {
                 src="/chow-now/mobile-1.png"
                 width={589.5}
                 height={1278}
+                blurDataURL="/chow-now/mobile-1.png"
                 className="md:mr-10 rounded-lg lg:rounded-3xl transition-all w-1/2 group-hover:-rotate-3 group-hover:scale-105"
                 alt="Chow Now Case Study"></Image>
               <Image
                 src="/chow-now/mobile-2.png"
                 width={589.5}
                 height={1278}
+                blurDataURL="/chow-now/mobile-2.png"
                 className="rounded-lg lg:rounded-3xl transition-all w-1/2 group-hover:rotate-3 group-hover:scale-105"
                 alt="Chow Now Case Study"></Image>
             </div>

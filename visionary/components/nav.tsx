@@ -94,14 +94,13 @@ export default function Nav() {
                   About
                 </a>
               </li>
-              {/* <li>
+              <li>
                 <a
                   className="relative block px-3 py-2 transition hover:text-blue-500"
-                  href="/projects"
-                >
-                  Projects
+                  href="/awards">
+                  Awards
                 </a>
-              </li> */}
+              </li>
 
               <li>
                 <a
