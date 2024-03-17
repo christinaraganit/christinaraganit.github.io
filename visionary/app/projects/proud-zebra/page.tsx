@@ -311,7 +311,7 @@ export default function ProudZebra() {
               height={1800}
               alt="Macbook mockup"
               className="absolute z-10 pointer-events-none"></Image>
-            <div className="w-[67.7%] relative translate-y-[32.315%] mx-auto h-[66.1111%]">
+            <div className="w-[69%] relative translate-y-[32.315%] mx-auto h-[66.1111%]">
               <video
                 width={1620}
                 height={892}
