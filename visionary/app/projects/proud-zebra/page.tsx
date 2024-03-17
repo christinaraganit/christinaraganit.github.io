@@ -99,8 +99,8 @@ export default function ProudZebra() {
       </section>
 
       <div className="mt-6 px-6">
-        <section className="grid lg:grid-cols-3 gap-6">
-          <div className="w-full col-span-3 lg:col-span-2">
+        <section className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <div className="col-span-3 lg:col-span-2">
             <section className="w-full bg-[#f9ceff] relative aspect-video">
               <Image
                 src="/proud-zebra/macbook-nav-only.png"
@@ -118,8 +118,8 @@ export default function ProudZebra() {
               </div>
             </section>
           </div>
-          <div className="hidden col-span-1 gap-6 lg:grid lg:grid-rows-2">
-            <div className="grid grid-cols-6">
+          <div className="w-full h-full grid grid-cols-3 col-span-3 lg:col-span-1 lg:grid-cols-2 lg:grid-rows-2 gap-6">
+            <div className="w-full col-span-1 lg:col-span-2 grid grid-cols-6">
               <div className="bg-[#FF4F14] h-full"></div>
               <div className="bg-[#FFF0E9] h-full"></div>
               <div className="bg-[#4747F3] h-full"></div>
@@ -127,24 +127,20 @@ export default function ProudZebra() {
               <div className="bg-[#01B99F] h-full"></div>
               <div className="bg-[#DAF85E] h-full"></div>
             </div>
-            <div className="grid grid-cols-2 gap-6">
-              <div>
-                <Image
-                  src="/proud-zebra/love.png"
-                  width={1620}
-                  height={1842}
-                  alt="Two people in love"
-                  className="h-full w-auto object-cover"></Image>
-              </div>
-              <div>
-                <Image
-                  src="/proud-zebra/product.png"
-                  width={1306}
-                  height={1306}
-                  alt="Pin from proud zebra"
-                  className="h-full w-auto object-cover"></Image>
-              </div>
-            </div>
+
+            <Image
+              src="/proud-zebra/love.png"
+              width={1620}
+              height={1842}
+              alt="Two people in love"
+              className="col-span-1 object-cover h-full"></Image>
+
+            <Image
+              src="/proud-zebra/product.png"
+              width={1306}
+              height={1306}
+              alt="Pin from proud zebra"
+              className="col-span-1 object-cover h-full"></Image>
           </div>
         </section>
         <section className="mt-6 flex flex-col lg:grid lg:grid-cols-3 gap-6">
