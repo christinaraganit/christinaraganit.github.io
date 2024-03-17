@@ -51,6 +51,7 @@ export default function DutchDesignWeek() {
           </div>
         </div>
       </section>
+
       <div className="flex mt-6 flex-col gap-2 px-6 max-w w-full">
         <div className="max-w w-full">
           <section className="w-full bg-[#C1F42A] relative aspect-video">
@@ -60,7 +61,7 @@ export default function DutchDesignWeek() {
               height={1800}
               alt="Macbook mockup"
               className="absolute z-10 pointer-events-none"></Image>
-            <div className="w-[67.7%] relative top-[12.3444444%] left-[16.25%] h-[75.3%] flex items-center bg-black">
+            <div className="w-[67.9%] relative translate-y-[16.45%] mx-auto h-[75.3%] flex items-center bg-black">
               <video
                 width={1600}
                 height={900}
@@ -134,7 +135,7 @@ export default function DutchDesignWeek() {
                 height={1800}
                 alt="Macbook mockup"
                 className="absolute z-10 pointer-events-none"></Image>
-              <div className="w-[67.6%] relative top-[12.3444444%] left-[16.25%] h-[75.3%] overflow-y-scroll custom-scrollbar scroll-desktop">
+              <div className="w-[67.9%] relative translate-y-[16.6%] mx-auto h-[75.3%] overflow-y-scroll custom-scrollbar scroll-desktop">
                 <Image
                   src="/ddw/landing-page.png"
                   width={2160}
@@ -619,7 +620,7 @@ export default function DutchDesignWeek() {
                 height={1800}
                 alt="Macbook mockup"
                 className="absolute z-10 pointer-events-none"></Image>
-              <div className="w-[67.7%] relative top-[12.3444444%] left-[16.25%] h-[75.3%] overflow-y-scroll custom-scrollbar scroll-desktop">
+              <div className="w-[67.9%] relative translate-y-[16.55%] mx-auto h-[75.3%] overflow-y-scroll custom-scrollbar scroll-desktop">
                 <Image
                   src="/ddw/landing-page.png"
                   width={2160}
@@ -714,7 +715,7 @@ export default function DutchDesignWeek() {
                 height={1800}
                 alt="Macbook mockup"
                 className="absolute z-10 pointer-events-none"></Image>
-              <div className="w-[67.7%] relative top-[12.3444444%] left-[16.25%] h-[75.3%] flex items-center bg-black">
+              <div className="w-[67.75%] relative translate-y-[12%] mx-auto h-[80%] flex items-center bg-black">
                 <video
                   width={1600}
                   height={900}
