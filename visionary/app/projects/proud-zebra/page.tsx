@@ -51,7 +51,8 @@ export default function ProudZebra() {
           width={3200}
           height={1800}
           src="/proud-zebra/header.png"
-          alt="Landing page"></Image>
+          alt="Landing page"
+        ></Image>
         <MediaTag media="IMAGE">
           Redesigned landing page of Proud Zebra's online store in a device
           mockup.
@@ -86,7 +87,8 @@ export default function ProudZebra() {
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                className="w-5 h-5">
+                className="w-5 h-5"
+              >
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -107,14 +109,16 @@ export default function ProudZebra() {
                 width={3200}
                 height={1800}
                 alt="Macbook mockup"
-                className="absolute z-10 pointer-events-none"></Image>
-              <div className="w-[67.6%] relative top-[21.444444%] left-[16.25%] h-[66.1111%] overflow-y-scroll modern-scrollbar">
+                className="absolute z-10 pointer-events-none"
+              ></Image>
+              <div className="w-[67.6%] relative translate-y-[32.2%] left-[16.25%] h-[66.1111%] overflow-y-scroll modern-scrollbar">
                 <Image
                   src="/proud-zebra/product-page.png"
                   width={1280}
                   height={2249}
                   alt="Product page"
-                  className="object-cover object-top"></Image>
+                  className="object-cover object-top"
+                ></Image>
               </div>
             </section>
           </div>
@@ -133,14 +137,16 @@ export default function ProudZebra() {
               width={1620}
               height={1842}
               alt="Two people in love"
-              className="col-span-1 object-cover h-full"></Image>
+              className="col-span-1 object-cover h-full"
+            ></Image>
 
             <Image
               src="/proud-zebra/product.png"
               width={1306}
               height={1306}
               alt="Pin from proud zebra"
-              className="col-span-1 object-cover h-full"></Image>
+              className="col-span-1 object-cover h-full"
+            ></Image>
           </div>
         </section>
         <section className="mt-6 flex flex-col lg:grid lg:grid-cols-3 gap-6">
@@ -150,7 +156,8 @@ export default function ProudZebra() {
               width={1600}
               height={900}
               alt="Mobile landing page"
-              className="object-cover h-full object-top"></Image>
+              className="object-cover h-full object-top"
+            ></Image>
           </div>
           <div className="lg:col-span-2 bg-[#DAF85E] aspect-video">
             <section className="bg-transparent relative aspect-video">
@@ -159,14 +166,16 @@ export default function ProudZebra() {
                 width={3200}
                 height={1800}
                 alt="Macbook mockup"
-                className="absolute z-10 pointer-events-none"></Image>
+                className="absolute z-10 pointer-events-none"
+              ></Image>
               <div className="w-[67.67%] relative top-[25.334444%] left-[16.25%] h-[62.1111%] overflow-y-scroll modern-scrollbar">
                 <Image
                   src="/proud-zebra/landing-page.png"
                   width={2160}
                   height={12310}
                   alt="Landing page"
-                  className="object-cover object-top"></Image>
+                  className="object-cover object-top"
+                ></Image>
               </div>
             </section>
           </div>
@@ -177,7 +186,8 @@ export default function ProudZebra() {
             width={1600}
             height={900}
             alt="Landing page"
-            className="object-cover object-top"></Image>
+            className="object-cover object-top"
+          ></Image>
         </section>
       </div>
 
@@ -204,7 +214,8 @@ export default function ProudZebra() {
               src="/proud-zebra/proud-zebra.webp"
               width={2032}
               height={1355}
-              alt="Delwin and Jimmy"></Image>
+              alt="Delwin and Jimmy"
+            ></Image>
             <MediaTag media="IMAGE">
               Delwin and Jimmy selling their products at British Columbia's 2023
               Pride Festival.
@@ -260,6 +271,7 @@ export default function ProudZebra() {
           </p>
         </div>
       </section>
+
       <div className="lg:-mt-4 flex flex-col gap-2 px-6 max-w w-full">
         <div>
           <section className="bg-transparent relative aspect-video">
@@ -268,14 +280,16 @@ export default function ProudZebra() {
               width={3200}
               height={1800}
               alt="Macbook mockup"
-              className="absolute z-10 pointer-events-none"></Image>
+              className="absolute z-10 pointer-events-none"
+            ></Image>
             <div className="w-[67.6%] relative top-[25.444444%] left-[16.25%] h-[62.1111%] overflow-y-scroll modern-scrollbar">
               <Image
                 src="/proud-zebra/landing-page.png"
                 width={2160}
                 height={12310}
                 alt="Landing page"
-                className="object-cover object-top"></Image>
+                className="object-cover object-top"
+              ></Image>
             </div>
           </section>
         </div>
@@ -309,7 +323,8 @@ export default function ProudZebra() {
               width={3200}
               height={1800}
               alt="Macbook mockup"
-              className="absolute z-10 pointer-events-none"></Image>
+              className="absolute z-10 pointer-events-none"
+            ></Image>
             <div className="w-[67.7%] relative top-[21.444444%] left-[16.25%] h-[66.1111%]">
               <video
                 width={1620}
@@ -317,7 +332,8 @@ export default function ProudZebra() {
                 src="/proud-zebra/shop-page.mp4"
                 loop
                 muted
-                autoPlay></video>
+                autoPlay
+              ></video>
             </div>
           </section>
         </div>
@@ -351,14 +367,16 @@ export default function ProudZebra() {
               width={3200}
               height={1800}
               alt="Macbook mockup"
-              className="absolute z-10 pointer-events-none"></Image>
+              className="absolute z-10 pointer-events-none"
+            ></Image>
             <div className="w-[67.6%] relative top-[21.444444%] left-[16.25%] h-[66.1111%] overflow-y-scroll modern-scrollbar">
               <Image
                 src="/proud-zebra/product-page.png"
                 width={1280}
                 height={2249}
                 alt="Product page"
-                className="object-cover object-top"></Image>
+                className="object-cover object-top"
+              ></Image>
             </div>
           </section>
         </div>
@@ -393,14 +411,16 @@ export default function ProudZebra() {
               width={3200}
               height={1800}
               alt="Macbook mockup"
-              className="absolute z-10 pointer-events-none"></Image>
+              className="absolute z-10 pointer-events-none"
+            ></Image>
             <div className="w-[67.6%] relative top-[25.444444%] left-[16.25%] h-[62.1111%] overflow-y-scroll modern-scrollbar">
               <Image
                 src="/proud-zebra/about-page.png"
                 width={1280}
                 height={3354}
                 alt="Landing page"
-                className="object-cover object-top"></Image>
+                className="object-cover object-top"
+              ></Image>
             </div>
           </section>
         </div>
@@ -451,7 +471,8 @@ export default function ProudZebra() {
           width={1600}
           height={900}
           src="/proud-zebra/survey-questions-purple.png"
-          className="border border-zinc-200/60 rounded-2xl"></Image>
+          className="border border-zinc-200/60 rounded-2xl"
+        ></Image>
         <MediaTag media="IMAGE">
           Survey participants' responses to why they prefer shopping at small
           businesses.
@@ -498,7 +519,8 @@ export default function ProudZebra() {
           width={1600}
           height={900}
           src="/proud-zebra/self-expression.png"
-          className="border border-zinc-200/60 rounded-2xl"></Image>
+          className="border border-zinc-200/60 rounded-2xl"
+        ></Image>
         <MediaTag media="IMAGE">
           Survey participants' responses to why they prefer shopping at small
           businesses.
@@ -547,7 +569,8 @@ export default function ProudZebra() {
                 link=""
                 color="purple"
                 text="a survey of 2,367 2SLGBTQIAP+ adults"
-                size="large"></Link>{" "}
+                size="large"
+              ></Link>{" "}
               that they strongly prefer brands that support causes that align
               with their values.
             </p>
@@ -584,7 +607,8 @@ export default function ProudZebra() {
           width={1600}
           height={900}
           src="/proud-zebra/lgbt-brands.png"
-          className="border border-zinc-200/60 rounded-2xl"></Image>
+          className="border border-zinc-200/60 rounded-2xl"
+        ></Image>
         <MediaTag media="IMAGE">
           Findings from a 2011 poll which surveyed 2,367 LGBTQ+ adults on their
           likeliness to consider brands which support causes important to them.
@@ -621,7 +645,8 @@ export default function ProudZebra() {
               width={800}
               height={540}
               src="/proud-zebra/sketches.png"
-              alt="Christina, Karishma, and Yuna exploring the brainstormed solutions"></Image>
+              alt="Christina, Karishma, and Yuna exploring the brainstormed solutions"
+            ></Image>
             <MediaTag media="IMAGE">
               Christina, Karishma, and Yuna exploring the solutions the team
               came up with while brainstorming
