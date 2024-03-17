@@ -108,7 +108,7 @@ export default function ProudZebra() {
                 height={1800}
                 alt="Macbook mockup"
                 className="absolute z-10 pointer-events-none"></Image>
-              <div className="w-[67.6%] relative translate-y-[32.2%] left-[16.25%] h-[66.1111%] overflow-y-scroll modern-scrollbar">
+              <div className="w-[67.6%] relative translate-y-[32.2%] mx-auto h-[66.1111%] overflow-y-scroll modern-scrollbar">
                 <Image
                   src="/proud-zebra/product-page.png"
                   width={1280}
@@ -160,7 +160,7 @@ export default function ProudZebra() {
                 height={1800}
                 alt="Macbook mockup"
                 className="absolute z-10 pointer-events-none"></Image>
-              <div className="w-[67.67%] relative translate-y-[41%] left-[16.25%] h-[62.1111%] overflow-y-scroll modern-scrollbar">
+              <div className="w-[67.67%] relative translate-y-[41%] mx-auto h-[62.1111%] overflow-y-scroll modern-scrollbar">
                 <Image
                   src="/proud-zebra/landing-page.png"
                   width={2160}
@@ -270,7 +270,7 @@ export default function ProudZebra() {
               height={1800}
               alt="Macbook mockup"
               className="absolute z-10 pointer-events-none"></Image>
-            <div className="w-[67.6%] relative translate-y-[39.95%] left-[16.25%] h-[62.5111%] overflow-y-scroll modern-scrollbar">
+            <div className="w-[67.6%] relative translate-y-[39.95%] mx-auto h-[62.5111%] overflow-y-scroll modern-scrollbar">
               <Image
                 src="/proud-zebra/landing-page.png"
                 width={2160}
@@ -311,7 +311,7 @@ export default function ProudZebra() {
               height={1800}
               alt="Macbook mockup"
               className="absolute z-10 pointer-events-none"></Image>
-            <div className="w-[67.7%] relative translate-y-[32.315%] left-[16.25%] h-[66.1111%]">
+            <div className="w-[67.7%] relative translate-y-[32.315%] mx-auto h-[66.1111%]">
               <video
                 width={1620}
                 height={892}
@@ -353,7 +353,7 @@ export default function ProudZebra() {
               height={1800}
               alt="Macbook mockup"
               className="absolute z-10 pointer-events-none"></Image>
-            <div className="w-[67.6%] relative translate-y-[32.2%] left-[16.25%] h-[66.2111%] overflow-y-scroll modern-scrollbar">
+            <div className="w-[67.6%] relative translate-y-[32.2%] mx-auto h-[66.2111%] overflow-y-scroll modern-scrollbar">
               <Image
                 src="/proud-zebra/product-page.png"
                 width={1280}
@@ -395,7 +395,7 @@ export default function ProudZebra() {
               height={1800}
               alt="Macbook mockup"
               className="absolute z-10 pointer-events-none"></Image>
-            <div className="w-[67.6%] relative translate-y-[40.8%] left-[16.25%] h-[62.2111%] overflow-y-scroll modern-scrollbar">
+            <div className="w-[68%] relative translate-y-[40.8%] mx-auto h-[62.2111%] overflow-y-scroll modern-scrollbar">
               <Image
                 src="/proud-zebra/about-page.png"
                 width={1280}
