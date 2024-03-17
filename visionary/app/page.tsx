@@ -12,7 +12,7 @@ export default function Home() {
 
       <section className="px-6 max-w w-full flex items-center flex-col text-center">
         {/* <a
-          href=""
+          href="/why-hire-me"
           className="mb-4 text-xs leading-5 font-medium border border-blue-300/20 text-blue-600 bg-blue-300/10 hover:bg-blue-300/20 hover:border-blue-300/30 transition-all rounded-full py-1 px-3 gap-1 flex items-center w-fit">
           Seeking internships for Summer 2024
         </a> */}

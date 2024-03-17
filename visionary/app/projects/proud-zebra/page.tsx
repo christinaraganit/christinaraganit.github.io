@@ -147,16 +147,16 @@ export default function ProudZebra() {
             </div>
           </div>
         </section>
-        <section className="mt-6 grid lg:grid-cols-3 gap-6">
-          <div className="col-span-1 h-full bg-[#4747f3]">
+        <section className="mt-6 flex flex-col lg:grid lg:grid-cols-3 gap-6">
+          <div className="lg:col-span-1 h-full bg-[#4747f3]">
             <Image
               src="/proud-zebra/mobile-landing-small.png"
               width={1600}
               height={900}
               alt="Mobile landing page"
-              className="object-cover h-full object-top"></Image>
+              className="object-cover w-full object-top"></Image>
           </div>
-          <div className="col-span-2 bg-[#DAF85E] aspect-video">
+          <div className="lg:col-span-2 bg-[#DAF85E] aspect-video">
             <section className="bg-transparent relative aspect-video">
               <Image
                 src="/proud-zebra/macbook.png"
@@ -599,26 +599,73 @@ export default function ProudZebra() {
 
       <section className="max-w w-full px-6">
         <h2 className="callout text-purple-500 mb-4">Brainstorming</h2>
-        <div className="grid gap-6 lg:grid-cols-2 lg:gap-20">
-          <p className="p-lg">
-            We sought to highlight the brand story of Proud Zebra to build trust
-            between the small business and potential customers, but we didn’t
-            know how.
-          </p>
+        <div className="grid lg:items-center gap-6 lg:grid-cols-2 lg:gap-20 mb-6">
+          <div>
+            <p className="p-lg mb-6">
+              We sought to highlight the brand story of Proud Zebra to build
+              trust between the small business and potential customers. But how?
+            </p>
+            <p className="mb-6 ">
+              Unsure how to solve the problem and deliver value for Proud Zebra,
+              we began generating ideas on how we might highlight the brand
+              story.
+            </p>
+            <p>
+              The team had plenty of ideas, like starting a podcast and writing
+              a weekly newsletter and adding a thank you note to every purchase.
+              I was hesitant, however, because I considered feasibility
+              foremost. I wanted to deliver a solution to Proud Zebra that they
+              could implement, and they might not have the resources for a
+              complex technical solution or something as time-consuming as a
+              podcast or a newsletter.
+            </p>
+          </div>
+          <div className="flex flex-col gap-2">
+            <Image
+              width={800}
+              height={540}
+              src="/proud-zebra/sketches.png"
+              alt="Christina, Karishma, and Yuna exploring the brainstormed solutions"></Image>
+            <MediaTag media="IMAGE">
+              Christina, Karishma, and Yuna exploring the solutions the team
+              came up with while brainstorming
+            </MediaTag>
+          </div>
+        </div>
+      </section>
+
+      <Spacer></Spacer>
+
+      {/* <section className="max-w w-full px-6">
+        <h2 className="callout text-purple-500 mb-4">
+          Low fidelity wireframes
+        </h2>
+        <div className="grid lg:grid-cols-2">
           <p>
-            Unsure how to solve the problem and deliver value for Proud Zebra,
-            we began generating ideas on how we might highlight the brand story.
-            After performing idea generation methods such as Lightning Demos and
-            the Four-Step Sketch Method, we each reviewed the sketches and
-            dot-voted on which ideas had the potential to solve the design
-            challenge—ideas which we would later prototype and test.
+            Based on the solutions we explored while brainstorming, I created
+            low-fidelity wireframes to prepare for the usability testing.
+            Despite being low-fidelity, I knew some of the tasks in the
+            usability testing would involve the selection of specific products;
+            hence, I applied imagery from the Proud Zebra website into the
+            navigational elements of the low-fidelity prototype so that the
+            usability test would more closely mimic a real-world situation.
           </p>
         </div>
       </section>
 
-      <section className="max-w w-full px-6 grid gap-6 lg:grid-cols-2 lg:gap-20"></section>
+      <Spacer></Spacer> */}
+
+      <section className="max-w w-full px-6 grid lg:grid-cols-2">
+        <div>
+          <p className="p-xl mb-4">
+            This part of the case study is still under construction.
+          </p>
+          <p>Please check back later!</p>
+        </div>
+      </section>
 
       <Spacer></Spacer>
+
       <section className="max-w w-full px-6">
         <h2 className="callout text-purple-500 mb-4">Reflection</h2>
         <div className="grid gap-6 lg:grid-cols-2 lg:gap-20">
