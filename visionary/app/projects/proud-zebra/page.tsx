@@ -154,7 +154,7 @@ export default function ProudZebra() {
               width={1600}
               height={900}
               alt="Mobile landing page"
-              className="object-cover w-full object-top"></Image>
+              className="object-cover h-full object-top"></Image>
           </div>
           <div className="lg:col-span-2 bg-[#DAF85E] aspect-video">
             <section className="bg-transparent relative aspect-video">
