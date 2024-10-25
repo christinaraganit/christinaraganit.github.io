@@ -686,6 +686,36 @@ export default function HackerHelper() {
 
       <Spacer></Spacer>
 
+      <div className="max-w w-full">
+        <div className="bg-white/60 border border-zinc-200/60 rounded-2xl p-6">
+          <p className="text-zinc-600 lg:leading-6 my-8 max-w-2xl text-balance text-lg mx-auto text-center">
+            As a previous hacker and mentor, I think an app like HackerHelper
+            would be really useful! It makes it much easier for hackers to
+            connect with mentors, and for mentors to communicate with each
+            other. This would be especially helpful in larger hackathons by
+            keeping requests organized and clearly indicating which request is
+            being worked on by which mentor. So overall, I would love to see
+            this implemented for future hackathons.
+          </p>
+          <div className="flex items-center justify-center gap-3.5 pt-1 pb-4">
+            <img
+              src="/hackerhelper/Stormy.png"
+              width={120}
+              height={120}
+              className="rounded-full w-12 h-12 aspect-square"
+            ></img>
+            <div>
+              <p className="text-sm font-semibold text-zinc-700 mb-0.5 ">
+                Anonymous Mentor
+              </p>
+              <p className="text-sm text-zinc-600">User Tester</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <Spacer></Spacer>
+
       <section className="p-6 lg:py-0 max-w w-full">
         <div className="grid gap-6 lg:gap-12 lg:grid-cols-2">
           <div>
