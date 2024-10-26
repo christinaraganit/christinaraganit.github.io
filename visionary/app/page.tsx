@@ -18,7 +18,7 @@ export default function Home() {
         </a> */}
 
         <h1 className="large-title max-w-4xl mb-4">
-          I'm Christina Raganit, a UI designer who writes code.
+          I'm Christina Raganit, a product designer who writes code.
         </h1>
         <p className="lg:text-lg text-zinc-600 max-w-3xl mb-12">
           2 years of experience in aligning business objectives and technical
