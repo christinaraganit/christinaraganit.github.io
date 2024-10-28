@@ -110,7 +110,7 @@ export default function Nav() {
               <li>
                 <a
                   className="relative block px-3 py-2 transition hover:text-blue-700"
-                  href="https://drive.google.com/file/d/1XdjiOlwxWced9ZCvzwyLcPiZANGwptAV/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1uK7cZj_Vp4ZmObAqB2wN4-fLNPliIkG2/view?usp=sharing"
                 >
                   Resume
                 </a>
@@ -160,7 +160,7 @@ export default function Nav() {
             ></Button> */}
             <div className="pl-1.5">
               <Button
-                link="https://drive.google.com/file/d/1qjVgedGo8Eb4xUUayLN1TlgdHEcQmimo/view?usp=sharing"
+                link="https://drive.google.com/file/d/1uK7cZj_Vp4ZmObAqB2wN4-fLNPliIkG2/view?usp=sharing"
                 variant="primary"
                 text="Resume"
               ></Button>

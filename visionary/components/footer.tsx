@@ -81,7 +81,7 @@ export default function Footer() {
           {/* <Button link="/projects" variant="secondary" text="Projects"></Button> */}
           <Button link="/awards" variant="secondary" text="Awards"></Button>
           <Button
-            link="https://drive.google.com/file/d/1XdjiOlwxWced9ZCvzwyLcPiZANGwptAV/view?usp=sharing"
+            link="https://drive.google.com/file/d/1uK7cZj_Vp4ZmObAqB2wN4-fLNPliIkG2/view?usp=sharing"
             variant="secondary"
             text="Resume"
           ></Button>
