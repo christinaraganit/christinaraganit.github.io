@@ -299,7 +299,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mt-8 px-6 flex max-w w-full flex-col text-center items-center">
+      <section
+        id="testimonials"
+        className="mt-8 px-6 scroll-mt-44 flex max-w w-full flex-col text-center items-center"
+      >
         <p className="callout text-blue-600 mb-3">Testimonials</p>
         <h2 className="title-1 font-semibold mb-4 max-w-3xl">
           I excel in collaborating with teams and working together to achieve

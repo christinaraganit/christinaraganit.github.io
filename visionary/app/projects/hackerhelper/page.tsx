@@ -686,9 +686,14 @@ export default function HackerHelper() {
 
       <Spacer></Spacer>
 
-      <div className="max-w w-full">
+      <div className="max-w w-full px-6">
+        <h2 className="callout text-indigo-500 mb-3 text-center">Reviews</h2>
+        <p className="p-xl mb-6 text-center">
+          What user testers are saying about HackerHelper
+        </p>
+
         <div className="bg-white/60 border border-zinc-200/60 rounded-2xl p-6">
-          <p className="text-zinc-600 lg:leading-6 my-8 max-w-2xl text-balance text-lg mx-auto text-center">
+          <p className="text-zinc-600 lg:leading-7 my-8 max-w-2xl text-balance text-lg mx-auto text-center">
             As a previous hacker and mentor, I think an app like HackerHelper
             would be really useful! It makes it much easier for hackers to
             connect with mentors, and for mentors to communicate with each
@@ -714,7 +719,7 @@ export default function HackerHelper() {
         </div>
       </div>
 
-      <Spacer></Spacer>
+      <Spacer />
 
       <section className="p-6 lg:py-0 max-w w-full">
         <div className="grid gap-6 lg:gap-12 lg:grid-cols-2">

@@ -35,6 +35,14 @@ export default function NavNotFixed() {
           <li>
             <a
               className="relative block px-3 py-2 transition hover:text-blue-500"
+              href="/#testimonials"
+            >
+              Testimonials
+            </a>
+          </li>
+          <li>
+            <a
+              className="relative block px-3 py-2 transition hover:text-blue-500"
               href="/awards"
             >
               Awards
@@ -101,6 +109,14 @@ export default function NavNotFixed() {
               <li>
                 <a
                   className="relative block px-3 py-2 transition hover:text-blue-500"
+                  href="/#testimonials"
+                >
+                  Testimonials
+                </a>
+              </li>
+              <li>
+                <a
+                  className="relative block px-3 py-2 transition hover:text-blue-500"
                   href="/awards"
                 >
                   Awards
@@ -152,6 +168,11 @@ export default function NavNotFixed() {
           <div className="flex">
             <Button link="/" variant="tertiary" text="Home"></Button>
             <Button link="/about" variant="tertiary" text="About"></Button>
+            <Button
+              link="/#testimonials"
+              variant="tertiary"
+              text="Testimonials"
+            ></Button>
             <Button link="/awards" variant="tertiary" text="Awards"></Button>
             {/* <Button
               link="/projects"
