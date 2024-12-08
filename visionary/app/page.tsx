@@ -22,9 +22,9 @@ export default function Home() {
         </h1>
         <p className="lg:text-lg text-zinc-600 max-w-3xl mb-12">
           Aligning business objectives and technical requirements to deliver
-          stunning design solutions. Currently a design intern at SAP.
-          Fourth-year BSc Interactive Arts and Technology student at SFU.
-          Computer Systems graduate from BCIT.
+          stunning design solutions that delight users. Currently a design
+          intern at SAP. Fourth-year BSc Interactive Arts and Technology student
+          at SFU. Computer Systems graduate from BCIT.
         </p>
 
         <div className="grid gap-6 text-left">
@@ -299,10 +299,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section
-        id="testimonials"
-        className="mt-8 px-6 scroll-mt-44 flex max-w w-full flex-col text-center items-center"
-      >
+      <section className="mt-8 px-6 flex max-w w-full flex-col text-center items-center">
         <p className="callout text-blue-600 mb-3">Testimonials</p>
         <h2 className="title-1 font-semibold mb-4 max-w-3xl">
           I excel in collaborating with teams and working together to achieve
@@ -315,6 +312,35 @@ export default function Home() {
         <div className="grid lg:grid-cols-3 gap-6 w-full text-left">
           <div className="flex flex-col gap-6">
             <Review
+              name="Ray Gong"
+              imgLink="/ray-gong.png"
+              title="Software Developer Intern at BlackBerry"
+            >
+              <span>
+                Christina is a{" "}
+                <span className="font-semibold">
+                  very talented designer with a vast skillset
+                </span>
+                . She excels at rapidly producing prototypes to present her
+                ideas, both in design platforms such as Figma or in code. I am
+                confident that Christina will be a valuable member to any team.
+              </span>
+            </Review>
+            <Review
+              name="Jason Lee"
+              imgLink="/jason-lee.jpg"
+              title="Team Lead at Felix Payment Systems"
+            >
+              <span>
+                Christina always brings a new perspective to the product team
+                with her designs. She has always gone out of her way to research
+                new ways to accomodate both the developers and the stakeholder
+                requirements.
+              </span>
+            </Review>
+          </div>
+          <div className="flex flex-col gap-6">
+            <Review
               name="Eric Dam"
               imgLink="/eric-dam.jpg"
               title="Software Developer at Harris Computers"
@@ -325,18 +351,6 @@ export default function Home() {
                   designer-developer powerhouse
                 </span>
                 .
-              </span>
-            </Review>
-            <Review
-              name="Gurnisha Rehal"
-              imgLink="/strivey.png"
-              title="UX Writer Intern at Samsung"
-            >
-              <span>
-                Christina always goes the extra mile to create both functional
-                and visually stunning UI. Her dedication to quality and
-                user-focused decisions brings value to every project she
-                touches.
               </span>
             </Review>
             <Review
@@ -367,51 +381,6 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-6">
             <Review
-              name="Ray Gong"
-              imgLink="/ray-gong.png"
-              title="Software Developer Intern at BlackBerry"
-            >
-              <span>
-                Christina is a{" "}
-                <span className="font-semibold">
-                  very talented designer with a vast skillset
-                </span>
-                . She excels at rapidly producing prototypes to present her
-                ideas, both in design platforms such as Figma or in code. I am
-                confident that Christina will be a valuable member to any team.
-              </span>
-            </Review>
-            <Review
-              name="Jason Lee"
-              imgLink="/jason-lee.jpg"
-              title="Team Lead at Felix Payment Systems"
-            >
-              <span>
-                Christina always brings a new perspective to the product team
-                with her designs. She has always gone out of her way to research
-                new ways to accomodate both the developers and the stakeholder
-                requirements.
-              </span>
-            </Review>
-            <Review
-              name="Yuna Okada"
-              imgLink="/yuna-okada.png"
-              title="Product Designer at Raccoopack Media"
-            >
-              <span>
-                Christina stands out as one of the most exceptional designers
-                I've had the pleasure of collaborating with. Our experience
-                together during a hackathon left a lasting impression; her
-                quality of design, attention to detail, and remarkable speed
-                exceeded all expectations. Christina's dedication and drive are
-                truly commendable, consistently pushing boundaries and
-                delivering outstanding results make her a valuable asset to any
-                team!
-              </span>
-            </Review>
-          </div>
-          <div className="flex flex-col gap-6">
-            <Review
               name="Kurt Milan"
               imgLink="/kurt-milan.jpg"
               title="Team Lead at Felix Payment Systems"
@@ -427,24 +396,6 @@ export default function Home() {
                 within the team.
               </span>
             </Review>
-            <Review
-              name="Celine August Santoso"
-              imgLink="/celine-santoso.jpeg"
-              title="UX Research Intern at Samsung"
-            >
-              <span>
-                Working with Christina has been an absolute pleasure. She
-                ensures that every component she designs is crafted down to the
-                finest granularity.{" "}
-                <span className="font-semibold">
-                  Her commitment to basing design decisions on UX research and
-                  data
-                </span>{" "}
-                is evident in every element, making her work both thoughtful and
-                highly effective.
-              </span>
-            </Review>
-
             <Review
               name="Devon Friend"
               imgLink="/devon-friend.jpg"

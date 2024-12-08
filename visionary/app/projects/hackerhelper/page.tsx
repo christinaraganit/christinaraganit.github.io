@@ -700,7 +700,7 @@ export default function HackerHelper() {
             other. This would be especially helpful in larger hackathons by
             keeping requests organized and clearly indicating which request is
             being worked on by which mentor. So overall, I would love to see
-            this implemented for future hackathons.
+            this implemented for future hackathons."
           </p>
           <div className="flex items-center justify-center gap-3.5 pt-1 pb-4">
             <img
@@ -720,6 +720,29 @@ export default function HackerHelper() {
       </div>
 
       <Spacer />
+
+      <section className="px-6 max-w w-full mb-4">
+        <h2 className="callout text-indigo-500 mb-4">Learnings</h2>
+        <div className="grid gap-6 lg:gap-12 lg:grid-cols-2">
+          <div>
+            <p>
+              This project was incredibly rewarding! What made this project even
+              more special for me was the ability to work closely with SFU
+              Surge, the student organization behind the largest hackathon at
+              Simon Fraser University, to discover the pain points of
+              individuals who are involved in the hackathon domain.
+            </p>
+          </div>
+          <div>
+            <p>
+              I gained valuable experience in interaction design and prototyping
+              while working alongside two skilled UX researchers who provided
+              deep insights into the discovery stage of the design process. Here
+              are some key findings that I encountered during the process:
+            </p>
+          </div>
+        </div>
+      </section>
 
       <section className="p-6 lg:py-0 max-w w-full">
         <div className="grid gap-6 lg:gap-12 lg:grid-cols-2">
