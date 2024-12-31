@@ -312,6 +312,60 @@ export default function Home() {
         <div className="grid lg:grid-cols-3 gap-6 w-full text-left">
           <div className="flex flex-col gap-6">
             <Review
+              name="Kurt Milan"
+              imgLink="/kurt-milan.jpg"
+              title="Team Lead at Felix Payment Systems"
+            >
+              <span>
+                Christina is an{" "}
+                <span className="font-semibold">
+                  excellent communicator and collaborator
+                </span>
+                . She has a proven track record of effectively communicating
+                design concepts to both the technical development team and
+                non-technical stakeholders, fostering a culture of collaboration
+                within the team.
+              </span>
+            </Review>
+            <Review
+              name="Simon Wong Chung"
+              imgLink="/simon-wong-chung.jpg"
+              title="Student at Simon Fraser University"
+            >
+              <span>
+                One of Christina's standout qualities is her attention to
+                detail. Every element of her designs, from layout and typography
+                to interactions and microinteractions, is meticulously crafted.
+              </span>
+            </Review>
+            <Review
+              name="Celine August Santoso"
+              imgLink="/celine-santoso.jpeg"
+              title="UX Researcher Intern at Samsung Electronics"
+            >
+              <span>
+                Christina ensures that every component she designs is crafted
+                down to the finest granularity. Her commitment to basing design
+                decisions on UX research and data is evident in every element,
+                making her work both thoughtful and highly effective.
+              </span>
+            </Review>
+          </div>
+          <div className="flex flex-col gap-6">
+            <Review
+              name="Eric Dam"
+              imgLink="/eric-dam.jpg"
+              title="Software Developer at Harris Computers"
+            >
+              <span>
+                Christina is a{" "}
+                <span className="font-semibold">
+                  designer-developer powerhouse
+                </span>
+                .
+              </span>
+            </Review>
+            <Review
               name="Ray Gong"
               imgLink="/ray-gong.png"
               title="Software Developer Intern at BlackBerry"
@@ -338,21 +392,20 @@ export default function Home() {
                 requirements.
               </span>
             </Review>
-          </div>
-          <div className="flex flex-col gap-6">
             <Review
-              name="Eric Dam"
-              imgLink="/eric-dam.jpg"
-              title="Software Developer at Harris Computers"
+              name="Gurnisha Rehal"
+              imgLink="/strivey.png"
+              title="UX Writer Intern at Samsung Electronics"
             >
               <span>
-                Christina Raganit is a{" "}
-                <span className="font-semibold">
-                  designer-developer powerhouse
-                </span>
-                .
+                Christina always goes the extra mile to create both functional
+                and visually stunning UI. Her dedication to quality and
+                user-focused decisions brings value to every project she
+                touches.
               </span>
             </Review>
+          </div>
+          <div className="flex flex-col gap-6">
             <Review
               name="Michael Dresler"
               imgLink="/michael-dresler.jpeg"
@@ -368,35 +421,6 @@ export default function Home() {
               </span>
             </Review>
             <Review
-              name="Simon Wong Chung"
-              imgLink="/simon-wong-chung.jpg"
-              title="Student at Simon Fraser University"
-            >
-              <span>
-                One of Christina's standout qualities is her attention to
-                detail. Every element of her designs, from layout and typography
-                to interactions and microinteractions, is meticulously crafted.
-              </span>
-            </Review>
-          </div>
-          <div className="flex flex-col gap-6">
-            <Review
-              name="Kurt Milan"
-              imgLink="/kurt-milan.jpg"
-              title="Team Lead at Felix Payment Systems"
-            >
-              <span>
-                Christina is an{" "}
-                <span className="font-semibold">
-                  excellent communicator and collaborator
-                </span>
-                . She has a proven track record of effectively communicating
-                design concepts to both the technical development team and
-                non-technical stakeholders, fostering a culture of collaboration
-                within the team.
-              </span>
-            </Review>
-            <Review
               name="Devon Friend"
               imgLink="/devon-friend.jpg"
               title="Student at University of British Columbia"
@@ -405,6 +429,20 @@ export default function Home() {
                 What does it take to bring your platform to the next level by
                 leveraging exceptional UI/UX design? Whatever the answer might
                 be, Christina will certainly have one for you.
+              </span>
+            </Review>
+            <Review
+              name="Yuna Okada"
+              imgLink="/yuna-okada.png"
+              title="Product Designer at Raccoopack Media"
+            >
+              <span>
+                Christina stands out as one of the most exceptional designers
+                I've had the pleasure of collaborating with. Her quality of
+                design, attention to detail, and remarkable speed exceeded all
+                expectations. Christina's dedication and drive are truly
+                commendable, consistently pushing boundaries and delivering
+                outstanding results make her a valuable asset to any team!
               </span>
             </Review>
           </div>
