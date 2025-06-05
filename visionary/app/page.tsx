@@ -23,7 +23,7 @@ export default function Home() {
         <p className="lg:text-lg text-zinc-600 max-w-3xl mb-12">
           Aligning business objectives and technical requirements to deliver
           stunning design solutions that delight users. Currently a design
-          intern at SAP. Fourth-year BSc Interactive Arts and Technology student
+          intern at Asana. Fourth-year BSc Interactive Arts and Technology student
           at SFU. Computer Systems graduate from BCIT.
         </p>
 
