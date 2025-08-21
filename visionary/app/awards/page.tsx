@@ -20,6 +20,12 @@ export default function Awards() {
 
       <section className="px-6 grid md:grid-cols-3 xs:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 max-w w-full">
         <Award
+          award="2nd Place at CreateSC 2025"
+          awardedBy="Innovative Design at USC"
+          date="Feb 2025"
+          project="Hear Me Out Cake"
+        ></Award>
+        <Award
           award="Undergraduate Open Scholarship"
           awardedBy="Simon Fraser University"
           date="Jan 2024"
@@ -38,7 +44,7 @@ export default function Awards() {
           type="school"
         ></Award>
         <Award
-          award="2nd Place, StormHacks 2023"
+          award="2nd Place at StormHacks 2023"
           awardedBy="SFU Surge"
           date="Jun 2023"
           project="Watchdog"

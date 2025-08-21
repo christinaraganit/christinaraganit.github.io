@@ -48,12 +48,12 @@ export default function About() {
             </svg>
             <span>Vancouver, BC</span>
           </div>
-          <div className="flex gap-4 items-center text-zinc-600">
+          <div className="flex gap-4 text-zinc-600">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
-              className="w-5 h-5 fill-zinc-400"
+              className="w-5 h-5 mt-1 fill-zinc-400"
             >
               <path
                 fill-rule="evenodd"
@@ -63,7 +63,10 @@ export default function About() {
               <path d="M3 18.4v-2.796a4.3 4.3 0 0 0 .713.31A26.226 26.226 0 0 0 12 17.25c2.892 0 5.68-.468 8.287-1.335.252-.084.49-.189.713-.311V18.4c0 1.452-1.047 2.728-2.523 2.923-2.12.282-4.282.427-6.477.427a49.19 49.19 0 0 1-6.477-.427C4.047 21.128 3 19.852 3 18.4Z" />
             </svg>
 
-            <span>User Assistance Design Intern at SAP</span>
+            <span>
+              (prv) Product Design Intern at Asana <br></br> (prv) User
+              Assistance Design Intern at SAP
+            </span>
           </div>
 
           <div className="flex gap-4 text-zinc-600">

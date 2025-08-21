@@ -20,11 +20,9 @@ export default function Home() {
         <h1 className="large-title max-w-4xl mb-4">
           I'm Christina Raganit, a product designer who writes code.
         </h1>
-        <p className="lg:text-lg text-zinc-600 max-w-3xl mb-12">
-          Aligning business objectives and technical requirements to deliver
-          stunning design solutions that delight users. Currently a design
-          intern at SAP. Fourth-year BSc Interactive Arts and Technology student
-          at SFU. Computer Systems graduate from BCIT.
+        <p className="lg:text-lg text-zinc-600 max-w-3xl mb-14 text-balance">
+          Seeking product design internships for Summer 2026. Previously at
+          Asana, SAP, and Felix Payment Systems.
         </p>
 
         <div className="grid gap-6 text-left">
