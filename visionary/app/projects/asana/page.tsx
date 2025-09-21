@@ -15,40 +15,31 @@ export default async function Asana() {
 
             {hasPassword ? (
                 <div>
-                    <section className="px-6 max-w w-full grid grid-cols-1 lg:grid-cols-3 mb-4 gap-6 lg:gap-40">
+                    <section className="px-6 max-w w-full grid grid-cols-1 lg:grid-cols-3 mb-12 gap-6 lg:gap-40">
                         <div className="col-span-2">
-                            <h1 className="large-title mb-6">Editing curated work in the Asana team page</h1>
-                            <p className="p-xl font-light mb-4">
-                                In a month-long class project with a team of 2 UX researchers, I led
-                                the interface and interaction design for a help request ticketing
-                                system to faciliate communication between hackathon participants and
-                                mentors, ensuring hackers receive the guidance they need in a timely
-                                manner.
+                            <h1 className="large-title mb-6">Empowering internal teams at Asana to drive user adoption with Custom Onboarding</h1>
+                            <p className="p-lg font-light mb-4">
+                                As a product design intern at Asana, I led the design direction for a feature within an internal tool that would enable our Customer Success team to create customized onboarding flows for the organizations they work with, making it easier for new users to adopt Asana and start using the platform effectively.
                             </p>
                         </div>
 
-                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-1 gap-6">
+                        <div className="grid grid-cols-1 lg:flex sm:grid-cols-2 md:grid-cols-3 lg:flex-col gap-6">
                             <div>
                                 <h2 className="callout mb-1">Team</h2>
-                                <p>Christina Raganit, Celine August Santoso, Gurnisha Rehal</p>
+                                <p>Christina Raganit (Lead Designer)<br></br>Chuiee Yang (Design Mentor)</p>
                             </div>
 
                             <div>
-                                <h2 className="callout mb-1">My Roles</h2>
-                                <p>
-                                    Product Design, User Interface Design, Interaction Design,
-                                    Prototyping, Wireframing
-                                </p>
+                                <h2 className="callout mb-1">Status</h2>
+                                <p>Handed Off<br></br>In Development</p>
                             </div>
 
-                            <div>
-                                <h2 className="callout mb-1">Course</h2>
-                                <p>IAT 334 - Interface Design</p>
-                            </div>
 
                             <div>
                                 <h2 className="callout mb-1">Duration</h2>
-                                <p>May 2025 (1 month)</p>
+                                <p>
+                                    June–July 2025<br></br>(6 Weeks)
+                                </p>
                             </div>
                         </div>
                     </section>
