@@ -21,13 +21,14 @@ export default async function Asana() {
 
             {hasPassword ? (
                 <div className="flex flex-col items-center">
-                    <section className="px-6 max-w w-full grid grid-cols-1 lg:grid-cols-3 mb-12 gap-6 lg:gap-40">
+                    <section className="px-6 max-w w-full grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-40">
                         <div className="col-span-2">
                             <h1 className="large-title mb-6">Empowering internal teams at Asana to drive user adoption with Custom Onboarding</h1>
-                            <p className="p-lg font-light mb-4">
+                            <p className="p-lg font-light mb-4 lg:mb-0">
                                 As a product design intern at Asana, I led the design direction for a feature within an internal tool that would enable our Customer Success team to create customized onboarding flows for the organizations they work with, making it easier for new users to adopt Asana and start using the platform effectively.
                             </p>
                         </div>
+
 
                         <div className="grid grid-cols-1 lg:flex sm:grid-cols-2 md:grid-cols-3 lg:flex-col gap-6">
                             <div>
@@ -50,6 +51,8 @@ export default async function Asana() {
                         </div>
                     </section>
 
+                    <Spacer></Spacer>
+
                     <section className="px-6 max-w w-full flex gap-8 flex-col">
                         <div>
                             <h2 className="callout text-purple-500 mb-4">Background</h2>
@@ -63,7 +66,7 @@ export default async function Asana() {
                                 </p>
                             </div>
                         </div>
-                        <img src="/otto/otto-background.png" width={1800} height={1076} alt="Current version of OTTO" className="max-w w-full"></img>
+                        <Image src="/otto/otto-background.png" width={1800} height={1076} alt="Current version of OTTO" className="max-w w-full"></Image>
                     </section>
 
                     <HalfSpacer />
@@ -75,7 +78,7 @@ export default async function Asana() {
                                     Asana <i>already</i> enables Admins to create Custom Onboarding; however, their heavy workloads often keep them from setting these flows up.
                                 </p>
 
-                                <img src="/otto/admin-problem.png" width={1000} height={760} alt="Admins don't have time to build custom onboarding"></img>
+                                <Image src="/otto/admin-problem.png" width={1000} height={760} alt="Admins don't have time to build custom onboarding"></Image>
                             </div>
 
                             <div className="grid lg:gap-6 gap-4 items-center">
@@ -83,7 +86,7 @@ export default async function Asana() {
                                     Customer Success Managers (CSMs) can’t create these flows themselves, since they need to be an Admin at that organization.
                                 </p>
 
-                                <img src="/otto/csm-no-access.png" width={1000} height={760} alt="Admins don't have time to build custom onboarding"></img>
+                                <Image src="/otto/csm-no-access.png" width={1000} height={760} alt="Admins don't have time to build custom onboarding"></Image>
                             </div>
                         </div>
                     </section>
@@ -93,7 +96,7 @@ export default async function Asana() {
 
                     <section className="p-6 lg:py-0 max-w">
                         <section className="text-center flex flex-col mx-auto items-center p-6 py-12 lg:p-16">
-                            <h2 className="callout text-[#C083DB] mb-4">Design Challenge</h2>
+                            <h2 className="callout text-purple-500 mb-4">Design Challenge</h2>
                             <p className="text-xl lg:text-4xl max-w-3xl tracking-tight text-balance">
                                 How might we enable CSMs to create Custom Onboarding flows on behalf of a company, while protecting said company’s sensitive data?
                             </p>
@@ -115,7 +118,7 @@ export default async function Asana() {
                                 <p>That’s where I intervened, navigating the technical challenges of OTTO and the complex configurations of Custom Onboarding to deliver a solution that meets CSMs’ needs.</p>
 
                             </div>
-                            <img src="/otto/otto.png" width={1050} height={700} className="col-span-2" alt="Current OTTO"></img>
+                            <Image src="/otto/otto.png" width={1050} height={700} className="col-span-2" alt="Current OTTO"></Image>
                         </div>
                     </section>
 
@@ -123,9 +126,9 @@ export default async function Asana() {
                     <HalfSpacer />
 
                     <section className="px-6 max-w w-full">
-                        <div className="md:w-1/2 mx-auto">
+                        <div>
                             <h2 className="callout text-purple-500 mb-4">Constraints</h2>
-                            <div className="grid gap-6 lg:gap-12">
+                            <div className="grid lg:grid-cols-2 gap-6 lg:gap-12">
                                 <div>
                                     <p className="title-2 font-normal mb-4">
                                         OTTO has a <i>very</i> limited component set.
@@ -148,6 +151,27 @@ export default async function Asana() {
                     </section>
 
                     <Spacer></Spacer>
+
+                    <section className="px-6 max-w w-full mb-8">
+                        <div className="md:w-1/2 mx-auto">
+                            <h2 className="callout text-purple-500 mb-4">Solution</h2>
+
+                            <div>
+                                <p className="title-1 font-normal mb-4">
+                                    Handed off a feature that met CSMs' needs by navigating complex onboarding logic, technical limitations, and sensitive data constraints
+                                </p>
+                                <p>
+                                    Through OTTO, CSMs wouldn’t need to be Admins at the organizations they work with, since the internal tool already obfuscates sensitive data.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <div className="bg-[#25172B] block w-full lg:px-40 lg:py-20">
+                        <video src="/otto/Comp 1.mp4" width={1920} height={1364} className="w-full" autoPlay controls loop></video>
+                    </div>
+
                     <Spacer></Spacer>
 
                     <section className="px-6 max-w w-full mb-6">
@@ -165,7 +189,7 @@ export default async function Asana() {
                         </div>
                     </section>
 
-                    <img src="/otto/edit-flow-otto.png" className="w-full lg:max-w-[80rem]" width={1600} height={900} alt="Design decisions on edit flow"></img>
+                    <Image src="/otto/edit-flow-otto.png" className="w-full lg:max-w-[80rem]" width={1600} height={900} alt="Design decisions on edit flow"></Image>
 
                     <HalfSpacer />
                     <HalfSpacer />
@@ -181,7 +205,7 @@ export default async function Asana() {
                         </div>
                     </section>
 
-                    <img src="/otto/summary-pane-feedback.png" className="w-full lg:max-w-[80rem]" width={1600} height={784} alt="Initial feedback on the summary pane"></img>
+                    <Image src="/otto/summary-pane-feedback.png" className="w-full lg:max-w-[80rem]" width={1600} height={784} alt="Initial feedback on the summary pane"></Image>
 
                     <section className="px-6 max-w w-full mt-10">
                         <div className="md:w-1/2 mx-auto">
@@ -207,7 +231,7 @@ export default async function Asana() {
                         </div>
                     </section>
 
-                    <img src="/otto/summary-pane-feedback.png" className="w-full lg:max-w-[80rem]" width={1600} height={784} alt="Initial feedback on the summary pane"></img>
+                    <Image src="/otto/summary-pane-feedback.png" className="w-full lg:max-w-[80rem]" width={1600} height={784} alt="Initial feedback on the summary pane"></Image>
 
 
                     {/* <Image src="/otto/current-otto.png" width={1440} height={1024} alt="Current version of OTTO" className=""></Image>
@@ -231,7 +255,7 @@ export default async function Asana() {
                         </div>
                     </section>
 
-                    <img src="/otto/form-factor.png" className="w-full lg:max-w-[80rem]" width={1600} height={940} alt="Two options and comparisons"></img>
+                    <Image src="/otto/form-factor.png" className="w-full lg:max-w-[80rem]" width={1600} height={940} alt="Two options and comparisons"></Image>
 
 
                     <section className="px-6 max-w w-full mt-12 mb-6">
@@ -242,7 +266,7 @@ export default async function Asana() {
                         </div>
                     </section>
 
-                    <img src="/otto/creation-exp-side-stepper.png" className="w-full lg:max-w-[80rem]" width={1600} height={628} alt="Side stepper form factor is inefficient for CSMs"></img>
+                    <Image src="/otto/creation-exp-side-stepper.png" className="w-full lg:max-w-[80rem]" width={1600} height={628} alt="Side stepper form factor is inefficient for CSMs"></Image>
 
 
                     <HalfSpacer></HalfSpacer>
@@ -260,6 +284,10 @@ export default async function Asana() {
                             </div>
                         </div>
                     </section>
+
+
+                    <video src="/otto/trimmed-color.mp4" width={1440} height={1024} className="w-full h-auto max-w px-6 mx-auto" autoPlay controls></video>
+
 
                     <Spacer></Spacer>
 
