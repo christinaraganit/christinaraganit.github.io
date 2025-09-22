@@ -4,8 +4,11 @@ import NavNotFixed from "@/components/nav-not-fixed";
 import Spacer from "@/components/spacer";
 import MediaTag from "@/components/media-tag";
 import LottieEmbed from "@/components/lottie-embed";
+import Tag from "@/components/tag";
 import Image from "next/image";
-
+import currentOTTO from "../../../public/otto/current-otto.png";
+import QuarterSpacer from "@/components/quarter-spacer";
+import HalfSpacer from "@/components/half-spacer";
 
 export default async function Asana() {
 
@@ -17,7 +20,7 @@ export default async function Asana() {
             <NavNotFixed></NavNotFixed>
 
             {hasPassword ? (
-                <div>
+                <div className="flex flex-col items-center">
                     <section className="px-6 max-w w-full grid grid-cols-1 lg:grid-cols-3 mb-12 gap-6 lg:gap-40">
                         <div className="col-span-2">
                             <h1 className="large-title mb-6">Empowering internal teams at Asana to drive user adoption with Custom Onboarding</h1>
@@ -47,12 +50,244 @@ export default async function Asana() {
                         </div>
                     </section>
 
-                    <section className="px-6 max-w w-full flex flex-col gap-2">
-                        <Image src="/otto/current-otto.png" blurDataURL="/otto/current-otto.png" width={1440} height={1024} placeholder="blur" alt="Current version of OTTO" className="rounded-lg w-full"></Image>
+                    <section className="px-6 max-w w-full flex gap-8 flex-col">
+                        <div>
+                            <h2 className="callout text-purple-500 mb-4">Background</h2>
+                            <div className="grid lg:grid-cols-2 lg:gap-12 gap-4">
+                                <p className="title-2 font-normal">
+                                    The ideal onboarding experience to Asana looks different for every team.
+                                </p>
+
+                                <p className="title-2 font-normal">
+                                    When organizations rely on a single generic flow, employees fail to see Asana’s value, and adoption suffers.
+                                </p>
+                            </div>
+                        </div>
+                        <img src="/otto/otto-background.png" width={1800} height={1076} alt="Current version of OTTO" className="max-w w-full"></img>
+                    </section>
+
+                    <HalfSpacer />
+
+                    <section className="px-6 max-w w-full">
+                        <div className="grid lg:grid-cols-2 lg:gap-12 gap-4">
+                            <div className="grid lg:gap-6 gap-4 items-center">
+                                <p className="p-lg font-normal">
+                                    Asana <i>already</i> enables Admins to create Custom Onboarding; however, their heavy workloads often keep them from setting these flows up.
+                                </p>
+
+                                <img src="/otto/admin-problem.png" width={1000} height={760} alt="Admins don't have time to build custom onboarding"></img>
+                            </div>
+
+                            <div className="grid lg:gap-6 gap-4 items-center">
+                                <p className="p-lg font-normal">
+                                    Customer Success Managers (CSMs) can’t create these flows themselves, since they need to be an Admin at that organization.
+                                </p>
+
+                                <img src="/otto/csm-no-access.png" width={1000} height={760} alt="Admins don't have time to build custom onboarding"></img>
+                            </div>
+                        </div>
+                    </section>
+
+                    <HalfSpacer></HalfSpacer>
+                    <HalfSpacer></HalfSpacer>
+
+                    <section className="p-6 lg:py-0 max-w">
+                        <section className="text-center flex flex-col mx-auto items-center p-6 py-12 lg:p-16">
+                            <h2 className="callout text-[#C083DB] mb-4">Design Challenge</h2>
+                            <p className="text-xl lg:text-4xl max-w-3xl tracking-tight text-balance">
+                                How might we enable CSMs to create Custom Onboarding flows on behalf of a company, while protecting said company’s sensitive data?
+                            </p>
+                        </section>
+                    </section>
+
+
+                    <HalfSpacer></HalfSpacer>
+                    <HalfSpacer></HalfSpacer>
+
+                    <section className="px-6 max-w w-full">
+                        <div className="grid lg:grid-cols-3 lg:gap-16 gap-4 items-center">
+                            <div className="flex flex-col lg:gap-6 gap-4">
+                                <h2 className="callout text-purple-500">What's OTTO?</h2>
+                                <p className="title-2 font-normal">
+                                    CSMs live in this internal tool called OTTO.
+                                </p>
+                                <p>Currently, they can only view existing Custom Onboarding flows. They can’t create one.</p>
+                                <p>That’s where I intervened, navigating the technical challenges of OTTO and the complex configurations of Custom Onboarding to deliver a solution that meets CSMs’ needs.</p>
+
+                            </div>
+                            <img src="/otto/otto.png" width={1050} height={700} className="col-span-2" alt="Current OTTO"></img>
+                        </div>
+                    </section>
+
+                    <HalfSpacer />
+                    <HalfSpacer />
+
+                    <section className="px-6 max-w w-full">
+                        <div className="md:w-1/2 mx-auto">
+                            <h2 className="callout text-purple-500 mb-4">Constraints</h2>
+                            <div className="grid gap-6 lg:gap-12">
+                                <div>
+                                    <p className="title-2 font-normal mb-4">
+                                        OTTO has a <i>very</i> limited component set.
+                                    </p>
+                                    <p>
+                                        I couldn’t use components and patterns that were available in the Admin Console, since the two codebases are not shared.
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <p className="title-2 font-normal mb-4">
+                                        In OTTO, sensitive company information must be redacted.
+                                    </p>
+                                    <p>
+                                        This protects NDA information, but can get in the way of them creating Custom Onboarding flows.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <Spacer></Spacer>
+                    <Spacer></Spacer>
+
+                    <section className="px-6 max-w w-full mb-6">
+                        <div className="md:w-1/2 mx-auto">
+                            <Tag color="purple">Design Decision | 1</Tag>
+
+                            <div>
+                                <p className="title-2 font-normal mb-4">
+                                    How do I design for clarity when key information is redacted?
+                                </p>
+                                <p>
+                                    How do you know what flow you’re editing if you can’t see its name?
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <img src="/otto/edit-flow-otto.png" className="w-full lg:max-w-[80rem]" width={1600} height={900} alt="Design decisions on edit flow"></img>
+
+                    <HalfSpacer />
+                    <HalfSpacer />
+
+                    <section className="px-6 max-w w-full mb-6">
+                        <div className="md:w-1/2 mx-auto">
+                            <Tag color="purple">Design Decision | 2</Tag>
+                            <div>
+                                <p className="title-2 font-normal">
+                                    How do I show the right amount of detail at the right time?
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <img src="/otto/summary-pane-feedback.png" className="w-full lg:max-w-[80rem]" width={1600} height={784} alt="Initial feedback on the summary pane"></img>
+
+                    <section className="px-6 max-w w-full mt-10">
+                        <div className="md:w-1/2 mx-auto">
+                            <div>
+                                <p>
+                                    I landed on a dynamic summary where dropdown groups begin collapsed, and only expand when the CSM interacts with its associated step.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <HalfSpacer />
+                    <HalfSpacer />
+
+                    <section className="px-6 max-w w-full mb-6">
+                        <div className="md:w-1/2 mx-auto">
+                            <Tag color="purple">Design Decision | 2</Tag>
+                            <div>
+                                <p className="title-2 font-normal">
+                                    How do I show the right amount of detail at the right time?
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <img src="/otto/summary-pane-feedback.png" className="w-full lg:max-w-[80rem]" width={1600} height={784} alt="Initial feedback on the summary pane"></img>
+
+
+                    {/* <Image src="/otto/current-otto.png" width={1440} height={1024} alt="Current version of OTTO" className=""></Image>
                         <MediaTag media="Image">
                             Custom Onboarding tab in current version of OTTO
-                        </MediaTag>
+                        </MediaTag> */}
+
+                    <HalfSpacer></HalfSpacer>
+                    <HalfSpacer></HalfSpacer>
+
+                    <section className="px-6 max-w w-full mb-6">
+                        <div className="md:w-1/2 mx-auto">
+                            <Tag color="purple">Design Decision | 3</Tag>
+                            <div className="pt-2">
+                                <p className="mb-3 opacity-60">Given the limited component set of OTTO...</p>
+                                <p className="title-2 font-normal mb-6">
+                                    What’s the best existing form factor for creating a Custom Onboarding flow?
+                                </p>
+                                <p>I narrowed it down to two options — a modal with a side stepper and a modal with a persistent summary.</p>
+                            </div>
+                        </div>
                     </section>
+
+                    <img src="/otto/form-factor.png" className="w-full lg:max-w-[80rem]" width={1600} height={940} alt="Two options and comparisons"></img>
+
+
+                    <section className="px-6 max-w w-full mt-12 mb-6">
+                        <div className="md:w-1/2 mx-auto">
+                            <div>
+                                <p>I chose the persistent summary because certain configurations in Custom Onboarding depend on one another. The persistent summary will help CSMs create flows more efficiently with the <em>context it provides from previous steps</em>.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <img src="/otto/creation-exp-side-stepper.png" className="w-full lg:max-w-[80rem]" width={1600} height={628} alt="Side stepper form factor is inefficient for CSMs"></img>
+
+
+                    <HalfSpacer></HalfSpacer>
+                    <HalfSpacer></HalfSpacer>
+
+                    <section className="px-6 max-w w-full mb-6">
+                        <div className="md:w-1/2 mx-auto">
+                            <Tag color="purple">Design Decision | 4</Tag>
+                            <div className="pt-2">
+                                <p className="title-2 font-normal mb-6">
+                                    When should I push back against technical limitations?
+                                </p>
+                                <p className="mb-6">I proposed new functionality in OTTO when I recognized that they contributed to my goal of creating a welcoming first experience for new users of Asana and helping them recognize how the platform can meet their unique needs.</p>
+                                <p>The functionality was for custom logo upload and a HEX code input for setting and previewing a background color in the welcome message.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <Spacer></Spacer>
+
+                    <section className="px-6 max-w w-full">
+                        <div className="w-full">
+                            <h2 className="callout text-purple-500 mb-4">Learnings</h2>
+                            <div className="grid lg:grid-cols-2 gap-6 lg:gap-16">
+                                <div>
+                                    <p className="title-2 font-normal mb-4">
+                                        Thinking critically about deeply interconnected systems
+                                    </p>
+                                    <p>
+                                        I had to understand the dependencies between different configurations of a Custom Onboarding flow, as well as the technical limitations of OTTO, to be able to design the optimal experience for a CSM given these constraints.
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <p className="title-2 font-normal mb-4">
+                                        Balancing engineering cost with user needs
+                                    </p>
+                                    <p>
+                                        I recognized that this project was not about improving the existing experience of OTTO. CSMs would rather have this feature sooner as it would allow them to deliver the ideal onboarding experiences for new users of Asana, driving adoption.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
                 </div>
             ) : (
                 <div className="h-full">

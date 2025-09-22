@@ -49,13 +49,13 @@ export default function HackerHelper() {
       </section>
 
       <section className="px-6 max-w w-full flex flex-col gap-2">
-        <img
+        <Image
           width={1600}
           height={900}
           src="/hackerhelper/main.png"
           alt="HackerHelper"
           className="rounded-lg"
-        ></img>
+        ></Image>
         <MediaTag media="IMAGE">
           Mobile and desktop user interfaces for HackerHelper
         </MediaTag>
@@ -140,43 +140,43 @@ export default function HackerHelper() {
             </div>
           </div>
           <div className="bg-[#FFC14D] flex items-center rounded-lg">
-            <img
+            <Image
               width={1080}
               height={1080}
               src="/hackerhelper/highlight-11.png"
               alt="HackerHelper"
               className="col-span-1 rounded-lg w-[87.5%] mx-auto"
-            ></img>
+            ></Image>
           </div>
         </section>
 
         <section className="grid grid-cols-1 md:grid-cols-5 gap-y-6 md:gap-6">
-          <img
+          <Image
             width={1080}
             height={1080}
             src="/hackerhelper/highlight-1.png"
             alt="HackerHelper"
             className="col-span-2 rounded-lg"
-          ></img>
+          ></Image>
           <div className="col-span-3 flex items-center bg-[#4F46E5] rounded-lg">
-            <img
-              src="/hackerhelper/highlight-6.png"
+            <Image
+              src="/hackerhelper/highlight-6.png" alt="highlight" width={1459} height={932}
               className="w-[90%] mx-auto"
-            ></img>
+            ></Image>
           </div>
         </section>
         <section className="grid grid-cols-1 md:grid-cols-3 gap-y-6 md:gap-6">
-          <img
+          <Image
             src="/hackerhelper/highlight-5.png"
             alt="HackerHelper"
-            className="col-span-2 rounded-lg"
-          ></img>
+            className="col-span-2 rounded-lg" width={1920} height={1080}
+          ></Image>
           <div className="flex items-center bg-[#FFC14D] col-span-1 rounded-lg">
-            <img
+            <Image
               src="/hackerhelper/highlight-4.png"
               alt="HackerHelper"
-              className="w-[55%] mx-auto "
-            ></img>
+              className="w-[55%] mx-auto" width={473} height={932}
+            ></Image>
           </div>
         </section>
       </div>
