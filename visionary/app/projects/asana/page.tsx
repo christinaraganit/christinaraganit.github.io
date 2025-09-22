@@ -3,6 +3,7 @@ import { cookies } from "next/headers";
 import NavNotFixed from "@/components/nav-not-fixed";
 import Spacer from "@/components/spacer";
 import MediaTag from "@/components/media-tag";
+import OpenModal from "@/components/decision-modal/open-modal";
 
 export default async function Asana() {
 
@@ -56,6 +57,7 @@ export default async function Asana() {
                             Mobile and desktop user interfaces for HackerHelper
                         </MediaTag>
                     </section>
+                  <OpenModal />
                 </div>
             ) : (
                 <div className="h-full">
