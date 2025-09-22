@@ -3,6 +3,9 @@ import { cookies } from "next/headers";
 import NavNotFixed from "@/components/nav-not-fixed";
 import Spacer from "@/components/spacer";
 import MediaTag from "@/components/media-tag";
+import LottieEmbed from "@/components/lottie-embed";
+import Image from "next/image";
+
 
 export default async function Asana() {
 
@@ -45,15 +48,9 @@ export default async function Asana() {
                     </section>
 
                     <section className="px-6 max-w w-full flex flex-col gap-2">
-                        <img
-                            width={1600}
-                            height={900}
-                            src="/hackerhelper/main.png"
-                            alt="HackerHelper"
-                            className="rounded-lg"
-                        ></img>
-                        <MediaTag media="IMAGE">
-                            Mobile and desktop user interfaces for HackerHelper
+                        <Image src="/otto/current-otto.png" blurDataURL="/otto/current-otto.png" width={1440} height={1024} placeholder="blur" alt="Current version of OTTO" className="rounded-lg w-full"></Image>
+                        <MediaTag media="Image">
+                            Custom Onboarding tab in current version of OTTO
                         </MediaTag>
                     </section>
                 </div>
