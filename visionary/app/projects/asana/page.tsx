@@ -162,7 +162,7 @@ export default function Asana() {
 
 
                 <div className="bg-[#25172B] block w-full lg:px-40 lg:py-20">
-                    <video src="/otto/smaller file size flow.mp4" width={1920} height={1364} className="w-full" autoPlay controls loop></video>
+                    <video src="/otto/smaller file size flow.mp4" width={1920} height={1364} className="w-full" autoPlay controls loop playsInline muted></video>
                 </div>
 
                 <Spacer></Spacer>
@@ -209,7 +209,7 @@ export default function Asana() {
                         </div>
                     </div>
                 </section>
-                <video src="/otto/interaction-behavior.mp4" width={1920} height={1200} className="w-full h-auto lg:max-w-[80rem] mx-auto" autoPlay controls></video>
+                <video src="/otto/interaction-behavior.mp4" width={1920} height={1200} className="w-full h-auto lg:max-w-[80rem] mx-auto" autoPlay controls loop playsInline muted></video>
 
 
 
@@ -260,7 +260,7 @@ export default function Asana() {
                 </section>
 
 
-                <video src="/otto/trimmed-color.mp4" width={1440} height={1024} className="w-full h-auto max-w px-6 mx-auto" autoPlay controls></video>
+                <video src="/otto/trimmed-color.mp4" width={1440} height={1024} className="w-full h-auto max-w px-6 mx-auto" autoPlay controls loop playsInline muted></video>
 
 
                 <Spacer></Spacer>
@@ -291,183 +291,6 @@ export default function Asana() {
                 </section>
 
             </div>
-            <Image src="/otto/otto.png" width={1050} height={700} className="col-span-2" alt="Current OTTO"></Image>
-
-
-            <HalfSpacer />
-            <HalfSpacer />
-
-            <section className="px-6 max-w w-full">
-                <div>
-                    <h2 className="callout text-purple-500 mb-4">Constraints</h2>
-                    <div className="grid lg:grid-cols-2 gap-6 lg:gap-12">
-                        <div>
-                            <p className="title-2 font-normal mb-4">
-                                OTTO has a <i>very</i> limited component set.
-                            </p>
-                            <p>
-                                I couldn’t use components and patterns that were available in the Admin Console, since the two codebases are not shared.
-                            </p>
-                        </div>
-
-                        <div>
-                            <p className="title-2 font-normal mb-4">
-                                In OTTO, sensitive company information must be redacted.
-                            </p>
-                            <p>
-                                This protects NDA information, but can get in the way of them creating Custom Onboarding flows.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <Spacer></Spacer>
-
-            <section className="px-6 max-w w-full mb-8">
-                <div className="md:w-1/2 mx-auto">
-                    <h2 className="callout text-purple-500 mb-4">Solution</h2>
-
-                    <div>
-                        <p className="title-1 font-normal mb-4">
-                            Handed off a feature that met CSMs' needs by navigating complex onboarding logic, technical limitations, and sensitive data constraints
-                        </p>
-                        <p>
-                            Through OTTO, CSMs wouldn’t need to be Admins at the organizations they work with, since the internal tool already obfuscates sensitive data.
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-
-            <div className="bg-[#25172B] block w-full lg:px-40 lg:py-20">
-                <video src="/otto/Comp 1.mp4" width={1920} height={1364} className="w-full" autoPlay controls loop></video>
-            </div>
-
-            <Spacer></Spacer>
-
-            <section className="px-6 max-w w-full mb-6">
-                <div className="md:w-1/2 mx-auto">
-                    <Tag color="purple">Design Decision | 1</Tag>
-
-                    <div>
-                        <p className="title-2 font-normal mb-4">
-                            How do I design for clarity when key information is redacted?
-                        </p>
-                        <p>
-                            How do you know what flow you’re editing if you can’t see its name?
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <Image src="/otto/edit-flow-otto.png" className="w-full lg:max-w-[80rem]" width={1600} height={900} alt="Design decisions on edit flow"></Image>
-
-            <HalfSpacer />
-            <HalfSpacer />
-
-            <section className="px-6 max-w w-full mb-6">
-                <div className="md:w-1/2 mx-auto">
-                    <Tag color="purple">Design Decision | 2</Tag>
-                    <div>
-                        <p className="title-2 font-normal">
-                            How do I show the right amount of detail at the right time?
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <Image src="/otto/summary-pane-feedback.png" className="w-full lg:max-w-[80rem]" width={1600} height={784} alt="Initial feedback on the summary pane"></Image>
-
-            <section className="px-6 max-w w-full mt-12">
-                <div className="md:w-1/2 mx-auto">
-                    <div>
-                        <p className="p-lg mb-6">
-                            I landed on a dynamic summary where dropdown groups begin collapsed, and only expand when the CSM interacts with its associated step.
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <video src="/otto/interaction-behavior-small.mov" width={1920} height={1200} className="w-full h-auto lg:max-w-[80rem] mx-auto" autoPlay controls></video>
-
-
-
-            <HalfSpacer />
-            <HalfSpacer />
-
-            <section className="px-6 max-w w-full mb-6">
-                <div className="md:w-1/2 mx-auto">
-                    <Tag color="purple">Design Decision | 3</Tag>
-                    <div className="pt-2">
-                        <p className="mb-3 opacity-60">Given the limited component set of OTTO...</p>
-                        <p className="title-2 font-normal mb-6">
-                            What’s the best existing form factor for creating a Custom Onboarding flow?
-                        </p>
-                        <p>I narrowed it down to two options — a modal with a side stepper and a modal with a persistent summary.</p>
-                    </div>
-                </div>
-            </section>
-
-            <Image src="/otto/form-factor.png" className="w-full lg:max-w-[80rem]" width={1600} height={940} alt="Two options and comparisons"></Image>
-
-
-            <section className="px-6 max-w w-full mt-12 mb-6">
-                <div className="md:w-1/2 mx-auto">
-                    <div>
-                        <p>I chose the persistent summary because certain configurations in Custom Onboarding depend on one another. The persistent summary will help CSMs create flows more efficiently with the <em>context it provides from previous steps</em>.</p>
-                    </div>
-                </div>
-            </section>
-
-            <Image src="/otto/creation-exp-side-stepper.png" className="w-full lg:max-w-[80rem]" width={1600} height={628} alt="Side stepper form factor is inefficient for CSMs"></Image>
-
-
-            <HalfSpacer></HalfSpacer>
-            <HalfSpacer></HalfSpacer>
-
-            <section className="px-6 max-w w-full mb-6">
-                <div className="md:w-1/2 mx-auto">
-                    <Tag color="purple">Design Decision | 4</Tag>
-                    <div className="pt-2">
-                        <p className="title-2 font-normal mb-6">
-                            When should I push back against technical limitations?
-                        </p>
-                        <p className="mb-6">I proposed new functionality in OTTO when I recognized that they contributed to my goal of creating a welcoming first experience for new users of Asana and helping them recognize how the platform can meet their unique needs.</p>
-                        <p>The functionality was for custom logo upload and a HEX code input for setting and previewing a background color in the welcome message.</p>
-                    </div>
-                </div>
-            </section>
-
-
-            <video src="/otto/trimmed-color.mp4" width={1440} height={1024} className="w-full h-auto max-w px-6 mx-auto" autoPlay controls></video>
-
-
-            <Spacer></Spacer>
-
-            <section className="px-6 max-w w-full">
-                <div className="w-full">
-                    <h2 className="callout text-purple-500 mb-4">Learnings</h2>
-                    <div className="grid lg:grid-cols-2 gap-6 lg:gap-16">
-                        <div>
-                            <p className="title-2 font-normal mb-4">
-                                Thinking critically about deeply interconnected systems
-                            </p>
-                            <p>
-                                I had to understand the dependencies between different configurations of a Custom Onboarding flow, as well as the technical limitations of OTTO, to be able to design the optimal experience for a CSM given these constraints.
-                            </p>
-                        </div>
-
-                        <div>
-                            <p className="title-2 font-normal mb-4">
-                                Balancing engineering cost with user needs
-                            </p>
-                            <p>
-                                I recognized that this project was not about improving the existing experience of OTTO. CSMs would rather have this feature sooner as it would allow them to deliver the ideal onboarding experiences for new users of Asana, driving adoption.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
         </main >
     );
 }

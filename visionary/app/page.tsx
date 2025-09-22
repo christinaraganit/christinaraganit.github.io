@@ -51,7 +51,7 @@ export default function Home() {
               alt="Teamfight Tactics Team Planner Case Study"></Image>
           </a> */}
 
-          <a
+          {/* <a
             href="/projects/asana"
             className="group bg-[#211426] px-6 py-8 lg:p-12 h-fit md:aspect-video rounded-3xl text-white overflow-hidden transition-all"
           >
@@ -74,7 +74,7 @@ export default function Home() {
                 className="md:-translate-y-[165.25rem] mx-auto z-0 scale-[0.5] md:scale-[0.75] md:group-hover:scale-[0.8] transition-all"
               ></img>
             </div>
-          </a>
+          </a> */}
 
 
           <a
