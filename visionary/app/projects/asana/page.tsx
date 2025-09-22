@@ -9,6 +9,7 @@ import Image from "next/image";
 import currentOTTO from "../../../public/otto/current-otto.png";
 import QuarterSpacer from "@/components/quarter-spacer";
 import HalfSpacer from "@/components/half-spacer";
+import OpenModal from "@/components/decision-modal/open-modal";
 
 export default async function Asana() {
 
@@ -296,7 +297,7 @@ export default async function Asana() {
                             </div>
                         </div>
                     </section>
-
+                  <OpenModal />
                 </div>
             ) : (
                 <div className="h-full">
