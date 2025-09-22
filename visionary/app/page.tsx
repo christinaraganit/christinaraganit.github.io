@@ -52,6 +52,32 @@ export default function Home() {
           </a> */}
 
           <a
+            href="/projects/asana"
+            className="group bg-[#211426] px-6 py-8 lg:p-12 h-fit md:aspect-video rounded-3xl text-white overflow-hidden transition-all"
+          >
+            <div className="w-full text-center flex flex-col items-center justify-center">
+              <p className="callout text-[#C083DB] mb-4">Product Design</p>
+              <h2 className="title-1 text-white mb-4 max-w-3xl text-pretty">Empowering internal teams at Asana to drive new user adoption with Custom Onboarding</h2>
+              <p className="max-w-3xl lg:text-lg text-zinc-300 mb-8 md:mb-0 text-balance">
+                Password protected due to NDA.
+              </p>
+            </div>
+
+            <div className="hidden md:block w-[160rem] aspect-square left-1/2 translate-y-[5rem] group-hover:blur-[200px] -translate-x-1/2 blur-[100px] rounded-full relative bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] to-[#211426] from-[#C083DB] opacity-40 group-hover:opacity-60 transition-all "></div>
+
+            <div>
+              <img
+                src="/otto/high-five.gif"
+                alt="Teamwork!"
+                width={720}
+                height={720}
+                className="md:-translate-y-[165.25rem] mx-auto z-0 scale-[0.5] md:scale-[0.75] md:group-hover:scale-[0.8] transition-all"
+              ></img>
+            </div>
+          </a>
+
+
+          <a
             href="/projects/hackerhelper"
             className="group bg-[#0F0E26] px-6 py-8 lg:p-12 h-fit md:aspect-video rounded-3xl text-white overflow-hidden transition-all"
           >

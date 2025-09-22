@@ -207,40 +207,21 @@ export default async function Asana() {
 
                     <Image src="/otto/summary-pane-feedback.png" className="w-full lg:max-w-[80rem]" width={1600} height={784} alt="Initial feedback on the summary pane"></Image>
 
-                    <section className="px-6 max-w w-full mt-10">
+                    <section className="px-6 max-w w-full mt-12">
                         <div className="md:w-1/2 mx-auto">
                             <div>
-                                <p>
+                                <p className="p-lg mb-6">
                                     I landed on a dynamic summary where dropdown groups begin collapsed, and only expand when the CSM interacts with its associated step.
                                 </p>
                             </div>
                         </div>
                     </section>
+                    <video src="/otto/interaction-behavior-small.mov" width={1920} height={1200} className="w-full h-auto lg:max-w-[80rem] mx-auto" autoPlay controls></video>
+
+
 
                     <HalfSpacer />
                     <HalfSpacer />
-
-                    <section className="px-6 max-w w-full mb-6">
-                        <div className="md:w-1/2 mx-auto">
-                            <Tag color="purple">Design Decision | 2</Tag>
-                            <div>
-                                <p className="title-2 font-normal">
-                                    How do I show the right amount of detail at the right time?
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-
-                    <Image src="/otto/summary-pane-feedback.png" className="w-full lg:max-w-[80rem]" width={1600} height={784} alt="Initial feedback on the summary pane"></Image>
-
-
-                    {/* <Image src="/otto/current-otto.png" width={1440} height={1024} alt="Current version of OTTO" className=""></Image>
-                        <MediaTag media="Image">
-                            Custom Onboarding tab in current version of OTTO
-                        </MediaTag> */}
-
-                    <HalfSpacer></HalfSpacer>
-                    <HalfSpacer></HalfSpacer>
 
                     <section className="px-6 max-w w-full mb-6">
                         <div className="md:w-1/2 mx-auto">
