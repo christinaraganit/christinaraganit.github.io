@@ -17,4 +17,11 @@ export default function Tag(props: Props) {
       </div>
     );
   }
+  else if (props.color == "purple") {
+    return (
+      <div className="px-4 py-1.5 rounded-full border border-purple-500 w-fit mb-4 block h-fit">
+        <h2 className="callout text-purple-500">{props.children}</h2>
+      </div>
+    );
+  }
 }

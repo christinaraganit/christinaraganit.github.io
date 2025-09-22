@@ -59,7 +59,7 @@ body {
 }
 
 @layer components {
-  P {
+  p {
     @apply text-pretty;
   }
 
@@ -74,10 +74,7 @@ body {
   .title-2 {
     @apply text-2xl lg:text-3xl font-medium tracking-tighter text-slate-900 leading-none;
   }
-
-  .title-3 {
-  }
-
+  
   p a {
     @apply underline underline-offset-4 font-medium hover:text-blue-600;
   }

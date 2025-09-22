@@ -68,12 +68,13 @@ export default function Home() {
             <div className="hidden md:block w-[160rem] aspect-square left-1/2 translate-y-[5rem] group-hover:blur-[200px] -translate-x-1/2 blur-[100px] rounded-full relative bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] to-[#4F46E5] from-[#B57BEE] opacity-40 group-hover:opacity-60 transition-all "></div>
 
             <div>
-              <img
+              <Image
                 src="/hackerhelper/phone and desktop.png"
+                alt="hackerhelper phone and desktop"
                 width={1600}
                 height={900}
                 className="rounded-md lg:rounded-xl md:-translate-y-[163.25rem] z-0 md:scale-[0.75] md:group-hover:scale-[0.8] transition-all"
-              ></img>
+              ></Image>
             </div>
           </a>
 
