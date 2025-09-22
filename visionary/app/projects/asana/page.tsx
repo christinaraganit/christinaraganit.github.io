@@ -97,7 +97,7 @@ export default async function Asana() {
                     <section className="p-6 lg:py-0 max-w">
                         <section className="text-center flex flex-col mx-auto items-center p-6 py-12 lg:p-16">
                             <h2 className="callout text-purple-500 mb-4">Design Challenge</h2>
-                            <p className="text-xl lg:text-4xl max-w-3xl tracking-tight text-balance">
+                            <p className="text-3xl lg:text-4xl max-w-3xl tracking-tight text-balance">
                                 How might we enable CSMs to create Custom Onboarding flows on behalf of a company, while protecting said company’s sensitive data?
                             </p>
                         </section>
@@ -169,7 +169,7 @@ export default async function Asana() {
 
 
                     <div className="bg-[#25172B] block w-full lg:px-40 lg:py-20">
-                        <video src="/otto/Comp 1.mp4" width={1920} height={1364} className="w-full" autoPlay controls loop></video>
+                        <video src="/otto/smaller file size flow.mp4" width={1920} height={1364} className="w-full" autoPlay controls loop></video>
                     </div>
 
                     <Spacer></Spacer>
@@ -216,7 +216,7 @@ export default async function Asana() {
                             </div>
                         </div>
                     </section>
-                    <video src="/otto/interaction-behavior-small.mov" width={1920} height={1200} className="w-full h-auto lg:max-w-[80rem] mx-auto" autoPlay controls></video>
+                    <video src="/otto/interaction-behavior.mp4" width={1920} height={1200} className="w-full h-auto lg:max-w-[80rem] mx-auto" autoPlay controls></video>
 
 
 
