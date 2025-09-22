@@ -34,14 +34,9 @@ const DecisionDropdown: React.FC<Props> = ({ title, titleValue, decisionKey }) =
   }, [watchedValues]);
 
   React.useEffect(() => {
-    if (
-      !autoExpand &&
-      typeof watchedValues === 'object' &&
-      watchedValues &&
-      Object.entries(watchedValues).every(([_, v]) => v === undefined)) {
+    if (!autoExpand && watchedValues) {
       setIsExpanded(true);
       setAutoExpand(true);
-      console.log(watchedValues);
     }
   }, [watchedValues]);
 
