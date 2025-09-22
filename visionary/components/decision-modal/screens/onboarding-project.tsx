@@ -9,6 +9,7 @@ import ScreenLabel from "@/components/decision-modal/ui/screen-label";
 import Description from "@/components/decision-modal/ui/description";
 import Label from "@/components/decision-modal/ui/label";
 import FormScreen from "@/components/decision-modal/ui/form-screen";
+import InputLabel from "@/components/decision-modal/ui/input-label";
 
 const OnboardingProject: React.FC = () => {
   const {control, watch, setValue} = useFormContext();
@@ -46,38 +47,42 @@ const OnboardingProject: React.FC = () => {
           </FormRow>
           <FormRow>
             <Label>Select project template</Label>
-            <label className="block">
-              <input
-                type="radio"
-                name="projectTemplate"
-                value="existing"
-                onChange={() => {
-                  setProjectTemplate('existing')
-                  setValue('onboardingProject.projectTemplate', null)
-                }}
-                checked={projectTemplate === 'existing'}
-              />
-              Use existing project template
-            </label>
-            {projectTemplate === 'existing' && (
-              <ControlledInput name={'onboardingProject.projectTemplate'} control={control} />
-            )}
-            <label className="block">
-              <input
-                type="radio"
-                name="projectTemplate"
-                value="new"
-                onChange={() => {
-                  setProjectTemplate('new')
-                  setValue('onboardingProject.projectTemplate', null)
-                }}
-                checked={projectTemplate === 'new'}
-              />
-              Create new project template
-            </label>
-            {projectTemplate === 'new' && (
-              <ControlledInput name={'onboardingProject.projectTemplate'} control={control} />
-            )}
+            <div className="flex flex-col gap-[8px]">
+              <label className="flex gap-[8px]">
+                <input
+                  type="radio"
+                  name="projectTemplate"
+                  value="existing"
+                  onChange={() => {
+                    setProjectTemplate('existing')
+                    setValue('onboardingProject.projectTemplate', null)
+                  }}
+                  checked={projectTemplate === 'existing'}
+                />
+                <InputLabel>Use existing template</InputLabel>
+              </label>
+              {projectTemplate === 'existing' && (
+                <div className="flex flex-col gap-[8px] pl-[22px]">
+                  <Label>Project Template ID</Label>
+                  <ControlledInput name={'onboardingProject.projectTemplate'} control={control} />
+                </div>
+              )}
+            </div>
+            <div className="flex flex-col gap-[8px]">
+              <label className="flex gap-[8px]">
+                <input
+                  type="radio"
+                  name="projectTemplate"
+                  value="existing"
+                  onChange={() => {
+                    setProjectTemplate('new')
+                    setValue('onboardingProject.projectTemplate', null)
+                  }}
+                  checked={projectTemplate === 'new'}
+                />
+                <InputLabel>Create new from onboarding template</InputLabel>
+              </label>
+            </div>
           </FormRow>
           <FormRow>
             <Label>Project name</Label>

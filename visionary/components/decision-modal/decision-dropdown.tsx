@@ -3,6 +3,9 @@
 import React from 'react';
 import {useFormContext} from "react-hook-form";
 import {getOptionsFor, OptionsMapKey} from "@/components/decision-modal/type";
+import SummaryLabel from "@/components/decision-modal/ui/summary-label";
+import SummaryValue from "@/components/decision-modal/ui/summary-value";
+import HelperText from "@/components/decision-modal/ui/helper-text";
 
 type Props = {
   title: string;
@@ -12,6 +15,7 @@ type Props = {
 
 const DecisionDropdown: React.FC<Props> = ({ title, titleValue, decisionKey }) => {
   const [isExpanded, setIsExpanded] = React.useState(false);
+  const [autoExpand, setAutoExpand] = React.useState(false);
   const {watch} = useFormContext();
   const watchedValues = watch(decisionKey);
   const options = getOptionsFor(decisionKey);
@@ -28,15 +32,29 @@ const DecisionDropdown: React.FC<Props> = ({ title, titleValue, decisionKey }) =
     }
     return  '-';
   }, [watchedValues]);
+
+  React.useEffect(() => {
+    if (
+      !autoExpand &&
+      typeof watchedValues === 'object' &&
+      watchedValues &&
+      Object.entries(watchedValues).every(([_, v]) => v === undefined)) {
+      setIsExpanded(true);
+      setAutoExpand(true);
+      console.log(watchedValues);
+    }
+  }, [watchedValues]);
+
   return (
-    <div className="grid grid-cols-2 gap-[20px] cursor-pointer" onClick={() => setIsExpanded((prev) => !prev)}>
-      <p>{title}</p>
-      <p>{titleValue}</p>
+    <div className="grid grid-cols-2 gap-x-[20px] gap-y-[16px]  cursor-pointer" onClick={() => setIsExpanded((prev) => !prev)}>
+      <SummaryLabel>{title}</SummaryLabel>
+      <SummaryValue>{titleValue}</SummaryValue>
       {isExpanded && options?.map((value) => (
         <>
-          <p key={value.label + value.key} className="text-gray-500">{value.label}</p>
-          <p key={value.label + value.key + "-value"} className="text-gray-500">{getValues(value.key)}
-          </p>
+          <HelperText key={value.label + value.key}>{value.label}</HelperText>
+          <SummaryValue key={value.label + value.key + "-value"}>
+            {getValues(value.key)}
+          </SummaryValue>
         </>
       ))}
     </div>

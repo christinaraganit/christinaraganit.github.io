@@ -19,17 +19,20 @@ const CustomWelcomeScreen: React.FC = () => {
         <ScreenLabel>Custom welcome screen (optional)</ScreenLabel>
       </FormRow>
       <FormRow>
-        <ControlledRadio name="hasCustomWelcomeScreen" control={control} options={[
-          {
-            label: 'No welcome screen',
-            value: false,
-          },
-          {
-            label: 'Add custom welcome screen',
-            value: true,
-          }
-        ]}
-                         onValueChange={() => setValue('customWelcomeScreen', null)}
+        <ControlledRadio
+          name="hasCustomWelcomeScreen"
+          control={control}
+          options={[
+            {
+              label: 'No welcome screen',
+              value: false,
+            },
+            {
+              label: 'Add custom welcome screen',
+              value: true,
+            }
+          ]}
+          onValueChange={() => setValue('customWelcomeScreen', null)}
         />
       </FormRow>
       {hasCustomWelcomeScreen && (

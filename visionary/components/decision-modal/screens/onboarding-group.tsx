@@ -42,14 +42,15 @@ const OnboardingGroup: React.FC = () => {
             },
             {
               label: 'Guest',
-              value: 'Guest'
+              value: 'Guest',
+              description: 'Selecting guest license disables email domain targeting'
             }
           ]}
         />
       </FormRow>
       <FormRow>
         <Label>Browser Language</Label>
-        <ControlledDropdown name="onboardingGroup.browserLanguage" control={control} options={[
+        <ControlledDropdown name="onboardingGroup.browserLanguage" placeholder={"Any language"} control={control} options={[
           {
             label: 'English',
           },
